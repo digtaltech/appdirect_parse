@@ -1,0 +1,1015 @@
+<base href="https://help.appdirect.com/api/graphql/integrationconfigurationcreatepayload.doc.html"><!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>IntegrationConfigurationCreatePayload | AppDirect GraphQL Reference Documentations</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <script defer="defer" src="https://use.fontawesome.com/a52c22cf39.js"></script>
+
+    <link href="https://use.fontawesome.com/a52c22cf39.css" media="all" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="./dist/styles/styles.css" />
+
+    
+</head>
+<body>
+    <div id="appDirect__header">
+        <div class="primary-header">
+
+            <ul class="primary-header-left-ul">
+                <li class="primary-header-left-ul-li logo-li">
+                    <a href="https://help.appdirect.com/" style="color: rgb(162, 162, 162);">
+                        <img src="dist/images/appdirect-mark.png" class="appdirect_dark_logo" style="display: block;">
+                        <img src="dist/images/appdirect-mark-light.png" class="appdirect_light_logo display_none" style="display: none;">
+                    </a>
+                </li>
+                <li id="hide_subnav" class="primary-header-left-ul-li subnav-li both-side-border">
+                    <a id="userguidelink_id" class="header-links userguidelink">
+                        Docs
+                        <i id="drop_down_icon" class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li>
+                            <a class="subnav-links" href="/platform/manageThePlatform.html" target="_blank">Platform</a>
+                        </li>
+                        <li>
+                            <a class="subnav-links" href="/reseller/appreseller.html" target="_blank">Resellers</a>
+                        </li>
+                        <li>
+                            <a class="subnav-links" href="/products/createAndManageProducts.html" target="_blank">Products</a>
+                        </li>
+                        <li>
+                            <a class="subnav-links" href="/develop/useAppDirectAPI.html" target="_blank">APIs</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search-bar container-search">
+                <a href="javascript:void(0)" id="search_menu">
+                    <img id="search_image" class="search_image" src="dist/images/magnifying_glass.png" alt="search">
+                </a>
+                <input style="margin-top: 0px; border-radius: 0px; width: 23.75em;" autocomplete="off" id="search-val" class="header-search-result search-bar-width" placeholder="Search Documentation Center" type="text">
+            </div>
+
+            <div class="header-right-div">
+                <a href="javascript:void(0)" id="hide_menu">
+                    ☰
+                </a>
+                <ul class="primary-header-right-ul display_none_mobile_view" style="">
+                    <li class="primary-header-right-ul-li both-side-border top-down-border training-li">
+                        <a class="header-links training" href="/training/training.html">
+                            Training
+                        </a>
+                    </li>
+                    <li class="primary-header-right-ul-li both-side-border top-down-border helpsupport-li">
+                        <a class="header-links helpsupport" href="https://docs.appdirect.com/help-support/overview">
+                            Help &amp; Support
+                        </a>
+                    </li>
+                    <li class="primary-header-right-ul-li right-side-border">
+                        <a class="header-links login" href="https://docs.appdirect.com/login">
+                            Log In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="row middle-xs header__row">
+            <ul class="header__list">
+                <li class="header__list-item header__list-item-hamburger">
+                    <button class="hamburger hamburger--slider" aria-controls="navigation" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </li>
+                <li class="header__list-item">
+                    <h1 class="header__list-heading">
+                        <a class="header__list-anchor" href="index.html">GraphQL Schema</a>
+                    </h1>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="row main__section">
+        <nav id="navigation" role="navigation" class="col-sm-3">
+            <div class="navigation__search">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.319 14.433A8.001 8.001 0 0 0 6.343 3.868a8 8 0 0 0 10.564 11.976l.043.045 4.242 4.243a1 1 0 1 0 1.415-1.415l-4.243-4.242a1.116 1.116 0 0 0-.045-.042zm-2.076-9.15a6 6 0 1 1-8.485 8.485 6 6 0 0 1 8.485-8.485z" fill="currentColor"/></svg>
+                <input id="type-search" class="navigation__search-input" type="text" placeholder="Search a Type"/>
+            </div>
+
+            <ul class="navigation">
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Queries</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="product">
+                                    <a href="product_query.doc.html" class="navigation__item-anchor">product</a>
+                                </li>
+                                <li class="navigation__sub-item" title="products">
+                                    <a href="products_query.doc.html" class="navigation__item-anchor">products</a>
+                                </li>
+                                <li class="navigation__sub-item" title="editionPricing">
+                                    <a href="editionpricing_query.doc.html" class="navigation__item-anchor">editionPricing</a>
+                                </li>
+                                <li class="navigation__sub-item" title="editionPricingByTag">
+                                    <a href="editionpricingbytag_query.doc.html" class="navigation__item-anchor">editionPricingByTag</a>
+                                </li>
+                                <li class="navigation__sub-item" title="pricingPlan">
+                                    <a href="pricingplan_query.doc.html" class="navigation__item-anchor">pricingPlan</a>
+                                </li>
+                                <li class="navigation__sub-item" title="edition">
+                                    <a href="edition_query.doc.html" class="navigation__item-anchor">edition</a>
+                                </li>
+                                <li class="navigation__sub-item" title="integrationConfiguration">
+                                    <a href="integrationconfiguration_query.doc.html" class="navigation__item-anchor">integrationConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="integrationConfigurationsByVendorId">
+                                    <a href="integrationconfigurationsbyvendorid_query.doc.html" class="navigation__item-anchor">integrationConfigurationsByVendorId</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Mutations</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="productCreate">
+                                    <a href="productcreate.doc.html" class="navigation__item-anchor">productCreate</a>
+                                </li>
+                                <li class="navigation__sub-item" title="productLinkIntegration">
+                                    <a href="productlinkintegration.doc.html" class="navigation__item-anchor">productLinkIntegration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="requestProductPublication">
+                                    <a href="requestproductpublication.doc.html" class="navigation__item-anchor">requestProductPublication</a>
+                                </li>
+                                <li class="navigation__sub-item" title="brandingSaveBasicInformation">
+                                    <a href="brandingsavebasicinformation.doc.html" class="navigation__item-anchor">brandingSaveBasicInformation</a>
+                                </li>
+                                <li class="navigation__sub-item" title="brandingDeleteBasicInformation">
+                                    <a href="brandingdeletebasicinformation.doc.html" class="navigation__item-anchor">brandingDeleteBasicInformation</a>
+                                </li>
+                                <li class="navigation__sub-item" title="addProductIntegrationSamlConfiguration">
+                                    <a href="addproductintegrationsamlconfiguration.doc.html" class="navigation__item-anchor">addProductIntegrationSamlConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="addProductIntegrationOpenIdConnectConfiguration">
+                                    <a href="addproductintegrationopenidconnectconfiguration.doc.html" class="navigation__item-anchor">addProductIntegrationOpenIdConnectConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="addProductIntegrationBookmarkConfiguration">
+                                    <a href="addproductintegrationbookmarkconfiguration.doc.html" class="navigation__item-anchor">addProductIntegrationBookmarkConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="addProductIntegrationSingleSignOnConfigurationSetupForm">
+                                    <a href="addproductintegrationsinglesignonconfigurationsetupform.doc.html" class="navigation__item-anchor">addProductIntegrationSingleSignOnConfigurationSetupForm</a>
+                                </li>
+                                <li class="navigation__sub-item" title="updateProductIntegrationSamlConfiguration">
+                                    <a href="updateproductintegrationsamlconfiguration.doc.html" class="navigation__item-anchor">updateProductIntegrationSamlConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="updateProductIntegrationOpenIdConnectConfiguration">
+                                    <a href="updateproductintegrationopenidconnectconfiguration.doc.html" class="navigation__item-anchor">updateProductIntegrationOpenIdConnectConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="updateProductIntegrationBookmarkConfiguration">
+                                    <a href="updateproductintegrationbookmarkconfiguration.doc.html" class="navigation__item-anchor">updateProductIntegrationBookmarkConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="updateProductIntegrationOpenIdConfiguration">
+                                    <a href="updateproductintegrationopenidconfiguration.doc.html" class="navigation__item-anchor">updateProductIntegrationOpenIdConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="updateProductIntegrationSingleSignOnConfigurationSetupForm">
+                                    <a href="updateproductintegrationsinglesignonconfigurationsetupform.doc.html" class="navigation__item-anchor">updateProductIntegrationSingleSignOnConfigurationSetupForm</a>
+                                </li>
+                                <li class="navigation__sub-item" title="deleteProductIntegrationSamlConfiguration">
+                                    <a href="deleteproductintegrationsamlconfiguration.doc.html" class="navigation__item-anchor">deleteProductIntegrationSamlConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="deleteProductIntegrationOpenIdConnectConfiguration">
+                                    <a href="deleteproductintegrationopenidconnectconfiguration.doc.html" class="navigation__item-anchor">deleteProductIntegrationOpenIdConnectConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="deleteProductIntegrationBookmarkConfiguration">
+                                    <a href="deleteproductintegrationbookmarkconfiguration.doc.html" class="navigation__item-anchor">deleteProductIntegrationBookmarkConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="deleteProductIntegrationOpenIdConfiguration">
+                                    <a href="deleteproductintegrationopenidconfiguration.doc.html" class="navigation__item-anchor">deleteProductIntegrationOpenIdConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="deleteProductIntegrationSingleSignOnConfigurationSetupForm">
+                                    <a href="deleteproductintegrationsinglesignonconfigurationsetupform.doc.html" class="navigation__item-anchor">deleteProductIntegrationSingleSignOnConfigurationSetupForm</a>
+                                </li>
+                                <li class="navigation__sub-item" title="updateEditionPricing">
+                                    <a href="updateeditionpricing.doc.html" class="navigation__item-anchor">updateEditionPricing</a>
+                                </li>
+                                <li class="navigation__sub-item" title="createPricingPlan">
+                                    <a href="createpricingplan.doc.html" class="navigation__item-anchor">createPricingPlan</a>
+                                </li>
+                                <li class="navigation__sub-item" title="updatePricingPlan">
+                                    <a href="updatepricingplan.doc.html" class="navigation__item-anchor">updatePricingPlan</a>
+                                </li>
+                                <li class="navigation__sub-item" title="removePricingPlan">
+                                    <a href="removepricingplan.doc.html" class="navigation__item-anchor">removePricingPlan</a>
+                                </li>
+                                <li class="navigation__sub-item" title="editionCreate">
+                                    <a href="editioncreate.doc.html" class="navigation__item-anchor">editionCreate</a>
+                                </li>
+                                <li class="navigation__sub-item" title="editionUpdate">
+                                    <a href="editionupdate.doc.html" class="navigation__item-anchor">editionUpdate</a>
+                                </li>
+                                <li class="navigation__sub-item" title="integrationConfigurationCreate">
+                                    <a href="integrationconfigurationcreate.doc.html" class="navigation__item-anchor">integrationConfigurationCreate</a>
+                                </li>
+                                <li class="navigation__sub-item" title="triggerIntegrationConfigurationPingTest">
+                                    <a href="triggerintegrationconfigurationpingtest.doc.html" class="navigation__item-anchor">triggerIntegrationConfigurationPingTest</a>
+                                </li>
+                                <li class="navigation__sub-item" title="integrationConfigurationUpdate">
+                                    <a href="integrationconfigurationupdate.doc.html" class="navigation__item-anchor">integrationConfigurationUpdate</a>
+                                </li>
+                                <li class="navigation__sub-item" title="integrationConfigurationGenerateInboundClient">
+                                    <a href="integrationconfigurationgenerateinboundclient.doc.html" class="navigation__item-anchor">integrationConfigurationGenerateInboundClient</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Scalars</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="BigDecimal">
+                                    <a href="bigdecimal.doc.html" class="navigation__item-anchor">BigDecimal</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Boolean">
+                                    <a href="boolean.doc.html" class="navigation__item-anchor">Boolean</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Currency">
+                                    <a href="currency.doc.html" class="navigation__item-anchor">Currency</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Date">
+                                    <a href="date.doc.html" class="navigation__item-anchor">Date</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ID">
+                                    <a href="id.doc.html" class="navigation__item-anchor">ID</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Int">
+                                    <a href="int.doc.html" class="navigation__item-anchor">Int</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Locale">
+                                    <a href="locale.doc.html" class="navigation__item-anchor">Locale</a>
+                                </li>
+                                <li class="navigation__sub-item" title="NonNegativeInt">
+                                    <a href="nonnegativeint.doc.html" class="navigation__item-anchor">NonNegativeInt</a>
+                                </li>
+                                <li class="navigation__sub-item" title="String">
+                                    <a href="string.doc.html" class="navigation__item-anchor">String</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Timestamp">
+                                    <a href="timestamp.doc.html" class="navigation__item-anchor">Timestamp</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Url">
+                                    <a href="url.doc.html" class="navigation__item-anchor">Url</a>
+                                </li>
+                                <li class="navigation__sub-item" title="URL">
+                                    <a href="url.doc.html" class="navigation__item-anchor">URL</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Enums</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="AdditionalSettingsFormFieldType">
+                                    <a href="additionalsettingsformfieldtype.doc.html" class="navigation__item-anchor">AdditionalSettingsFormFieldType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingElementType">
+                                    <a href="brandingelementtype.doc.html" class="navigation__item-anchor">BrandingElementType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="CustomIntegrationType">
+                                    <a href="customintegrationtype.doc.html" class="navigation__item-anchor">CustomIntegrationType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EditionState">
+                                    <a href="editionstate.doc.html" class="navigation__item-anchor">EditionState</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EditionStatus">
+                                    <a href="editionstatus.doc.html" class="navigation__item-anchor">EditionStatus</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EndpointHealth">
+                                    <a href="endpointhealth.doc.html" class="navigation__item-anchor">EndpointHealth</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EventType">
+                                    <a href="eventtype.doc.html" class="navigation__item-anchor">EventType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="GrantType">
+                                    <a href="granttype.doc.html" class="navigation__item-anchor">GrantType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfigurationState">
+                                    <a href="integrationconfigurationstate.doc.html" class="navigation__item-anchor">IntegrationConfigurationState</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationType">
+                                    <a href="integrationtype.doc.html" class="navigation__item-anchor">IntegrationType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="OpenIdConfigurationHttpMethod">
+                                    <a href="openidconfigurationhttpmethod.doc.html" class="navigation__item-anchor">OpenIdConfigurationHttpMethod</a>
+                                </li>
+                                <li class="navigation__sub-item" title="OpenIdConfigurationLoginMethod">
+                                    <a href="openidconfigurationloginmethod.doc.html" class="navigation__item-anchor">OpenIdConfigurationLoginMethod</a>
+                                </li>
+                                <li class="navigation__sub-item" title="OpenIdConnectCredentialMethod">
+                                    <a href="openidconnectcredentialmethod.doc.html" class="navigation__item-anchor">OpenIdConnectCredentialMethod</a>
+                                </li>
+                                <li class="navigation__sub-item" title="OpenIdConnectGrantType">
+                                    <a href="openidconnectgranttype.doc.html" class="navigation__item-anchor">OpenIdConnectGrantType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="OutboundCredentialsType">
+                                    <a href="outboundcredentialstype.doc.html" class="navigation__item-anchor">OutboundCredentialsType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PriceStrategy">
+                                    <a href="pricestrategy.doc.html" class="navigation__item-anchor">PriceStrategy</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingDuration">
+                                    <a href="pricingduration.doc.html" class="navigation__item-anchor">PricingDuration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingPeriodUnit">
+                                    <a href="pricingperiodunit.doc.html" class="navigation__item-anchor">PricingPeriodUnit</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductState">
+                                    <a href="productstate.doc.html" class="navigation__item-anchor">ProductState</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductType">
+                                    <a href="producttype.doc.html" class="navigation__item-anchor">ProductType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductTypeInput">
+                                    <a href="producttypeinput.doc.html" class="navigation__item-anchor">ProductTypeInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="RevenueType">
+                                    <a href="revenuetype.doc.html" class="navigation__item-anchor">RevenueType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SamlCertificateUsage">
+                                    <a href="samlcertificateusage.doc.html" class="navigation__item-anchor">SamlCertificateUsage</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SamlSigningAlgorithm">
+                                    <a href="samlsigningalgorithm.doc.html" class="navigation__item-anchor">SamlSigningAlgorithm</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SamlSigningSource">
+                                    <a href="samlsigningsource.doc.html" class="navigation__item-anchor">SamlSigningSource</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TerminationFeeType">
+                                    <a href="terminationfeetype.doc.html" class="navigation__item-anchor">TerminationFeeType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UsageType">
+                                    <a href="usagetype.doc.html" class="navigation__item-anchor">UsageType</a>
+                                </li>
+                                <li class="navigation__sub-item" title="__DirectiveLocation">
+                                    <a href="directivelocation.spec.html" class="navigation__item-anchor">__DirectiveLocation</a>
+                                </li>
+                                <li class="navigation__sub-item" title="__TypeKind">
+                                    <a href="typekind.spec.html" class="navigation__item-anchor">__TypeKind</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Interfaces</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="Node">
+                                    <a href="node.doc.html" class="navigation__item-anchor">Node</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfiguration">
+                                    <a href="singlesignonconfiguration.doc.html" class="navigation__item-anchor">SingleSignOnConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UserError">
+                                    <a href="usererror.doc.html" class="navigation__item-anchor">UserError</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Unions</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="AddProductIntegrationBookmarkConfigurationError">
+                                    <a href="addproductintegrationbookmarkconfigurationerror.doc.html" class="navigation__item-anchor">AddProductIntegrationBookmarkConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationOpenIdConnectConfigurationError">
+                                    <a href="addproductintegrationopenidconnectconfigurationerror.doc.html" class="navigation__item-anchor">AddProductIntegrationOpenIdConnectConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationSamlConfigurationError">
+                                    <a href="addproductintegrationsamlconfigurationerror.doc.html" class="navigation__item-anchor">AddProductIntegrationSamlConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationSingleSignOnConfigurationSetupFormError">
+                                    <a href="addproductintegrationsinglesignonconfigurationsetupformerror.doc.html" class="navigation__item-anchor">AddProductIntegrationSingleSignOnConfigurationSetupFormError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingDeleteBasicInformationError">
+                                    <a href="brandingdeletebasicinformationerror.doc.html" class="navigation__item-anchor">BrandingDeleteBasicInformationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingSaveOrUpdateBasicInformationError">
+                                    <a href="brandingsaveorupdatebasicinformationerror.doc.html" class="navigation__item-anchor">BrandingSaveOrUpdateBasicInformationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="CreatePricingPlanError">
+                                    <a href="createpricingplanerror.doc.html" class="navigation__item-anchor">CreatePricingPlanError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationBookmarkConfigurationError">
+                                    <a href="deleteproductintegrationbookmarkconfigurationerror.doc.html" class="navigation__item-anchor">DeleteProductIntegrationBookmarkConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationOpenIdConfigurationError">
+                                    <a href="deleteproductintegrationopenidconfigurationerror.doc.html" class="navigation__item-anchor">DeleteProductIntegrationOpenIdConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationOpenIdConnectConfigurationError">
+                                    <a href="deleteproductintegrationopenidconnectconfigurationerror.doc.html" class="navigation__item-anchor">DeleteProductIntegrationOpenIdConnectConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationSamlConfigurationError">
+                                    <a href="deleteproductintegrationsamlconfigurationerror.doc.html" class="navigation__item-anchor">DeleteProductIntegrationSamlConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationSingleSignOnConfigurationSetupFormError">
+                                    <a href="deleteproductintegrationsinglesignonconfigurationsetupformerror.doc.html" class="navigation__item-anchor">DeleteProductIntegrationSingleSignOnConfigurationSetupFormError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EventURLValidationError">
+                                    <a href="eventurlvalidationerror.doc.html" class="navigation__item-anchor">EventURLValidationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfigurationValidationError">
+                                    <a href="integrationconfigurationvalidationerror.doc.html" class="navigation__item-anchor">IntegrationConfigurationValidationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductRequestPublicationError">
+                                    <a href="productrequestpublicationerror.doc.html" class="navigation__item-anchor">ProductRequestPublicationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductValidationError">
+                                    <a href="productvalidationerror.doc.html" class="navigation__item-anchor">ProductValidationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PublishEditionPricingError">
+                                    <a href="publisheditionpricingerror.doc.html" class="navigation__item-anchor">PublishEditionPricingError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PublishProductIntegrationSingleSignOnConfigurationError">
+                                    <a href="publishproductintegrationsinglesignonconfigurationerror.doc.html" class="navigation__item-anchor">PublishProductIntegrationSingleSignOnConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="RemovePricingPlanError">
+                                    <a href="removepricingplanerror.doc.html" class="navigation__item-anchor">RemovePricingPlanError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TagEditionPricingForPublicationError">
+                                    <a href="tageditionpricingforpublicationerror.doc.html" class="navigation__item-anchor">TagEditionPricingForPublicationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdatePricingPlanError">
+                                    <a href="updatepricingplanerror.doc.html" class="navigation__item-anchor">UpdatePricingPlanError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationBookmarkConfigurationError">
+                                    <a href="updateproductintegrationbookmarkconfigurationerror.doc.html" class="navigation__item-anchor">UpdateProductIntegrationBookmarkConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationOpenIdConfigurationError">
+                                    <a href="updateproductintegrationopenidconfigurationerror.doc.html" class="navigation__item-anchor">UpdateProductIntegrationOpenIdConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationOpenIdConnectConfigurationError">
+                                    <a href="updateproductintegrationopenidconnectconfigurationerror.doc.html" class="navigation__item-anchor">UpdateProductIntegrationOpenIdConnectConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationSamlConfigurationError">
+                                    <a href="updateproductintegrationsamlconfigurationerror.doc.html" class="navigation__item-anchor">UpdateProductIntegrationSamlConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationSingleSignOnConfigurationSetupFormError">
+                                    <a href="updateproductintegrationsinglesignonconfigurationsetupformerror.doc.html" class="navigation__item-anchor">UpdateProductIntegrationSingleSignOnConfigurationSetupFormError</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Objects</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="AddProductIntegrationBookmarkConfigurationPayload">
+                                    <a href="addproductintegrationbookmarkconfigurationpayload.doc.html" class="navigation__item-anchor">AddProductIntegrationBookmarkConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationOpenIdConnectConfigurationPayload">
+                                    <a href="addproductintegrationopenidconnectconfigurationpayload.doc.html" class="navigation__item-anchor">AddProductIntegrationOpenIdConnectConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationSamlConfigurationPayload">
+                                    <a href="addproductintegrationsamlconfigurationpayload.doc.html" class="navigation__item-anchor">AddProductIntegrationSamlConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationSingleSignOnConfigurationSetupFormPayload">
+                                    <a href="addproductintegrationsinglesignonconfigurationsetupformpayload.doc.html" class="navigation__item-anchor">AddProductIntegrationSingleSignOnConfigurationSetupFormPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingAccessDeniedError">
+                                    <a href="brandingaccessdeniederror.doc.html" class="navigation__item-anchor">BrandingAccessDeniedError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingCreationFailedError">
+                                    <a href="brandingcreationfailederror.doc.html" class="navigation__item-anchor">BrandingCreationFailedError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingDeleteBasicInformationPayload">
+                                    <a href="brandingdeletebasicinformationpayload.doc.html" class="navigation__item-anchor">BrandingDeleteBasicInformationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingInvalidFieldLengthError">
+                                    <a href="brandinginvalidfieldlengtherror.doc.html" class="navigation__item-anchor">BrandingInvalidFieldLengthError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingInvalidFieldValueError">
+                                    <a href="brandinginvalidfieldvalueerror.doc.html" class="navigation__item-anchor">BrandingInvalidFieldValueError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingInvalidInputError">
+                                    <a href="brandinginvalidinputerror.doc.html" class="navigation__item-anchor">BrandingInvalidInputError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingMissingDataError">
+                                    <a href="brandingmissingdataerror.doc.html" class="navigation__item-anchor">BrandingMissingDataError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingMissingRequiredFieldError">
+                                    <a href="brandingmissingrequiredfielderror.doc.html" class="navigation__item-anchor">BrandingMissingRequiredFieldError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingProductNotFoundError">
+                                    <a href="brandingproductnotfounderror.doc.html" class="navigation__item-anchor">BrandingProductNotFoundError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingSaveOrUpdateBasicInformationPayload">
+                                    <a href="brandingsaveorupdatebasicinformationpayload.doc.html" class="navigation__item-anchor">BrandingSaveOrUpdateBasicInformationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingServerError">
+                                    <a href="brandingservererror.doc.html" class="navigation__item-anchor">BrandingServerError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingUnsupportedElementError">
+                                    <a href="brandingunsupportedelementerror.doc.html" class="navigation__item-anchor">BrandingUnsupportedElementError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingUnsupportedFieldError">
+                                    <a href="brandingunsupportedfielderror.doc.html" class="navigation__item-anchor">BrandingUnsupportedFieldError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingUnsupportedLocaleError">
+                                    <a href="brandingunsupportedlocaleerror.doc.html" class="navigation__item-anchor">BrandingUnsupportedLocaleError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingValidationError">
+                                    <a href="brandingvalidationerror.doc.html" class="navigation__item-anchor">BrandingValidationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="BrandingValidationMissingField">
+                                    <a href="brandingvalidationmissingfield.doc.html" class="navigation__item-anchor">BrandingValidationMissingField</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Cost">
+                                    <a href="cost.doc.html" class="navigation__item-anchor">Cost</a>
+                                </li>
+                                <li class="navigation__sub-item" title="CreatePricingPlanPayload">
+                                    <a href="createpricingplanpayload.doc.html" class="navigation__item-anchor">CreatePricingPlanPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationBookmarkConfigurationPayload">
+                                    <a href="deleteproductintegrationbookmarkconfigurationpayload.doc.html" class="navigation__item-anchor">DeleteProductIntegrationBookmarkConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationOpenIdConfigurationPayload">
+                                    <a href="deleteproductintegrationopenidconfigurationpayload.doc.html" class="navigation__item-anchor">DeleteProductIntegrationOpenIdConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationOpenIdConnectConfigurationPayload">
+                                    <a href="deleteproductintegrationopenidconnectconfigurationpayload.doc.html" class="navigation__item-anchor">DeleteProductIntegrationOpenIdConnectConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationSamlConfigurationPayload">
+                                    <a href="deleteproductintegrationsamlconfigurationpayload.doc.html" class="navigation__item-anchor">DeleteProductIntegrationSamlConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationSingleSignOnConfigurationSetupFormPayload">
+                                    <a href="deleteproductintegrationsinglesignonconfigurationsetupformpayload.doc.html" class="navigation__item-anchor">DeleteProductIntegrationSingleSignOnConfigurationSetupFormPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DomainAssociationConfiguration">
+                                    <a href="domainassociationconfiguration.doc.html" class="navigation__item-anchor">DomainAssociationConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DomainResellerInvalidUsageTypeError">
+                                    <a href="domainresellerinvalidusagetypeerror.doc.html" class="navigation__item-anchor">DomainResellerInvalidUsageTypeError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DuplicatePricingUnitError">
+                                    <a href="duplicatepricinguniterror.doc.html" class="navigation__item-anchor">DuplicatePricingUnitError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Edition">
+                                    <a href="edition.doc.html" class="navigation__item-anchor">Edition</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EditionPricing">
+                                    <a href="editionpricing.doc.html" class="navigation__item-anchor">EditionPricing</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EditionPricingTagNotFoundError">
+                                    <a href="editionpricingtagnotfounderror.doc.html" class="navigation__item-anchor">EditionPricingTagNotFoundError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EventURL">
+                                    <a href="eventurl.doc.html" class="navigation__item-anchor">EventURL</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IncludedItem">
+                                    <a href="includeditem.doc.html" class="navigation__item-anchor">IncludedItem</a>
+                                </li>
+                                <li class="navigation__sub-item" title="InsufficientPricingTiersError">
+                                    <a href="insufficientpricingtierserror.doc.html" class="navigation__item-anchor">InsufficientPricingTiersError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationAdditionalSettingsForm">
+                                    <a href="integrationadditionalsettingsform.doc.html" class="navigation__item-anchor">IntegrationAdditionalSettingsForm</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationAdditionalSettingsFormField">
+                                    <a href="integrationadditionalsettingsformfield.doc.html" class="navigation__item-anchor">IntegrationAdditionalSettingsFormField</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationAdditionalSettingsFormFieldOption">
+                                    <a href="integrationadditionalsettingsformfieldoption.doc.html" class="navigation__item-anchor">IntegrationAdditionalSettingsFormFieldOption</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfiguration">
+                                    <a href="integrationconfiguration.doc.html" class="navigation__item-anchor">IntegrationConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfigurationConnection">
+                                    <a href="integrationconfigurationconnection.doc.html" class="navigation__item-anchor">IntegrationConfigurationConnection</a>
+                                </li>
+                                <li class="navigation__sub-item navigation__sub-item--active" title="IntegrationConfigurationCreatePayload">
+                                    <a href="integrationconfigurationcreatepayload.doc.html" class="navigation__item-anchor">IntegrationConfigurationCreatePayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfigurationGenerateInboundClientPayload">
+                                    <a href="integrationconfigurationgenerateinboundclientpayload.doc.html" class="navigation__item-anchor">IntegrationConfigurationGenerateInboundClientPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfigurationTest">
+                                    <a href="integrationconfigurationtest.doc.html" class="navigation__item-anchor">IntegrationConfigurationTest</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfigurationUpdatePayload">
+                                    <a href="integrationconfigurationupdatepayload.doc.html" class="navigation__item-anchor">IntegrationConfigurationUpdatePayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="InvalidAddonProductTypeError">
+                                    <a href="invalidaddonproducttypeerror.doc.html" class="navigation__item-anchor">InvalidAddonProductTypeError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="InvalidEditionConfigurationError">
+                                    <a href="invalideditionconfigurationerror.doc.html" class="navigation__item-anchor">InvalidEditionConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="InvalidIntegrationLinkError">
+                                    <a href="invalidintegrationlinkerror.doc.html" class="navigation__item-anchor">InvalidIntegrationLinkError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="InvalidIntegrationReportError">
+                                    <a href="invalidintegrationreporterror.doc.html" class="navigation__item-anchor">InvalidIntegrationReportError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="InvalidNotificationEmailError">
+                                    <a href="invalidnotificationemailerror.doc.html" class="navigation__item-anchor">InvalidNotificationEmailError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="InvalidPricingTierError">
+                                    <a href="invalidpricingtiererror.doc.html" class="navigation__item-anchor">InvalidPricingTierError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="InvalidUnlimitedIncludedPricingUnitsError">
+                                    <a href="invalidunlimitedincludedpricingunitserror.doc.html" class="navigation__item-anchor">InvalidUnlimitedIncludedPricingUnitsError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ItemPrice">
+                                    <a href="itemprice.doc.html" class="navigation__item-anchor">ItemPrice</a>
+                                </li>
+                                <li class="navigation__sub-item" title="LocaleString">
+                                    <a href="localestring.doc.html" class="navigation__item-anchor">LocaleString</a>
+                                </li>
+                                <li class="navigation__sub-item" title="LocalizedBasicInformation">
+                                    <a href="localizedbasicinformation.doc.html" class="navigation__item-anchor">LocalizedBasicInformation</a>
+                                </li>
+                                <li class="navigation__sub-item" title="LocalizedString">
+                                    <a href="localizedstring.doc.html" class="navigation__item-anchor">LocalizedString</a>
+                                </li>
+                                <li class="navigation__sub-item" title="NoEditionError">
+                                    <a href="noeditionerror.doc.html" class="navigation__item-anchor">NoEditionError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="NoIntegrationError">
+                                    <a href="nointegrationerror.doc.html" class="navigation__item-anchor">NoIntegrationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="NoIntegrationReportError">
+                                    <a href="nointegrationreporterror.doc.html" class="navigation__item-anchor">NoIntegrationReportError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="OutboundCredentials">
+                                    <a href="outboundcredentials.doc.html" class="navigation__item-anchor">OutboundCredentials</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PageInfo">
+                                    <a href="pageinfo.doc.html" class="navigation__item-anchor">PageInfo</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingCostIncrementError">
+                                    <a href="pricingcostincrementerror.doc.html" class="navigation__item-anchor">PricingCostIncrementError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingItemError">
+                                    <a href="pricingitemerror.doc.html" class="navigation__item-anchor">PricingItemError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingItemUnitsError">
+                                    <a href="pricingitemunitserror.doc.html" class="navigation__item-anchor">PricingItemUnitsError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingMonetaryStructure">
+                                    <a href="pricingmonetarystructure.doc.html" class="navigation__item-anchor">PricingMonetaryStructure</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingPeriod">
+                                    <a href="pricingperiod.doc.html" class="navigation__item-anchor">PricingPeriod</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingPlan">
+                                    <a href="pricingplan.doc.html" class="navigation__item-anchor">PricingPlan</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingPlanContract">
+                                    <a href="pricingplancontract.doc.html" class="navigation__item-anchor">PricingPlanContract</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingServerError">
+                                    <a href="pricingservererror.doc.html" class="navigation__item-anchor">PricingServerError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingUnitError">
+                                    <a href="pricinguniterror.doc.html" class="navigation__item-anchor">PricingUnitError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="Product">
+                                    <a href="product.doc.html" class="navigation__item-anchor">Product</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductBranding">
+                                    <a href="productbranding.doc.html" class="navigation__item-anchor">ProductBranding</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductCannotBePublishedError">
+                                    <a href="productcannotbepublishederror.doc.html" class="navigation__item-anchor">ProductCannotBePublishedError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductConnection">
+                                    <a href="productconnection.doc.html" class="navigation__item-anchor">ProductConnection</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductCreatePayload">
+                                    <a href="productcreatepayload.doc.html" class="navigation__item-anchor">ProductCreatePayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductIntegrationBookmarkConfiguration">
+                                    <a href="productintegrationbookmarkconfiguration.doc.html" class="navigation__item-anchor">ProductIntegrationBookmarkConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductIntegrationLinkPayload">
+                                    <a href="productintegrationlinkpayload.doc.html" class="navigation__item-anchor">ProductIntegrationLinkPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductIntegrationOpenIdConfiguration">
+                                    <a href="productintegrationopenidconfiguration.doc.html" class="navigation__item-anchor">ProductIntegrationOpenIdConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductIntegrationOpenIdConnectConfiguration">
+                                    <a href="productintegrationopenidconnectconfiguration.doc.html" class="navigation__item-anchor">ProductIntegrationOpenIdConnectConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductIntegrationSamlConfiguration">
+                                    <a href="productintegrationsamlconfiguration.doc.html" class="navigation__item-anchor">ProductIntegrationSamlConfiguration</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductPublicationRequest">
+                                    <a href="productpublicationrequest.doc.html" class="navigation__item-anchor">ProductPublicationRequest</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PublishEditionPricingPayload">
+                                    <a href="publisheditionpricingpayload.doc.html" class="navigation__item-anchor">PublishEditionPricingPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="RemovePricingPlanPayload">
+                                    <a href="removepricingplanpayload.doc.html" class="navigation__item-anchor">RemovePricingPlanPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="RequestProductPublicationPayload">
+                                    <a href="requestproductpublicationpayload.doc.html" class="navigation__item-anchor">RequestProductPublicationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SamlAttribute">
+                                    <a href="samlattribute.doc.html" class="navigation__item-anchor">SamlAttribute</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SetupFormPlaceholderParameter">
+                                    <a href="setupformplaceholderparameter.doc.html" class="navigation__item-anchor">SetupFormPlaceholderParameter</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfigurationForbiddenError">
+                                    <a href="singlesignonconfigurationforbiddenerror.doc.html" class="navigation__item-anchor">SingleSignOnConfigurationForbiddenError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfigurationInvalidArgumentError">
+                                    <a href="singlesignonconfigurationinvalidargumenterror.doc.html" class="navigation__item-anchor">SingleSignOnConfigurationInvalidArgumentError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfigurationInvalidConfigurationError">
+                                    <a href="singlesignonconfigurationinvalidconfigurationerror.doc.html" class="navigation__item-anchor">SingleSignOnConfigurationInvalidConfigurationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfigurationInvalidTypeError">
+                                    <a href="singlesignonconfigurationinvalidtypeerror.doc.html" class="navigation__item-anchor">SingleSignOnConfigurationInvalidTypeError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfigurationNotFoundError">
+                                    <a href="singlesignonconfigurationnotfounderror.doc.html" class="navigation__item-anchor">SingleSignOnConfigurationNotFoundError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfigurationPublicationError">
+                                    <a href="singlesignonconfigurationpublicationerror.doc.html" class="navigation__item-anchor">SingleSignOnConfigurationPublicationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfigurationSetupForm">
+                                    <a href="singlesignonconfigurationsetupform.doc.html" class="navigation__item-anchor">SingleSignOnConfigurationSetupForm</a>
+                                </li>
+                                <li class="navigation__sub-item" title="SingleSignOnConfigurationUnknownError">
+                                    <a href="singlesignonconfigurationunknownerror.doc.html" class="navigation__item-anchor">SingleSignOnConfigurationUnknownError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TagEditionPricingForPublicationPayload">
+                                    <a href="tageditionpricingforpublicationpayload.doc.html" class="navigation__item-anchor">TagEditionPricingForPublicationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TerminationFee">
+                                    <a href="terminationfee.doc.html" class="navigation__item-anchor">TerminationFee</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TestFailedValidationError">
+                                    <a href="testfailedvalidationerror.doc.html" class="navigation__item-anchor">TestFailedValidationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TestMissingValidationError">
+                                    <a href="testmissingvalidationerror.doc.html" class="navigation__item-anchor">TestMissingValidationError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TriggerIntegrationConfigurationPingTestPayload">
+                                    <a href="triggerintegrationconfigurationpingtestpayload.doc.html" class="navigation__item-anchor">TriggerIntegrationConfigurationPingTestPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UndefinedNotificationEmailError">
+                                    <a href="undefinednotificationemailerror.doc.html" class="navigation__item-anchor">UndefinedNotificationEmailError</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateEditionPricingPayload">
+                                    <a href="updateeditionpricingpayload.doc.html" class="navigation__item-anchor">UpdateEditionPricingPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdatePricingPlanPayload">
+                                    <a href="updatepricingplanpayload.doc.html" class="navigation__item-anchor">UpdatePricingPlanPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationBookmarkConfigurationPayload">
+                                    <a href="updateproductintegrationbookmarkconfigurationpayload.doc.html" class="navigation__item-anchor">UpdateProductIntegrationBookmarkConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationOpenIdConfigurationPayload">
+                                    <a href="updateproductintegrationopenidconfigurationpayload.doc.html" class="navigation__item-anchor">UpdateProductIntegrationOpenIdConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationOpenIdConnectConfigurationPayload">
+                                    <a href="updateproductintegrationopenidconnectconfigurationpayload.doc.html" class="navigation__item-anchor">UpdateProductIntegrationOpenIdConnectConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationSamlConfigurationPayload">
+                                    <a href="updateproductintegrationsamlconfigurationpayload.doc.html" class="navigation__item-anchor">UpdateProductIntegrationSamlConfigurationPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationSingleSignOnConfigurationSetupFormPayload">
+                                    <a href="updateproductintegrationsinglesignonconfigurationsetupformpayload.doc.html" class="navigation__item-anchor">UpdateProductIntegrationSingleSignOnConfigurationSetupFormPayload</a>
+                                </li>
+                                <li class="navigation__sub-item" title="__Directive">
+                                    <a href="directive.spec.html" class="navigation__item-anchor">__Directive</a>
+                                </li>
+                                <li class="navigation__sub-item" title="__EnumValue">
+                                    <a href="enumvalue.spec.html" class="navigation__item-anchor">__EnumValue</a>
+                                </li>
+                                <li class="navigation__sub-item" title="__Field">
+                                    <a href="field.spec.html" class="navigation__item-anchor">__Field</a>
+                                </li>
+                                <li class="navigation__sub-item" title="__InputValue">
+                                    <a href="inputvalue.spec.html" class="navigation__item-anchor">__InputValue</a>
+                                </li>
+                                <li class="navigation__sub-item" title="__Schema">
+                                    <a href="schema.spec.html" class="navigation__item-anchor">__Schema</a>
+                                </li>
+                                <li class="navigation__sub-item" title="__Type">
+                                    <a href="type.spec.html" class="navigation__item-anchor">__Type</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Input Objects</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="AddProductIntegrationBookmarkConfigurationInput">
+                                    <a href="addproductintegrationbookmarkconfigurationinput.doc.html" class="navigation__item-anchor">AddProductIntegrationBookmarkConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationOpenIdConnectConfigurationInput">
+                                    <a href="addproductintegrationopenidconnectconfigurationinput.doc.html" class="navigation__item-anchor">AddProductIntegrationOpenIdConnectConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationSamlAssertionAttributeInput">
+                                    <a href="addproductintegrationsamlassertionattributeinput.doc.html" class="navigation__item-anchor">AddProductIntegrationSamlAssertionAttributeInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationSamlConfigurationInput">
+                                    <a href="addproductintegrationsamlconfigurationinput.doc.html" class="navigation__item-anchor">AddProductIntegrationSamlConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddProductIntegrationSingleSignOnConfigurationSetupFormInput">
+                                    <a href="addproductintegrationsinglesignonconfigurationsetupforminput.doc.html" class="navigation__item-anchor">AddProductIntegrationSingleSignOnConfigurationSetupFormInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="AddSetupFormPlaceholderParameterInput">
+                                    <a href="addsetupformplaceholderparameterinput.doc.html" class="navigation__item-anchor">AddSetupFormPlaceholderParameterInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="CostInput">
+                                    <a href="costinput.doc.html" class="navigation__item-anchor">CostInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="CreatePricingPlanInput">
+                                    <a href="createpricingplaninput.doc.html" class="navigation__item-anchor">CreatePricingPlanInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationBookmarkConfigurationInput">
+                                    <a href="deleteproductintegrationbookmarkconfigurationinput.doc.html" class="navigation__item-anchor">DeleteProductIntegrationBookmarkConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationOpenIdConfigurationInput">
+                                    <a href="deleteproductintegrationopenidconfigurationinput.doc.html" class="navigation__item-anchor">DeleteProductIntegrationOpenIdConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationOpenIdConnectConfigurationInput">
+                                    <a href="deleteproductintegrationopenidconnectconfigurationinput.doc.html" class="navigation__item-anchor">DeleteProductIntegrationOpenIdConnectConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationSamlConfigurationInput">
+                                    <a href="deleteproductintegrationsamlconfigurationinput.doc.html" class="navigation__item-anchor">DeleteProductIntegrationSamlConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DeleteProductIntegrationSingleSignOnConfigurationSetupFormInput">
+                                    <a href="deleteproductintegrationsinglesignonconfigurationsetupforminput.doc.html" class="navigation__item-anchor">DeleteProductIntegrationSingleSignOnConfigurationSetupFormInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="DomainAssociationConfigurationInput">
+                                    <a href="domainassociationconfigurationinput.doc.html" class="navigation__item-anchor">DomainAssociationConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EditionInput">
+                                    <a href="editioninput.doc.html" class="navigation__item-anchor">EditionInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EditionPricingByTagInput">
+                                    <a href="editionpricingbytaginput.doc.html" class="navigation__item-anchor">EditionPricingByTagInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="EditionPricingInput">
+                                    <a href="editionpricinginput.doc.html" class="navigation__item-anchor">EditionPricingInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IncludedItemInput">
+                                    <a href="includediteminput.doc.html" class="navigation__item-anchor">IncludedItemInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationAdditionalSettingsFormFieldInput">
+                                    <a href="integrationadditionalsettingsformfieldinput.doc.html" class="navigation__item-anchor">IntegrationAdditionalSettingsFormFieldInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationAdditionalSettingsFormFieldOptionInput">
+                                    <a href="integrationadditionalsettingsformfieldoptioninput.doc.html" class="navigation__item-anchor">IntegrationAdditionalSettingsFormFieldOptionInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationAdditionalSettingsFormInput">
+                                    <a href="integrationadditionalsettingsforminput.doc.html" class="navigation__item-anchor">IntegrationAdditionalSettingsFormInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfigurationInput">
+                                    <a href="integrationconfigurationinput.doc.html" class="navigation__item-anchor">IntegrationConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="IntegrationConfigurationUpdateInput">
+                                    <a href="integrationconfigurationupdateinput.doc.html" class="navigation__item-anchor">IntegrationConfigurationUpdateInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ItemPriceInput">
+                                    <a href="itempriceinput.doc.html" class="navigation__item-anchor">ItemPriceInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="LocaleStringInput">
+                                    <a href="localestringinput.doc.html" class="navigation__item-anchor">LocaleStringInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="LocalizedBasicInformationInput">
+                                    <a href="localizedbasicinformationinput.doc.html" class="navigation__item-anchor">LocalizedBasicInformationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="LocalizedStringInput">
+                                    <a href="localizedstringinput.doc.html" class="navigation__item-anchor">LocalizedStringInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="OutboundCredentialsInput">
+                                    <a href="outboundcredentialsinput.doc.html" class="navigation__item-anchor">OutboundCredentialsInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingContractInput">
+                                    <a href="pricingcontractinput.doc.html" class="navigation__item-anchor">PricingContractInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingMonetaryStructureInput">
+                                    <a href="pricingmonetarystructureinput.doc.html" class="navigation__item-anchor">PricingMonetaryStructureInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingPeriodInput">
+                                    <a href="pricingperiodinput.doc.html" class="navigation__item-anchor">PricingPeriodInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PricingPlanInput">
+                                    <a href="pricingplaninput.doc.html" class="navigation__item-anchor">PricingPlanInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="ProductCreateInput">
+                                    <a href="productcreateinput.doc.html" class="navigation__item-anchor">ProductCreateInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="PublishEditionPricingTagInput">
+                                    <a href="publisheditionpricingtaginput.doc.html" class="navigation__item-anchor">PublishEditionPricingTagInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="RemovePricingPlanInput">
+                                    <a href="removepricingplaninput.doc.html" class="navigation__item-anchor">RemovePricingPlanInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="RequestProductPublicationInput">
+                                    <a href="requestproductpublicationinput.doc.html" class="navigation__item-anchor">RequestProductPublicationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TagEditionPricingForPublicationInput">
+                                    <a href="tageditionpricingforpublicationinput.doc.html" class="navigation__item-anchor">TagEditionPricingForPublicationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TerminationFeeInput">
+                                    <a href="terminationfeeinput.doc.html" class="navigation__item-anchor">TerminationFeeInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="TriggerIntegrationConfigurationPingTestInput">
+                                    <a href="triggerintegrationconfigurationpingtestinput.doc.html" class="navigation__item-anchor">TriggerIntegrationConfigurationPingTestInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdatePricingPlanInput">
+                                    <a href="updatepricingplaninput.doc.html" class="navigation__item-anchor">UpdatePricingPlanInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationBookmarkConfigurationInput">
+                                    <a href="updateproductintegrationbookmarkconfigurationinput.doc.html" class="navigation__item-anchor">UpdateProductIntegrationBookmarkConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationOpenIdConfigurationInput">
+                                    <a href="updateproductintegrationopenidconfigurationinput.doc.html" class="navigation__item-anchor">UpdateProductIntegrationOpenIdConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationOpenIdConnectConfigurationInput">
+                                    <a href="updateproductintegrationopenidconnectconfigurationinput.doc.html" class="navigation__item-anchor">UpdateProductIntegrationOpenIdConnectConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationSamlAssertionAttributeInput">
+                                    <a href="updateproductintegrationsamlassertionattributeinput.doc.html" class="navigation__item-anchor">UpdateProductIntegrationSamlAssertionAttributeInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationSamlConfigurationInput">
+                                    <a href="updateproductintegrationsamlconfigurationinput.doc.html" class="navigation__item-anchor">UpdateProductIntegrationSamlConfigurationInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateProductIntegrationSingleSignOnConfigurationSetupFormInput">
+                                    <a href="updateproductintegrationsinglesignonconfigurationsetupforminput.doc.html" class="navigation__item-anchor">UpdateProductIntegrationSingleSignOnConfigurationSetupFormInput</a>
+                                </li>
+                                <li class="navigation__sub-item" title="UpdateSetupFormPlaceholderParameterInput">
+                                    <a href="updatesetupformplaceholderparameterinput.doc.html" class="navigation__item-anchor">UpdateSetupFormPlaceholderParameterInput</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-trigger button button--no-styles">Directives</button>
+                            <ul class="navigation__sub-menu">
+                                <li class="navigation__sub-item" title="authorization">
+                                    <a href="authorization.doc.html" class="navigation__item-anchor">authorization</a>
+                                </li>
+                                <li class="navigation__sub-item" title="deprecated">
+                                    <a href="deprecated.doc.html" class="navigation__item-anchor">deprecated</a>
+                                </li>
+                                <li class="navigation__sub-item" title="include">
+                                    <a href="include.doc.html" class="navigation__item-anchor">include</a>
+                                </li>
+                                <li class="navigation__sub-item" title="integrationConfigurationVerification">
+                                    <a href="integrationconfigurationverification.doc.html" class="navigation__item-anchor">integrationConfigurationVerification</a>
+                                </li>
+                                <li class="navigation__sub-item" title="internal">
+                                    <a href="internal.doc.html" class="navigation__item-anchor">internal</a>
+                                </li>
+                                <li class="navigation__sub-item" title="productValidation">
+                                    <a href="productvalidation.doc.html" class="navigation__item-anchor">productValidation</a>
+                                </li>
+                                <li class="navigation__sub-item" title="skip">
+                                    <a href="skip.doc.html" class="navigation__item-anchor">skip</a>
+                                </li>
+                                <li class="navigation__sub-item" title="specifiedBy">
+                                    <a href="specifiedby.doc.html" class="navigation__item-anchor">specifiedBy</a>
+                                </li>
+                            </ul>
+                        </li>
+            </ul>
+        </nav>        <article class="col-sm-9 article">
+            <section class="row middle-xs article__breadcrumb"></section>
+
+            <header class="article__header">
+                <h2 class="article__heading">IntegrationConfigurationCreatePayload</h2>
+            </header>
+
+            <section class="article__section">
+                
+            </section>
+
+            <section class="article__section document document__this-page-contains">
+                <h3 id="this-page-contains" class="document__heading">This page contains</h3>
+                <div class="table-of-content__section">
+                    <ul class="table-of-content__list"></ul>
+                </div>
+            </section>
+
+
+                <section class="article__section document document__fields">
+                    <h3 id="fields" class="document__heading">Fields</h3>
+                    <table class="fields"><tr class="fields__row"><td class="fields__data"><span class="fields__property">integrationConfiguration</span>: <a class="fields__type" href="integrationconfiguration.doc.html">IntegrationConfiguration</a> </td><td class="fields__data"><div class="fields__paragraph fields__paragraph--markdown"></div></td></tr></table>
+                </section>
+        </article>    </section>
+
+    <footer></footer>
+
+    <script type="text/javascript" src="./dist/js/manifest.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./dist/js/vendor.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./dist/js/app.js" charset="utf-8"></script>
+
+</body>

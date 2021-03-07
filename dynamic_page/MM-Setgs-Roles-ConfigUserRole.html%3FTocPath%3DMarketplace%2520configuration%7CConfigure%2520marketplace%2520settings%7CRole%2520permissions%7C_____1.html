@@ -1,0 +1,552 @@
+<base href="https://help.appdirect.com/platform/Default.htm#MarketplaceManager/MM-Setgs-Roles-ConfigUserRole.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____1"><html class="defaultSkin left-layout js no-touch svg inlinesvg svgclippaths no-ie8compat fa-events-icons-ready has-topic _Skins_HTML5___Tripane" data-mc-runtime-file-type="Default;TriPane" lang="en"><!-- saved from url=(0016)http://localhost --><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-title="">Configure User role permissions - Platform Help - AppDirect</title>
+    <link rel="shortcut icon" href="https://d6r6ulbtqyuv7.cloudfront.net/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/appdirectapp/images/favicon-ver-E524860B6D15077DC12CB7437023988E.ico" type="image/x-icon">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/TextEffects.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Styles.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/normalize.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/foundation_custom.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/offcanvas.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Web.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Tablet.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Mobile.css">
+
+	<!----------------------------- Share-this Script ------------------------------->
+
+    <iframe id="pxcelframe" src="//t.sharethis.com/a/t_.htm?ver=1.457.22036&amp;cid=c010&amp;cls=B#cid=c010&amp;cls=B&amp;dmn=help.appdirect.com&amp;rnd=1615158052133&amp;tt=t.dhj&amp;dhjLcy=327&amp;lbl=pxcel&amp;flbl=pxcel&amp;ll=d&amp;ver=1.457.22036&amp;ell=d&amp;cck=__stid&amp;pn=%2Fplatform%2FDefault.htm&amp;qs=na&amp;rdn=help.appdirect.com&amp;rpn=%2Fplatform%2FDefault.htm&amp;rqs=na&amp;cc=RU&amp;cont=EU&amp;ipaddr=" style="display: none;"></iframe><script async="" src="https://buttons-config.sharethis.com/js/5a5c5a8c72b70f00137efecc.js"></script><script type="text/javascript" async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_7d99ba68b982471c851b1260868b2859_https.js"></script><script defer="defer" type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a5c5a8c72b70f00137efecc&amp;product=sticky-share-buttons">
+    </script>
+
+	<!----------------------------- Walkme Script ------------------------------->
+
+    <script type="text/javascript">
+        (function() {
+            var walkme = document.createElement('script');
+            walkme.type = 'text/javascript';
+            walkme.async = true;
+            walkme.src = 'https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_7d99ba68b982471c851b1260868b2859_https.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(walkme, s);
+            window._walkmeConfig = { smartLoad: true };
+        })();
+    </script>
+
+	<!----------------------------- Local JS Script ------------------------------->
+
+    <script type="text/javascript" src="Resources/Scripts/jquery.min.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/custom.modernizr.js">
+    </script>
+    <script type="text/javascript" src="Resources/Scripts/foundation.min.js">
+    </script><meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xxlarge"><style></style>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/require.min.js">
+    </script>
+    <script type="text/javascript" src="Resources/Scripts/plugins.min.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/require.config.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/MadCapAll.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/header.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/redirect.js">
+    </script>
+    <script defer="defer" src="https://use.fontawesome.com/a52c22cf39.js">
+    </script>
+    <style>
+
+	.button.print-button {
+		-pie-background : url('Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.separator-button {
+		-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.topic-ratings-button {
+		-pie-background : url('Skins/Default/Stylesheets/Images/starFull.png') no-repeat center center, linear-gradient(transparent, transparent);
+		}
+
+	.button.separator-button {
+		-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.edit-user-profile-button {
+		-pie-background : url('Skins/Default/Stylesheets/Images/edit-profile.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.filler-button {
+		-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.previous-topic-button {
+		-pie-background : url('Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.current-topic-index-button {
+		-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.next-topic-button {
+		-pie-background : url('Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.select-language-button {
+		-pie-background : url('Skins/Default/Stylesheets/Images/select-language.png') no-repeat center cente, linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.button.login-button {
+		-pie-background : url('Skins/Default/Stylesheets/Images/login.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.tabs-nav li.tabs-nav-inactive {
+		-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.tabs-nav li.tabs-nav-active {
+		-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+		}
+
+	.login-dialog-header {
+		-pie-background : url('Skins/Default/Stylesheets/Images/login-dialog-icon.png') no-repeat 18px center, linear-gradient(#5A5A5A, #4A4A4A);
+		}
+
+	.login-dialog button {
+		-pie-background : linear-gradient(#595959, #4A4A4A);
+		}
+
+    </style>
+<link href="https://use.fontawesome.com/a52c22cf39.css" media="all" rel="stylesheet"><script id="mt_script_051685613" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/settings.txt"></script><script id="mt_script_051935911" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/player/resources/wmjQuery3315.js"></script><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/scripts/prelib-plugin-a5bf053c-c09c-3183-8c39-ece2ec41c63c.js" rel="preload" as="script" id="wm_link0"><link href="https://cdn.walkme.com/player/lib/walkme_lib_20210301-130444-72c2f7f8-0ef15b74.js" rel="preload" as="script" id="wm_link1"><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_config_410af9750466448d9b285642808c1b7c.js" rel="preload" as="script" id="wm_link2"><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/data_60d29a68dc85497cb255474bcc1fdf9c.js" rel="preload" as="script" id="wm_link3"><link href="https://papi.walkme.com" rel="preconnect" id="wm_link4"><script id="mt_script_052010967" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/scripts/prelib-plugin-a5bf053c-c09c-3183-8c39-ece2ec41c63c.js"></script><script id="mt_script_0520559653" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/player/lib/walkme_lib_20210301-130444-72c2f7f8-0ef15b74.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Breakpoints.js" src="Data/Breakpoints.js?t=636421935078698520"></script><style type="text/css">#st-2 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  backface-visibility: hidden;
+  display: block;
+  position: fixed;
+  opacity: 1;
+  text-align: left;
+  top: 88%;
+  z-index: 94034;
+}
+#st-2.st-right {
+  right: 0px;
+}
+#st-2.st-hidden.st-right {
+  right: -48px;
+}
+#st-2.st-hidden {
+  width: 96px;
+}
+#st-2 > div {
+  clear: right;
+  float: right;
+}
+#st-2 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: NaNpx;
+  height: 48px;
+  line-height: 24px;
+  margin-bottom: 0;
+  opacity: 1;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+  text-align: left;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 48px;
+}
+#st-2 .st-btn.st-first {
+  border-top: none;
+  border-top-left-radius: 11px;
+}
+#st-2 .st-btn.st-last {
+  border-bottom: none;
+  border-bottom-left-radius: 11px;
+}
+#st-2 .st-btn > svg {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > img {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  left: -35px;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+  filter: alpha(opacity=0);
+}
+#st-2 .st-btn.st-hide-label > span {
+  display: none !important;
+}
+#st-2 .st-total {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #fff;
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 18px;
+  margin-right: 0;
+  min-height: 34px;
+  max-width: 80px;
+  opacity: 1;
+  padding: 4px 0;
+  text-align: center;
+  width: 48px;
+}
+#st-2 .st-total.st-hidden {
+  display: none;
+}
+#st-2 .st-total > span {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0;
+}
+#st-2 .st-total > span.st-shares {
+  font-size: 11px;
+  line-height: 11px;
+}
+#st-2 .st-toggle {
+  right: -48px;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #ccc;
+  border-bottom-left-radius: 11px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  text-align: center;
+  width: 48px;
+}
+#st-2.st-hidden .st-toggle {
+  border-top-left-radius: 11px;
+}
+#st-2.st-right .st-toggle .st-right {
+  display: inline-block;
+}
+#st-2.st-right.st-hidden .st-toggle .st-right {
+  display: none;
+}
+#st-2.st-right .st-toggle .st-left {
+  display: none;
+}
+#st-2.st-right.st-hidden .st-toggle .st-left {
+  display: inline-block;
+}#st-2:hover .st-toggle {
+  right: 0;
+}
+#st-2.st-hidden:hover .st-toggle {
+  right: 48px;
+}
+#st-2.st-toggleable:hover .st-btn.st-last {
+  border-bottom-left-radius: 0;
+}
+#st-2.st-toggleable:hover .st-btn.st-last:hover {
+  border-bottom-left-radius: 11px;
+}
+#st-2 .st-btn:hover {
+  border-bottom-left-radius: 11px;
+  border-top-left-radius: 11px;
+}
+#st-2.st-has-labels .st-btn:hover {
+  width: 120px;
+}
+#st-2:not(.st-has-labels) .st-btn:hover {
+  width: 62px;
+}
+#st-2 .st-btn.st-hide-label:hover {
+  width: 62px;
+}
+#st-2 .st-btn:hover > svg {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > img {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > span {
+  opacity: 1;
+  display: inline-block;
+  left: 0;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 1073px) {
+  #st-2 .st-btn:hover > svg {
+    margin-left: 0;
+  }
+  #st-2 .st-btn:hover > span {
+    display: none;
+  }
+}@media (max-width: 1073px) {
+  #st-2 {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+}
+#st-2.st-hidden {
+  bottom: -48px;
+  width: 100%;
+}
+#st-2.st-hidden.st-left {
+  left: 0;
+}
+#st-2.st-hidden.st-right {
+  right: 0;
+}
+#st-2 > div {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  clear: none;
+  flex: 1;
+  float: none;
+}
+#st-2 .st-total {
+  background: #fff;
+  padding: 6px 8px;
+}
+#st-2 .st-btn {
+  -moz-border-radius: 0 !important;
+-webkit-border-radius: 0 !important;
+border-radius: 0 !important;
+  text-align: center;
+  width: auto;
+}
+#st-2 .st-btn > span {
+  display: none;
+}
+#st-2 .st-toggle {
+  display: none;
+}body { padding-bottom: 48px; }
+}#st-2 .st-btn[data-network='email'] {
+  background-color: #7d7d7d;
+}
+#st-2 .st-btn[data-network='email'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='email'] > span {
+  color: #fff;
+}
+#st-2 .st-btn[data-network='sms'] {
+  background-color: #ffbd00;
+}
+#st-2 .st-btn[data-network='sms'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='sms'] > span {
+  color: #fff;
+}</style><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_config_410af9750466448d9b285642808c1b7c.js" id="mt_script_052375889" class="walkme-to-remove"></script><link id="walkme-custom-css" rel="stylesheet" type="text/css" href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/custom_css_60d29a68dc85497cb255474bcc1fdf9c.css" media="all" class="walkme-to-remove"><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/data_60d29a68dc85497cb255474bcc1fdf9c.js" id="mt_script_0524595432" class="walkme-to-remove"></script><script charset="utf-8" src="https://cdn.walkme.com/player/lib/20210301-130444-72c2f7f8-0ef15b74/22.c96692b5.walkme_lib.js"></script><script charset="utf-8" src="https://cdn.walkme.com/player/lib/20210301-130444-72c2f7f8-0ef15b74/15.3bf98503.walkme_lib.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Language.js" src="Data/Language.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Tocs/REORGplatform.js" src="Data/Tocs/REORGplatform.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Filters.js" src="Data/Filters.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Tocs/REORGplatform_Chunk0.js" src="Data/Tocs/REORGplatform_Chunk0.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Tocs/REORGplatform_Chunk1.js" src="Data/Tocs/REORGplatform_Chunk1.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Tocs/REORGplatform_Chunk2.js" src="Data/Tocs/REORGplatform_Chunk2.js?t=636421935078698520"></script><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/settings.txt?forceUpdate=1615158057684" id="mt_script_057684854" class="walkme-to-remove"></script></head>
+
+<body class="off-canvas hide-extras" onload="setTimeout(function() {window.scrollTo(0, 1)}, 100)">
+<div id="DEBUG_Log">
+    <div class="MCDebugLogHeader">
+        Log Console
+    </div>
+    <div class="MCDebugLogBody"><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">204688ms 02:04:16</p>onhashchange: #MarketplaceManager/MM-Setgs-Roles-ConfigUserRole.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">202629ms 02:04:13</p>onhashchange: #MarketplaceManager/MM-Setgs-Roles-Overview.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">200562ms 02:04:11</p>onhashchange: #MarketplaceManager/MM-Setgs-MktplcFunc-ConfigCustRole.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">198494ms 02:04:09</p>onhashchange: #MarketplaceManager/MM-Setgs-MktplcFunc-ConfCustUI.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">196429ms 02:04:07</p>onhashchange: #MarketplaceManager/configQuestionsReviews.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">194357ms 02:04:05</p>onhashchange: #MarketplaceManager/MM-Setgs-MktplcFunc-ConfMktplcPswdReqrmt.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">192296ms 02:04:03</p>onhashchange: #mng-platform/store-func.htm%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">190180ms 02:04:01</p>onhashchange: #MarketplaceManager/MM-Setgs-Dev-ConfigDevStgs.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____7</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">188120ms 02:03:59</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigGoogleAnalData.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">186061ms 02:03:57</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigSEO.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">183995ms 02:03:55</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigSuppResources.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">181922ms 02:03:53</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigLegalResources.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">179844ms 02:03:51</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigEmailStgs.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">177782ms 02:03:49</p>onhashchange: #MarketplaceManager/MM-Setgs-GenSet-ConfigMrktplInfo-About.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">175716ms 02:03:47</p>onhashchange: #mng-platform/config-gen-settings.htm%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">173653ms 02:03:44</p>onhashchange: #MarketplaceManager/MM-MarketplInsights-KPIDefs.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMarketplace%2520Insights%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">171580ms 02:03:42</p>onhashchange: #MarketplaceManager/MM-MarketplInsights-NavReordDashb.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMarketplace%2520Insights%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">169484ms 02:03:40</p>onhashchange: #MarketplaceManager/MM-MarketplInsights-NavFold.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMarketplace%2520Insights%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">167411ms 02:03:38</p>onhashchange: #MarketplaceManager/MM-MarketplInsights-Ov.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMarketplace%2520Insights%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">165344ms 02:03:36</p>onhashchange: #MarketplaceManager/configQuestionsReviews.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">163235ms 02:03:34</p>onhashchange: #MarketplaceManager/downloadMigrationReports.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMigrate%2520data%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">161166ms 02:03:32</p>onhashchange: #MarketplaceManager/createOrders.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMigrate%2520data%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">159095ms 02:03:30</p>onhashchange: #MarketplaceManager/mm-dash-home-bulk.htm%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMigrate%2520data%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">157021ms 02:03:28</p>onhashchange: #MarketplaceManager/myMktplDashboard.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">154961ms 02:03:26</p>onhashchange: #mng-platform/mktplc-config.htm%3FTocPath%3DMarketplace%2520configuration%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">152885ms 02:03:24</p>onhashchange: #MarketplaceManager/viewResolvePendingEvents.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">150760ms 02:03:22</p>onhashchange: #MarketplaceManager/viewEditQuotes.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">148682ms 02:03:20</p>onhashchange: #MarketplaceManager/refundPayments.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">146613ms 02:03:17</p>onhashchange: #MarketplaceManager/viewPayments.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">144523ms 02:03:15</p>onhashchange: #MarketplaceManager/viewInvoices.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">142406ms 02:03:13</p>onhashchange: #MarketplaceManager/viewOrderDetails.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">140339ms 02:03:11</p>onhashchange: #GettingStarted/start-manage-sales.htm%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">138273ms 02:03:09</p>onhashchange: #DevCenter/Prod-Create-Products.html%3FTocPath%3DGetting%2520started%7CSell%2520your%2520own%2520products%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">136213ms 02:03:07</p>onhashchange: #GettingStarted/start-sell-your-products.htm%3FTocPath%3DGetting%2520started%7CSell%2520your%2520own%2520products%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">134147ms 02:03:05</p>onhashchange: #GettingStarted/start-cust-prod-pricing.html%3FTocPath%3DGetting%2520started%7CSell%2520third-party%2520products%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">132077ms 02:03:03</p>onhashchange: #GettingStarted/start-cust-prod-content.html%3FTocPath%3DGetting%2520started%7CSell%2520third-party%2520products%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">130017ms 02:03:01</p>onhashchange: #GettingStarted/start-sell-AD-prods.html%3FTocPath%3DGetting%2520started%7CSell%2520third-party%2520products%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">127957ms 02:02:59</p>onhashchange: #GettingStarted/start-sell-3P-products.htm%3FTocPath%3DGetting%2520started%7CSell%2520third-party%2520products%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">125903ms 02:02:57</p>onhashchange: #GettingStarted/gs-cust-prod-profiles.htm%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____8</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">123823ms 02:02:55</p>onhashchange: #GettingStarted/gs-Staging-Catalog.htm%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____7</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">121738ms 02:02:53</p>onhashchange: #MarketplaceManager/MM-Prod-Bundles-CreateBundles.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">119682ms 02:02:51</p>onhashchange: #GettingStarted/start-config-sorting.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">117626ms 02:02:48</p>onhashchange: #GettingStarted/start-create-promo.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">115571ms 02:02:46</p>onhashchange: #MarketplaceManager/createManageLeads_OLD_MM.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">113509ms 02:02:44</p>onhashchange: #GettingStarted/start-create-prod-groups.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">111413ms 02:02:42</p>onhashchange: #MarketplaceManager/MM-Prod-Discounts-CreateDisc.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">109249ms 02:02:40</p>onhashchange: #GettingStarted/start-merchandize.htm%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">107188ms 02:02:38</p>onhashchange: #MarketplaceManager/custui-retrieve-reseller.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">105126ms 02:02:36</p>onhashchange: #MarketplaceManager/custui-create-reseller-id.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">103063ms 02:02:34</p>onhashchange: #MarketplaceManager/custui-edit-del-attribs.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">100967ms 02:02:32</p>onhashchange: #MarketplaceManager/MM-SetgsCustUI-SetCustomAttrib.htm%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">98907ms 02:02:30</p>onhashchange: #MarketplaceManager/MM-Setgscustui-create-attribs.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">96848ms 02:02:28</p>onhashchange: #MarketplaceManager/custui-custom-attribs-ov.htm%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">94789ms 02:02:26</p>onhashchange: #MarketplaceManager/import-export-mp-themes.htm%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____8</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">92729ms 02:02:24</p>onhashchange: #MarketplaceManager/custui-create-notifs.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____7</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">90672ms 02:02:22</p>onhashchange: #GettingStarted/start-cust-banner.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">88601ms 02:02:19</p>onhashchange: #MarketplaceManager/custui-mng-faqs.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">86531ms 02:02:17</p>onhashchange: #GettingStarted/customizeButtons.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">84457ms 02:02:15</p>onhashchange: #GettingStarted/CustomizeHeadersFooters.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">82362ms 02:02:13</p>onhashchange: #GettingStarted/customizeUI.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">80295ms 02:02:11</p>onhashchange: #GettingStarted/start-trans.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">78193ms 02:02:09</p>onhashchange: #GettingStarted/start-config-UI.htm%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">76135ms 02:02:07</p>onhashchange: #MarketplaceManager/api-client-edit.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7CAPI%2520clients%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">74080ms 02:02:05</p>onhashchange: #MarketplaceManager/api-client-create.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7CAPI%2520clients%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">72014ms 02:02:03</p>onhashchange: #MarketplaceManager/mm-set-integ-api.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7CAPI%2520clients%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">69938ms 02:02:01</p>onhashchange: #MarketplaceManager/MM-Setgs-Dev-ConfigDevStgs.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">67882ms 02:01:59</p>onhashchange: #MarketplaceManager/MM-Setgs-MktplcFunc-ConfCustUI.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">65825ms 02:01:57</p>onhashchange: #MarketplaceManager/reviewsQuestions.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">63761ms 02:01:55</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigSecurity.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">61685ms 02:01:53</p>onhashchange: #GettingStarted/start-config-marketplace.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">59620ms 02:01:50</p>onhashchange: #MarketplaceManager/Payment-gateways-change-or-delete.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7CPayment%2520gateways%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">57573ms 02:01:48</p>onhashchange: #MarketplaceManager/Payment-Gateways-configuration.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7CPayment%2520gateways%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">55512ms 02:01:46</p>onhashchange: #Dev-DistributionGuide/Bill-ThirdPartIntegrations.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7CPayment%2520gateways%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">53456ms 02:01:44</p>onhashchange: #MarketplaceManager/Payment-Gateways-intro.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7CPayment%2520gateways%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">51394ms 02:01:42</p>onhashchange: #MarketplaceManager/MM-Setgs-BillStgs-ConfigContractsDisc.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">49325ms 02:01:40</p>onhashchange: #MarketplaceManager/MM-Setgs-BillStgs-ConfigPaymtRqrmnts.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">47269ms 02:01:38</p>onhashchange: #MarketplaceManager/MM-Setgs-BillStgs-ConfigSubscriptions.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">45175ms 02:01:36</p>onhashchange: #MarketplaceManager/MM-Setgs-BillStgs-ConfigPurchRestr.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">43105ms 02:01:34</p>onhashchange: #GettingStarted/start-config-billing.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">41040ms 02:01:32</p>onhashchange: #GettingStarted/start-sales-roles.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____7</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">38953ms 02:01:30</p>onhashchange: #MarketplaceManager/webhooks-create.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">36895ms 02:01:28</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigGoogleAnalData.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">34827ms 02:01:26</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigSEO.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">32772ms 02:01:24</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigLegalResources.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">30703ms 02:01:22</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigSuppResources.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">28627ms 02:01:19</p>onhashchange: #MarketplaceManager/MM-Setgs-ConfigEmailStgs.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">26554ms 02:01:17</p>onhashchange: #GettingStarted/start-config-general.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">24493ms 02:01:15</p>onhashchange: #MarketplaceManager/createCompany.html%3FTocPath%3DGetting%2520started%7CInvite%2520your%2520team%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">22410ms 02:01:13</p>onhashchange: #GettingStarted/start-assign-roles.html%3FTocPath%3DGetting%2520started%7CInvite%2520your%2520team%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">20343ms 02:01:11</p>onhashchange: #GettingStarted/start-invite-users.html%3FTocPath%3DGetting%2520started%7CInvite%2520your%2520team%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">18282ms 02:01:09</p>onhashchange: #GettingStarted/start-invite.htm%3FTocPath%3DGetting%2520started%7CInvite%2520your%2520team%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">16227ms 02:01:07</p>onhashchange: #GettingStarted/gsg-intro.htm%3FTocPath%3DGetting%2520started%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">14163ms 02:01:05</p>onhashchange: #mng-platform/deprecated-retired-features.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">12102ms 02:01:03</p>onhashchange: #mng-platform/preview-ea-features.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">10039ms 02:01:01</p>onhashchange: #mng-platform/product-lifecycle.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">7989ms 02:00:59</p>onhashchange: #mng-platform/mktplc-roles-comps.htm%3FTocPath%3DManage%2520the%2520platform%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">5938ms 02:00:57</p>onhashchange: #MarketplaceManager/Supported-browsers.htm%3FTocPath%3DManage%2520the%2520platform%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">315ms 02:00:51</p>search: </div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">315ms 02:00:51</p>hash: </div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">293ms 02:00:51</p>onload</div>
+    </div>
+    <div class="MCDebugLogFooter">
+    </div>
+</div>
+<div id="header" class="primary-header">
+    <ul class="primary-header-left-ul">
+        <li class="primary-header-left-ul-li logo-li">
+            <a href="https://help.appdirect.com/" style="color: rgb(162, 162, 162);">
+                <img src="Skins/Default/Stylesheets/Images/appdirect-mark.png" class="appdirect_dark_logo" style="display: block;">
+                <img src="Skins/Default/Stylesheets/Images/appdirect-mark-light.png" class="appdirect_light_logo display_none" style="display: none;">
+            </a>
+        </li>
+        <li id="hide_subnav" class="primary-header-left-ul-li subnav-li both-side-border" style="background-color: rgb(238, 238, 238);">
+            <a id="userguidelink_id" class="header-links userguidelink" style="color: rgb(162, 162, 162); background-color: rgb(238, 238, 238);">
+                Docs
+            <i id="drop_down_icon" class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <ul class="subnav display_none" style="display: none;">
+                <li>
+                    <a class="subnav-links" href="/platform/manageThePlatform.html" target="_blank" style="color: rgb(162, 162, 162);">Platform</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/reseller/appreseller.html" target="_blank" style="color: rgb(162, 162, 162);">Resellers</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/products/createAndManageProducts.html" target="_blank" style="color: rgb(162, 162, 162);">Products</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/develop/useAppDirectAPI.html" target="_blank" style="color: rgb(162, 162, 162);">APIs</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="search-bar container-search">
+        <a href="javascript:void(0)" id="search_menu">
+            <img id="search_image" class="search_image" src="Skins/Default/Stylesheets/Images/magnifying_glass.png">
+        </a>
+        <input style="margin-top: 0px; border-radius: 0px; width: 23.75em; display: none;" autocomplete="off" id="search-val" class="header-search-result" placeholder="Search Documentation Center" type="text">
+    </div>
+    <div class="header-right-div">
+        <a href="javascript:void(0)" id="hide_menu">
+            ☰
+        </a>
+		<ul class="primary-header-right-ul display_none_mobile_view" style="display: none;">
+            <li class="primary-header-right-ul-li both-side-border top-down-border training-li">
+                <a class="header-links training" href="/training/training.html">Training</a>
+            </li>
+            <li class="primary-header-right-ul-li both-side-border top-down-border helpsupport-li">
+                <a class="header-links helpsupport" href="https://docs.appdirect.com/help-support/overview">Help &amp;
+                    Support</a>
+            </li>
+            <li class="primary-header-right-ul-li right-side-border">
+                <a class="header-links login" href="https://docs.appdirect.com/login">Log In</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div>
+    <div class="secondary_nav">
+        <div class="secondary_nav_bold_link">
+            <a href="/platform/manageThePlatform.html">PLATFORM HELP</a>
+            <span class="black">&gt;</span>
+        </div>
+        <div class="secondary_nav_links">
+            <a class="secondary_nav_links_start secondary_nav_active" href="#GettingStarted/gsg-intro.htm%3FTocPath%3DGetting%2520started%7C_____0">Getting
+                Started</a>
+        </div>
+        <div class="secondary_nav_links">
+            <a class="secondary_nav_links_over" href="#mng-platform/mktplc-intro.htm%3FTocPath%3DIntroduction%2520to%2520the%2520marketplace%7C_____0">Overview</a>
+        </div>
+        <div class="secondary_nav_links">
+            <a class="secondary_nav_links_over" href="#mng-platform/product-lifecycle.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____0">Product Lifecycle Phases</a>
+        </div>
+    </div>
+</div>
+<div id="navigationResizeBar" class="show-for-xlarge-up columns navbar-offset">
+    <div id="show-hide-navigation" class="needs-pie" dir="ltr">
+    </div>
+</div>
+<div id="body" class="row collapse" onload="setTimeout(function() {window.scrollTo(0, 1)}, 100)">
+    <div id="navigation" class="small-2 columns" role="complementary" style="">
+        <div class="tabs">
+            <div class="tab">
+                <ul class="tabs-nav clearfix image-then-text tab-icon">
+                </ul>
+                <div id="tabs-panel" class="tabs-panel tabs-panel-active">
+                    <div id="toc" class="tabs-panel-content needs-pie">
+                    <ul class="tree" data-mc-chunk="Data/Toc.xml"><li class="tree-node tree-node-expanded" data-mc-id="0"><div><span class="label"><a href="#mng-platform/mktplc-intro.htm%3FTocPath%3DManage%2520the%2520platform%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Manage the platform</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="17"><div><span class="label"><a href="#MarketplaceManager/Supported-browsers.htm%3FTocPath%3DManage%2520the%2520platform%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Supported browsers</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="18"><div><span class="label"><a href="#mng-platform/mktplc-roles-comps.htm%3FTocPath%3DManage%2520the%2520platform%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Roles and company access</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="19"><div><span class="label"><a href="#mng-platform/product-lifecycle.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Product lifecycle phases</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="20"><div><span class="label"><a href="#mng-platform/preview-ea-features.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Product features in Preview or Early Availability status</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="21"><div><span class="label"><a href="#mng-platform/deprecated-retired-features.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Product features in Deprecated or Retired status</a></span></div><ul class="tree inner"></ul></li></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="1"><div><span class="label"><a href="#GettingStarted/gsg-intro.htm%3FTocPath%3DGetting%2520started%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Getting started</a></span></div><ul class="tree inner"><li class="tree-node tree-node-expanded" data-mc-id="22"><div><span class="label"><a href="#GettingStarted/start-invite.htm%3FTocPath%3DGetting%2520started%7CInvite%2520your%2520team%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Invite your team</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="31"><div><span class="label"><a href="#GettingStarted/start-invite-users.html%3FTocPath%3DGetting%2520started%7CInvite%2520your%2520team%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Invite users to your company</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="32"><div><span class="label"><a href="#GettingStarted/start-assign-roles.html%3FTocPath%3DGetting%2520started%7CInvite%2520your%2520team%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Assign roles to users</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="33"><div><span class="label"><a href="#MarketplaceManager/createCompany.html%3FTocPath%3DGetting%2520started%7CInvite%2520your%2520team%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create companies</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="23"><div><span class="label"><a href="#GettingStarted/start-config-general.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Configure general settings</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="34"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigEmailStgs.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure email settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="35"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigSuppResources.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure support resources</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="36"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigLegalResources.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure legal resources</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="37"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigSEO.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure search engine optimization</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="38"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigGoogleAnalData.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Google Analytics settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="39"><div><span class="label"><a href="#MarketplaceManager/webhooks-create.html%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create webhooks</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="40"><div><span class="label"><a href="#GettingStarted/start-sales-roles.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520general%2520settings%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure sales agent roles</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="24"><div><span class="label"><a href="#GettingStarted/start-config-billing.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Configure billing settings</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="41"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-BillStgs-ConfigPurchRestr.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure purchase restrictions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="42"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-BillStgs-ConfigSubscriptions.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure subscriptions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="43"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-BillStgs-ConfigPaymtRqrmnts.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure payment requirements</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="44"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-BillStgs-ConfigContractsDisc.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure contracts and discounts</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="45"><div><span class="label"><a href="#MarketplaceManager/Payment-Gateways-intro.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7CPayment%2520gateways%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Payment gateways</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="46"><div><span class="label"><a href="#Dev-DistributionGuide/Bill-ThirdPartIntegrations.html%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7CPayment%2520gateways%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Select payment gateways</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="47"><div><span class="label"><a href="#MarketplaceManager/Payment-Gateways-configuration.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7CPayment%2520gateways%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure payment gateways</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="48"><div><span class="label"><a href="#MarketplaceManager/Payment-gateways-change-or-delete.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520billing%2520settings%7CPayment%2520gateways%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Change or delete payment gateways</a></span></div><ul class="tree inner"></ul></li></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="25"><div><span class="label"><a href="#GettingStarted/start-config-marketplace.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Configure marketplace functionality</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="49"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigSecurity.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure marketplace security</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="50"><div><span class="label"><a href="#MarketplaceManager/reviewsQuestions.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Enable and approve reviews and questions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="51"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-MktplcFunc-ConfCustUI.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure the customer UI</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="52"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-Dev-ConfigDevStgs.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Developer settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="53"><div><span class="label"><a href="#MarketplaceManager/mm-set-integ-api.htm%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7CAPI%2520clients%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">API clients</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="54"><div><span class="label"><a href="#MarketplaceManager/api-client-create.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7CAPI%2520clients%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create API&nbsp;clients</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="55"><div><span class="label"><a href="#MarketplaceManager/api-client-edit.html%3FTocPath%3DGetting%2520started%7CConfigure%2520marketplace%2520functionality%7CAPI%2520clients%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit API&nbsp;clients</a></span></div><ul class="tree inner"></ul></li></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="26"><div><span class="label"><a href="#GettingStarted/start-config-UI.htm%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Customize the marketplace user interface</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="56"><div><span class="label"><a href="#GettingStarted/start-trans.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize terms and translations</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="57"><div><span class="label"><a href="#GettingStarted/customizeUI.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize UI elements</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="58"><div><span class="label"><a href="#GettingStarted/CustomizeHeadersFooters.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize headers and footers</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="59"><div><span class="label"><a href="#GettingStarted/customizeButtons.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize buttons</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="60"><div><span class="label"><a href="#MarketplaceManager/custui-mng-faqs.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create FAQs</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="61"><div><span class="label"><a href="#GettingStarted/start-cust-banner.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize homepage banners</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="62"><div><span class="label"><a href="#MarketplaceManager/custui-create-notifs.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Manage customer notifications v1</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="63"><div><span class="label"><a href="#MarketplaceManager/import-export-mp-themes.htm%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7C_____8"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Import and export files for marketplace themes</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="64"><div><span class="label"><a href="#MarketplaceManager/custui-custom-attribs-ov.htm%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Manage custom attributes</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="65"><div><span class="label"><a href="#MarketplaceManager/MM-Setgscustui-create-attribs.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create custom attributes</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="66"><div><span class="label"><a href="#MarketplaceManager/MM-SetgsCustUI-SetCustomAttrib.htm%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Set custom attributes</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="67"><div><span class="label"><a href="#MarketplaceManager/custui-edit-del-attribs.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit and delete custom attribute fields</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="68"><div><span class="label"><a href="#MarketplaceManager/custui-create-reseller-id.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create the Reseller ID&nbsp;custom attribute</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="69"><div><span class="label"><a href="#MarketplaceManager/custui-retrieve-reseller.html%3FTocPath%3DGetting%2520started%7CCustomize%2520the%2520marketplace%2520user%2520interface%7CManage%2520custom%2520attributes%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Retrieve the Reseller ID&nbsp;custom attribute</a></span></div><ul class="tree inner"></ul></li></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="27"><div><span class="label"><a href="#GettingStarted/start-merchandize.htm%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Merchandize products</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="70"><div><span class="label"><a href="#MarketplaceManager/MM-Prod-Discounts-CreateDisc.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create discounts</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="71"><div><span class="label"><a href="#GettingStarted/start-create-prod-groups.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create and manage product groups</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="72"><div><span class="label"><a href="#MarketplaceManager/createManageLeads_OLD_MM.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create and manage leads</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="73"><div><span class="label"><a href="#GettingStarted/start-create-promo.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create and edit promotional components</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="74"><div><span class="label"><a href="#GettingStarted/start-config-sorting.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure sorting rank for the home page and search results</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="75"><div><span class="label"><a href="#MarketplaceManager/MM-Prod-Bundles-CreateBundles.html%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create bundles</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="76"><div><span class="label"><a href="#GettingStarted/gs-Staging-Catalog.htm%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Staging Catalog</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="77"><div><span class="label"><a href="#GettingStarted/gs-cust-prod-profiles.htm%3FTocPath%3DGetting%2520started%7CMerchandize%2520products%7C_____8"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize product profiles</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="28"><div><span class="label"><a href="#GettingStarted/start-sell-3P-products.htm%3FTocPath%3DGetting%2520started%7CSell%2520third-party%2520products%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Sell third-party products</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="78"><div><span class="label"><a href="#GettingStarted/start-sell-AD-prods.html%3FTocPath%3DGetting%2520started%7CSell%2520third-party%2520products%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Sell products from the AppDirect network</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="79"><div><span class="label"><a href="#GettingStarted/start-cust-prod-content.html%3FTocPath%3DGetting%2520started%7CSell%2520third-party%2520products%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize product content</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="80"><div><span class="label"><a href="#GettingStarted/start-cust-prod-pricing.html%3FTocPath%3DGetting%2520started%7CSell%2520third-party%2520products%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize product pricing</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="29"><div><span class="label"><a href="#GettingStarted/start-sell-your-products.htm%3FTocPath%3DGetting%2520started%7CSell%2520your%2520own%2520products%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Sell your own products</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="81"><div><span class="label"><a href="#DevCenter/Prod-Create-Products.html%3FTocPath%3DGetting%2520started%7CSell%2520your%2520own%2520products%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add products</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="30"><div><span class="label"><a href="#GettingStarted/start-manage-sales.htm%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Manage your sales</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="82"><div><span class="label"><a href="#MarketplaceManager/viewOrderDetails.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">View order details</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="83"><div><span class="label"><a href="#MarketplaceManager/viewInvoices.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">View invoice details</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="84"><div><span class="label"><a href="#MarketplaceManager/viewPayments.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">View payments</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="85"><div><span class="label"><a href="#MarketplaceManager/refundPayments.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Refund payments</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="86"><div><span class="label"><a href="#MarketplaceManager/viewEditQuotes.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">View and edit quotes</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="87"><div><span class="label"><a href="#MarketplaceManager/viewResolvePendingEvents.html%3FTocPath%3DGetting%2520started%7CManage%2520your%2520sales%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">View and resolve pending events</a></span></div><ul class="tree inner"></ul></li></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="2"><div><span class="label"><a href="#mng-platform/mktplc-config.htm%3FTocPath%3DMarketplace%2520configuration%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Marketplace configuration</a></span></div><ul class="tree inner"><li class="tree-node tree-node-expanded" data-mc-id="88"><div><span class="label"><a href="#MarketplaceManager/myMktplDashboard.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Use the marketplace dashboard</a></span></div><ul class="tree inner"><li class="tree-node tree-node-expanded" data-mc-id="101"><div><span class="label"><a href="#MarketplaceManager/mm-dash-home-bulk.htm%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMigrate%2520data%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Migrate data</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="104"><div><span class="label"><a href="#MarketplaceManager/createOrders.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMigrate%2520data%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create order datasets</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="105"><div><span class="label"><a href="#MarketplaceManager/downloadMigrationReports.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMigrate%2520data%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Download migration reports</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="102"><div><span class="label"><a href="#MarketplaceManager/configQuestionsReviews.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure reviews and questions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="103"><div><span class="label"><a href="#MarketplaceManager/MM-MarketplInsights-Ov.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMarketplace%2520Insights%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Marketplace Insights</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="106"><div><span class="label"><a href="#MarketplaceManager/MM-MarketplInsights-NavFold.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMarketplace%2520Insights%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Navigate folders</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="107"><div><span class="label"><a href="#MarketplaceManager/MM-MarketplInsights-NavReordDashb.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMarketplace%2520Insights%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Navigate and reorder dashboards</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="108"><div><span class="label"><a href="#MarketplaceManager/MM-MarketplInsights-KPIDefs.html%3FTocPath%3DMarketplace%2520configuration%7CUse%2520the%2520marketplace%2520dashboard%7CMarketplace%2520Insights%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Marketplace KPI insights definitions</a></span></div><ul class="tree inner"></ul></li></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="89"><div><span class="label"><a href="#mng-platform/config-gen-settings.htm%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Configure marketplace settings</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="109"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-GenSet-ConfigMrktplInfo-About.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure marketplace information</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="110"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigEmailStgs.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure email settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="111"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigLegalResources.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure legal resources</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="112"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigSuppResources.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure support resources</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="113"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigSEO.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure search engine optimization</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="114"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigGoogleAnalData.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Google Analytics settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="115"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-Dev-ConfigDevStgs.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Developer settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="116"><div><span class="label"><a href="#mng-platform/store-func.htm%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Configure storefront options</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="122"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-MktplcFunc-ConfMktplcPswdReqrmt.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure marketplace passwords</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="123"><div><span class="label"><a href="#MarketplaceManager/configQuestionsReviews.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure reviews and questions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="124"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-MktplcFunc-ConfCustUI.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure the customer UI</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="125"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-MktplcFunc-ConfigCustRole.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CConfigure%2520storefront%2520options%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Set default user roles</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="117"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-Roles-Overview.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Role permissions</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf tree-node-selected" data-mc-id="126"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-Roles-ConfigUserRole.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure User role permissions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="127"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-Roles-ConfigSalesSupport.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Sales Support role permissions</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="128"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-Roles-ConfigCustSupport.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Customer Support role permissions</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="129"><div><span class="label"><a href="#MarketplaceManager/ConfigProductSupportRole.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Product Support role permissions</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="130"><div><span class="label"><a href="#MarketplaceManager/configResellerMgrRolePermissions.htm%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Reseller Manager role permissions</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="131"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-Roles-ConfigResellerPerm.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Reseller role permissions</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="132"><div><span class="label"><a href="#MarketplaceManager/ConfigReferralRole.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7CRole%2520permissions%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure Referral role permissions</a></span></div></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="118"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-AssistedSales.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____10"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure assisted sales</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="119"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-ConfigSecurity.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____11"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure marketplace security</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="120"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-MktplcFunc-ConfCustNotif.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____12"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Enable SMS&nbsp;notifications</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="121"><div><span class="label"><a href="#MarketplaceManager/MM-Setgs-CustomDomain.html%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520marketplace%2520settings%7C_____13"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure custom domains</a></span></div></li></ul></li><li class="tree-node tree-node-collapsed" data-mc-id="90"><div><span class="label"><a href="#mng-platform/cfg-bill-settings.htm%3FTocPath%3DMarketplace%2520configuration%7CConfigure%2520billing%2520settings%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Configure billing settings</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="91"><div><span class="label"><a href="#mng-platform/cust-mktplc.htm%3FTocPath%3DMarketplace%2520configuration%7CCustomize%2520the%2520marketplace%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Customize the marketplace</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="92"><div><span class="label"><a href="#MarketplaceManager/mm-set-integ-migr.htm%3FTocPath%3DMarketplace%2520configuration%7CMigrate%2520external%2520company%2520data%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Migrate external company data</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="93"><div><span class="label"><a href="#MarketplaceManager/data-sync.html%3FTocPath%3DMarketplace%2520configuration%7CSynchronize%2520data%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Synchronize data</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="94"><div><span class="label"><a href="#MarketplaceManager/mob-mkt-branding.html%3FTocPath%3DMarketplace%2520configuration%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Customize mobile marketplace branding</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="95"><div><span class="label"><a href="#MarketplaceManager/Manage-Report-Destinations.htm%3FTocPath%3DMarketplace%2520configuration%7C_____8"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Manage report destinations</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="96"><div><span class="label"><a href="#MarketplaceManager/High-risk-settings.htm%3FTocPath%3DMarketplace%2520configuration%7C_____9"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">High-risk settings</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="97"><div><span class="label"><a href="#MarketplaceManager/mm-set-integ.htm%3FTocPath%3DMarketplace%2520configuration%7CIntegrate%2520external%2520systems%2520with%2520the%2520marketplace%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Integrate external systems with the marketplace</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="98"><div><span class="label"><a href="#MarketplaceManager/ConfigureAppResellerMMgrs.htm%3FTocPath%3DMarketplace%2520configuration%7C_____11"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure your marketplace to use AppReseller</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="99"><div><span class="label"><a href="#MarketplaceManager/ManageCustomAttributeFields.html%3FTocPath%3DMarketplace%2520configuration%7C_____12"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Manage custom attribute fields</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="100"><div><span class="label"><a href="#MarketplaceManager/Renew-marketplace-certificate.htm%3FTocPath%3DMarketplace%2520configuration%7C_____13"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Renew marketplace certificates</a></span></div></li></ul></li><li class="tree-node tree-node-collapsed" data-mc-id="3"><div><span class="label"><a href="#mng-platform/mktplc-cust-storefront.htm%3FTocPath%3DCustomize%2520the%2520storefront%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Customize the storefront</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="4"><div><span class="label"><a href="#mng-platform/mktplc-comps.htm%3FTocPath%3DCompanies%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Companies</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="5"><div><span class="label"><a href="#mng-platform/mktplc-manage-users.htm%3FTocPath%3DUsers%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Users</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="6"><div><span class="label"><a href="#mng-platform/mktplc-manage-prods.htm%3FTocPath%3DProducts%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Products</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="7"><div><span class="label"><a href="#mng-platform/mktplc-billing.htm%3FTocPath%3DBilling%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Billing</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="8"><div><span class="label"><a href="#Reports/Reports-Overview.htm%3FTocPath%3DReports%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Reports</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="9"><div><span class="label"><a href="#mng-platform/mktplc-manage-leads.htm%3FTocPath%3DLeads%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Leads</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="10"><div><span class="label"><a href="#endUser/asst-sales.htm%3FTocPath%3DAssisted%2520sales%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Assisted sales</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="11"><div><span class="label"><a href="#NetworkManager/NetMgrOverview.htm%3FTocPath%3D_____12"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Network Manager</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="12"><div><span class="label"><a href="#NetworkManager/NetCatMgrOverview.htm%3FTocPath%3DNetwork%2520Catalog%2520Manager%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Network Catalog Manager</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="13"><div><span class="label"><a href="#MarketplaceManager/mm-dash-event.htm%3FTocPath%3DEvent%2520logs%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Event logs</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="14"><div><span class="label"><a href="#endUser/comp-admin.htm%3FTocPath%3DInformation%2520for%2520your%2520Company%2520Administrators%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Information for your Company Administrators</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="15"><div><span class="label"><a href="#AppWise/AppWise-Overview.htm%3FTocPath%3DSearch%2520with%2520AppWise%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Search with AppWise</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="16"><div><span class="label"><a href="#AppInsights/appinsights-intro.htm%3FTocPath%3DVisualize%2520data%2520with%2520AppInsights%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Visualize data with AppInsights</a></span></div></li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contentBody" class="small-10 expand-for-small-10 columns non-collapsable needs-pie" role="main" style="margin-left: 310px;">
+        <div id="responsiveHeader" class="needs-pie"><a class="homeLink" href="Default.htm"><h1 class="logo"><img src="Skins/Default/Stylesheets/Images/appdirect-mark.png" alt="Logo"></h1></a>
+            <div id="slideRight" class="toggle-topbar menu-icon"><a id="sidebarButton" href="#"><span>   NAV </span></a>
+            </div>
+        </div>
+        <div class="buttons toolbar-buttons popup-container">
+            <div class="button-group-container-right">
+                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                    <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                </button>
+                <div class="button current-topic-index-button disabled"><span class="sequence-index"></span> of <span class="sequence-total"></span></div>
+                <button class="button needs-pie next-topic-button" title="Navigate next">
+                    <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                </button>
+            </div>
+        </div>
+        <div id="contentBodyInner">
+            <!-- frameBorder="0" is for IE 8 and below -->
+            <iframe id="topic" class="content" name="topic" frameborder="0" style="display: block;"></iframe>
+            <iframe id="pulse" class="content" name="pulse" frameborder="0" style="display: none;"></iframe>
+            <div id="searchPane" style="display: none;">
+                <h1 id="results-heading">Your search for <span class="query"></span> returned <span class="total-results"></span> result(s).</h1>
+                <div id="pagination"><a class="previousPage">Previous</a><a class="nextPage">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="login-dialog needs-pie">
+    <div class="login-dialog-header needs-pie">
+        Create Profile
+    </div>
+    <div class="login-dialog-content needs-pie">
+        <div class="profile-item-wrapper clearfix" data-mc-style="Feedback User Profile Item Label">
+            <div class="label-wrapper">
+                <label>Username *</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="needs-pie" type="text" name="Username" data-required="true">
+            </div>
+        </div>
+        <div class="profile-item-wrapper clearfix">
+            <div class="label-wrapper">
+                <label>Email Address *</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="needs-pie" type="text" name="EmailAddress" data-required="true">
+            </div>
+        </div>
+        <div class="profile-item-wrapper email-notifications-wrapper">
+            <div class="label-wrapper">
+                Email Notifications
+            </div>
+            <div class="email-notifications-group needs-pie">
+                I want to receive an email when...
+                <div><label><input type="checkbox" name="CommentReplyNotification">a reply is left to one of my
+                    comments</label></div>
+                <div><label><input type="checkbox" name="CommentSameTopicNotification">a comment is left on a topic
+                    that I commented on</label></div>
+                <div><label><input type="checkbox" name="CommentSameHelpSystemNotification">a comment is left on any
+                    topic in the Help system</label></div>
+            </div>
+        </div>
+        <div class="login-dialog-buttons">
+            <button class="submit-button needs-pie" type="submit">Submit</button>
+            <button class="cancel-button needs-pie">Cancel</button>
+        </div>
+        <div class="status-message-box"><span class="message verification-email-sent-message">An email has been sent to verify your new profile.</span><span class="message required-fields-missing-message">Please fill out all required fields before submitting your information.</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="Resources/Scripts/jquery.offcanvas.js">
+</script>
+<script>
+    $(document).foundation();
+</script>
+
+
+<iframe src="https://c.sharethis.mgr.consensu.org/portal-v2.html" id="st_gdpr_iframe" title="GDPR Consent Management" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe><div id="st-2" class=" st-sticky-share-buttons st-right st-toggleable st-has-labels "><div class="st-btn st-first st-last" data-network="email" style="display: inline-block;">
+  <img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+  <span class="st-label">Email</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+  </div>
+</div><div class="walkme-icon-root-Launcher-352082 walkme-not-embed walkme-launcher-container walkme-launcher-container-id-352082" title="Feedback" style="position: relative; display: inline-block; float: right; zoom: 1; cursor: pointer;"><div class="SkipThisFixedPosition walkme-custom-icon-outer-div walkme-launcher-id-352082 walkme-custom-launcher-outer-div walkme-text-launcher" style="position: absolute; display: inline; left: -100px; top: -81.5px; z-index: 2147483647;"><div class="walkme-icon-image-div walkme-launcher-image-div" style="background-repeat: no-repeat; background-image: url(&quot;https://d2qhvajt3imc89.cloudfront.net/customers/AppDirect/Feedback_Icon.png&quot;); height: 42px; width: 48px;"></div></div></div></div></body></html>

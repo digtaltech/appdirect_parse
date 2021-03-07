@@ -1,0 +1,3060 @@
+<base href="https://help.appdirect.com/api/appwise.html">
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <title>AppWise API Reference - AppDirect</title>
+    <link rel='shortcut icon' href='https://d6r6ulbtqyuv7.cloudfront.net/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/appdirectapp/images/favicon-ver-E524860B6D15077DC12CB7437023988E.ico' type='image/x-icon'>
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+
+   <!----------------------------- Local JS Scripts ------------------------------->
+
+  <script defer type='text/javascript' src='./javascripts/redirect.js'></script>
+  <script defer type='text/javascript' src='./javascripts/header.js'></script>
+
+	<!----------------------------- Share-this Script ------------------------------->
+
+    <script defer='defer' type='text/javascript'
+			src='//platform-api.sharethis.com/js/sharethis.js#property=5a5c5a8c72b70f00137efecc&product=sticky-share-buttons'>
+    </script>
+
+  	<!----------------------------- Heap Script ------------------------------->
+
+ 	<script defer type='text/javascript'>
+ 		window.heap = window.heap || [], heap.load = function(e, t) {
+             window.heap.appid = e, window.heap.config = t = t || {};
+             var r = t.forceSSL || 'https:' === document.location.protocol,
+                 a = document.createElement('script');
+             a.type = 'text/javascript', a.async = !0, a.src = (r ? 'https:' : 'http:') +
+                 '//cdn.heapanalytics.com/js/heap-' + e + '.js';
+             var n = document.getElementsByTagName('script')[0];
+             n.parentNode.insertBefore(a, n);
+             for (var o = function(e) {
+                 return function() {
+                     heap.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                 };
+             }, p = ['addEventProperties', 'addUserProperties', 'clearEventProperties', 'identify',
+                 'removeEventProperty', 'setEventProperties', 'track', 'unsetEventProperty'
+             ], c = 0; c < p.length; c++) {
+                 heap[p[c]] = o(p[c]);
+             }
+         };
+         heap.load('169561623');
+ 	</script>
+
+ 	<!----------------------------- Walkme Script ------------------------------->
+
+    <script defer='defer' type='text/javascript'>
+        (function() {
+            var walkme = document.createElement('script');
+            walkme.type = 'text/javascript';
+            walkme.async = true;
+            walkme.src =
+                'https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_7d99ba68b982471c851b1260868b2859_https.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(walkme, s);
+            window._walkmeConfig = {
+                smartLoad: true
+            };
+        })();
+    </script>
+
+ 	 <!----------------------------- Google-Analytics Script ------------------------------->
+
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-19401247-68'></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-19401247-68');
+	</script>
+  </head>
+
+  <body class='appwise' data-languages='[&quot;shell&quot;,&quot;http&quot;,&quot;javascript&quot;,&quot;javascript--nodejs&quot;,&quot;python&quot;,&quot;ruby&quot;,&quot;java&quot;]'>
+    <div id = 'load'>
+       <div class='load_div'>
+         <div class='loading_text'>
+          <span>Loading...</span>
+         </div>
+         <span class='adb-loading'>
+          <span class='adb-loading--text'></span>
+         </span>
+       </div>
+    </div>
+
+     <header id='header'>
+      <div class='primary-header'>
+        <ul class='primary-header-left-ul'>
+            <li class='primary-header-left-ul-li logo-li'>
+               <a href='https://help.appdirect.com/'>
+               <img src='images/appdirect-mark.png'
+                    class='appdirect_dark_logo'
+                    alt='appdirect-dark-logo'>
+               <img src='images/appdirect-mark-light.png'
+                    class='appdirect_light_logo display_none'
+                    alt='appdirect-light-logo'>
+               </a>
+            </li>
+            <li id='hide_subnav'
+                class='primary-header-left-ul-li subnav-li both-side-border'>
+                    <a id='userguidelink_id' class='header-links userguidelink'>
+                        Docs
+                    </a>
+                  <ul class='subnav display_none'>
+                    <li>
+                        <a class='subnav-links' href='/platform/manageThePlatform.html' target='_blank'>
+                            Platform
+                        </a>
+                    </li>
+                    <li>
+                        <a class='subnav-links' href='/reseller/appreseller.html' target='_blank'>
+                            Resellers
+                        </a>
+                    </li>
+                    <li>
+                        <a class='subnav-links' href='/products/createAndManageProducts.html' target='_blank'>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a class='subnav-links' href='/develop/useAppDirectAPI.html' target='_blank'>
+                            APIs
+                        </a>
+                    </li>
+                  </ul>
+            </li>
+        </ul>
+          <div class='search-bar container-search'>
+                <a href='javascript:void(0)' id='search_menu'>
+                    <img id ='search_image'
+                         class='search_image'
+                         src='./images/magnifying_glass.png'
+                         alt='search'>
+                </a>
+                <input style='margin-top: 0; width: 380px;'
+                       autocomplete='off'
+                       id='search-val'
+                       class='header-search-result search-bar-width'
+                       placeholder='Search Documentation Center'
+                       type='text'/>
+        </div>
+        <div class='header-right-div'>
+          <a href='javascript:void(0)'
+              id='hide_menu'
+              style='height: 40px;'>
+              &#9776;
+          </a>
+          <ul class='primary-header-right-ul display_none_mobile_view'>
+              <li class='primary-header-right-ul-li both-side-border top-down-border training-li'>
+                <a class='header-links training' href='/training/training.html'>
+                    Training
+                </a>
+              </li>
+            <li class='primary-header-right-ul-li both-side-border  top-down-border helpsupport-li'>
+               <a class='header-links helpsupport' href='https://docs.appdirect.com/help-support/overview'>
+                    Help & Support
+               </a>
+            </li>
+            <li class='primary-header-right-ul-li right-side-border'>
+               <a class='header-links login' href='https://docs.appdirect.com/login'>
+                    Log In
+               </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class='iam_secondary_nav'>
+            <div class='secondary_nav' id='iam_second_nav'>
+                <div class='secondary_nav_bold_link'>
+                    <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                    <span class='black'>&gt;</span>
+                </div>
+                <div class='secondary_nav_links'>
+                    <a href='/api-iam/Default.htm#api-iam/api-iam.htm%3FTocPath%3DIdentity%2520and%2520Access%2520Management%2520API%7C_____0'>
+                        Overview
+                    </a>
+                </div>
+                <div class='secondary_nav_links'>
+                    <a href='/api-iam/Default.htm#api-iam/api-iam-guides.htm%3FTocPath%3DGuides%7C_____0'>Guides</a>
+                </div>
+                <div class='secondary_nav_links api_reference'>
+                    <a href='/api/iam.html'>API Reference</a>
+                </div>
+            </div>
+    </div>
+
+    <div class='sub_billing_secondary_nav'>
+        <div class='secondary_nav' id='sub_billing_second_nav'>
+            <div class='secondary_nav_bold_link'>
+                <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                <span class='black'>&gt;</span>
+            </div>
+            <div class='secondary_nav_links'>
+                <a href='/api-sub-billing/Default.htm#api-sub/api-sub.htm%3FTocPath%3DSubscription%2520Management%2520and%2520Billing%2520API%7C_____0'>
+                    Overview
+                </a>
+            </div>
+            <div class='secondary_nav_links'>
+               <a href='/api-sub-billing/Default.htm#api-sub/api-sub-bill-guides.htm%3FTocPath%3DGuides%7C_____0'>
+                    Guides
+              </a>
+            </div>
+            <div class='secondary_nav_links api_reference'>
+                <a href='/api/billing-subscription-management.html'>
+                    API Reference
+                </a>
+            </div>
+        </div>
+    </div>
+
+     <div class='checkout_secondary_nav'>
+        <div class='secondary_nav' id='checkout_second_nav'>
+            <div class='secondary_nav_bold_link'>
+                <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                <span class='black'>&gt;</span>
+            </div>
+            <div class='secondary_nav_links'>
+                <a href='/api-checkout/Default.htm#api-checkout/api-chck.htm%3FTocPath%3DCheckout%2520APIs%7C_____0'>
+                        Overview
+                </a>
+            </div>
+            <div class='secondary_nav_links'>
+               <a href='/api-checkout/Default.htm#api-checkout/api-check-guides.htm%3FTocPath%3DGuides%7C_____0'>
+                    Guides
+               </a>
+            </div>
+            <div class='secondary_nav_links api_reference'>
+                <a href='/api/checkout.html'>
+                    API Reference
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class='platform_secondary_nav'>
+        <div class='secondary_nav' id='platform_second_nav'>
+            <div class='secondary_nav_bold_link'>
+                <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                <span class='black'>&gt;</span>
+            </div>
+            <div class='secondary_nav_links'>
+                <a href='/api-platform/Default.htm#api-platform/api-plat.htm%3FTocPath%3DPlatform%2520Administration%2520API%7C_____0'>
+                    Overview
+               </a>
+            </div>
+            <div class='secondary_nav_links'>
+               <a href='/api-platform/Default.htm#api-platform/api-plat-guides.htm%3FTocPath%3D_____6'>
+                     Guides
+               </a>
+            </div>
+            <div class='secondary_nav_links api_reference'>
+                <a href='/api/checkout.html'>
+                        API Reference
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class='catalog_secondary_nav'>
+        <div class='secondary_nav' id='catalog_second_nav'>
+            <div class='secondary_nav_bold_link'>
+                <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                <span class='black'>&gt;</span>
+            </div>
+            <div class='secondary_nav_links'>
+                <a href='/api-catalog/Default.htm#api-catalog/api-cat.htm%3FTocPath%3DCatalog%2520Management%2520API%7C_____0'>Overview</a>
+            </div>
+            <div class='secondary_nav_links'>
+               <a href='/api-catalog/Default.htm#api-catalog/api-cat-guides.htm%3FTocPath%3DGuides%7C_____0'>Guides</a>
+            </div>
+            <div class='secondary_nav_links api_reference'>
+                <a href='/api/catalog-management.html'>API Reference</a>
+            </div>
+        </div>
+    </div>
+
+        <div class='assisted_secondary_nav'>
+            <div class='secondary_nav' id='assisted_second_nav'>
+                <div class='secondary_nav_bold_link'>
+                   <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                    <span class='black'>&gt;</span>
+                </div>
+                <div class='secondary_nav_links'>
+                    <a href='/api-assist/Default.htm#api-assist/api-asst.htm%3FTocPath%3DAssisted%2520Sales%2520API%7C_____0'>Overview</a>
+                </div>
+                <div class='secondary_nav_links'>
+                   <a href='/api-assist/Default.htm#api-assist/api-assist-guides.htm%3FTocPath%3D_____6'>Guides</a>
+                </div>
+                <div class='secondary_nav_links api_reference'>
+                    <a href='/api/assisted-sales.html'>API Reference</a>
+                </div>
+            </div>
+        </div>
+
+        <div class='reports_v1_secondary_nav'>
+            <div class='secondary_nav' id='reports_v1_second_nav'>
+                <div class='secondary_nav_bold_link'>
+                    <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                    <span class='black'>&gt;</span>
+                </div>
+                <div class='secondary_nav_links'>
+                    <a href='/api-reportsv1/Default.htm#api-reports/api-rep.htm%3FTocPath%3DReports%2520API%2520v1%7C_____0'>Overview</a>
+                </div>
+                <div class='secondary_nav_links'>
+                   <a href='/api-reportsv1/Default.htm#api-reports/api-reportsv1-guides.htm%3FTocPath%3D_____6'>Guides</a>
+                </div>
+                <div class='secondary_nav_links api_reference'>
+                    <a href='/api/reports-v1.html'>API Reference</a>
+                </div>
+            </div>
+        </div>
+
+        <div class='reports_v2_secondary_nav'>
+            <div class='secondary_nav' id='reports_v2_second_nav'>
+                <div class='secondary_nav_bold_link'>
+                    <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                    <span class='black'>&gt;</span>
+                </div>
+                <div class='secondary_nav_links'>
+                    <a href='/api-reportsv2/Default.htm#api-reports/api-rep-v2.htm%3FTocPath%3D_____1'>Overview</a>
+                </div>
+                <div class='secondary_nav_links'>
+                   <a href='/api-reportsv2/Default.htm#api-reports/api-reportsv2-guides.htm%3FTocPath%3D_____6'>Guides</a>
+                </div>
+                <div class='secondary_nav_links api_reference'>
+                    <a href='/api/reports-v2.html'>API Reference</a>
+                </div>
+            </div>
+        </div>
+
+        <div class='storefront_secondary_nav'>
+            <div class='secondary_nav' id='storefront_second_nav'>
+                <div class='secondary_nav_bold_link'>
+                    <a href='/develop/useAppDirectAPI.html'>API HELP</a>
+                    <span class='black'>&gt;</span>
+                </div>
+                <div class='secondary_nav_links'>
+                    <a href='/api-storefront/Default.htm#api-storefront/api-storef.htm%3FTocPath%3DStorefront%2520API%7C_____0'>Overview</a>
+                </div>
+                <div class='secondary_nav_links'>
+                   <a href='/api-storefront/Default.htm#api-storefront/api-storefront-guides.htm%3FTocPath%3D_____6'>Guides</a>
+                </div>
+                <div class='secondary_nav_links api_reference'>
+                    <a href='/api/storefront.html'>API Reference</a>
+                </div>
+            </div>
+        </div>
+
+        <div class='appwise_secondary_nav'>
+            <div class='secondary_nav' id='appwise_second_nav'>
+                <div class='secondary_nav_bold_link'>
+                    <a href='#'>API HELP</a>
+                            <span class='black'>&gt;</span>
+                        </div>
+                        <div class='secondary_nav_links api_reference'>
+                            <a href='/api/appwise.html'>API Reference</a>
+                      </div>
+                </div>
+          </div>
+
+          <div class='appinsights_secondary_nav'>
+                <div class='secondary_nav' id='appinsights_second_nav'>
+                    <div class='secondary_nav_bold_link'>
+                        <a href='#'>API HELP</a>
+                            <span class='black'>&gt;</span>
+                                </div>
+                                  <div class='secondary_nav_links api_reference'>
+                                      <a href='/api/appinsights.html'>API Reference</a>
+                           </div>
+                   </div>
+           </div>
+
+           <div class='appdirect_secondary_nav'>
+                 <div class='secondary_nav' id='appdirect_second_nav'>
+                      <div class='secondary_nav_bold_link'>
+                          <a href='#'>API HELP</a>
+                              <span class='black'>&gt;</span>
+                                   </div>
+                                      <div class='secondary_nav_links api_reference'>
+                                          <a href='/api/appdirect.html'>API Reference</a>
+                                    </div>
+                            </div>
+            </div>
+
+    <a href='/' id='nav-button'>
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span> 
+    </a>
+    <div class='toc-wrapper'>
+      <div class ='logo'></div>
+        <div class='lang-selector'>
+              <a href='%' data-language-name='shell'>Shell</a>
+              <a href='%' data-language-name='http'>HTTP</a>
+              <a href='%' data-language-name='javascript'>JavaScript</a>
+              <a href='%' data-language-name='javascript--nodejs'>Node.JS</a>
+              <a href='%' data-language-name='python'>Python</a>
+              <a href='%' data-language-name='ruby'>Ruby</a>
+              <a href='%' data-language-name='java'>Java</a>
+        </div>
+        <div class='search'>
+            <input type='text' class='search input-search' placeholder='Search'>
+        </div>
+        <ul class='search-results'></ul>
+      <div id='toc' class='toc-list-h1'>
+         <li class='nav-appwise-api-reference'>
+            <a href='#appwise-api-reference' class='toc-h1 toc-link' data-title='AppWise API Reference'>AppWise API Reference</a>
+          </li>
+         <li class='nav-content-events'>
+            <a href='#content-events' class='toc-h1 toc-link' data-title='Content Events'>Content Events</a>
+              <ul class='toc-list-h2'>
+                  <li>
+                    <a href='#ingest-content-events' class='toc-h2 toc-link' data-title='Content Events'>Ingest content events</a>
+                  </li>
+              </ul>
+          </li>
+         <li class='nav-user-accounts'>
+            <a href='#user-accounts' class='toc-h1 toc-link' data-title='User Accounts'>User Accounts</a>
+              <ul class='toc-list-h2'>
+                  <li>
+                    <a href='#disconnect-user-accounts' class='toc-h2 toc-link' data-title='User Accounts'>Disconnect user accounts</a>
+                  </li>
+                  <li>
+                    <a href='#create-user-connections' class='toc-h2 toc-link' data-title='User Accounts'>Create user connections</a>
+                  </li>
+              </ul>
+          </li>
+         <li class='nav-definitions'>
+            <a href='#definitions' class='toc-h1 toc-link' data-title='Definitions'>Definitions</a>
+              <ul class='toc-list-h2'>
+                  <li>
+                    <a href='#action' class='toc-h2 toc-link' data-title='Definitions'>Action</a>
+                  </li>
+                  <li>
+                    <a href='#actionbutton' class='toc-h2 toc-link' data-title='Definitions'>ActionButton</a>
+                  </li>
+                  <li>
+                    <a href='#actionbuttoncontent' class='toc-h2 toc-link' data-title='Definitions'>ActionButtonContent</a>
+                  </li>
+                  <li>
+                    <a href='#actionbuttoncontentbutton' class='toc-h2 toc-link' data-title='Definitions'>ActionButtonContentButton</a>
+                  </li>
+                  <li>
+                    <a href='#applicationtoconnect' class='toc-h2 toc-link' data-title='Definitions'>ApplicationToConnect</a>
+                  </li>
+                  <li>
+                    <a href='#applicationtodisconnect' class='toc-h2 toc-link' data-title='Definitions'>ApplicationToDisconnect</a>
+                  </li>
+                  <li>
+                    <a href='#changes' class='toc-h2 toc-link' data-title='Definitions'>Changes</a>
+                  </li>
+                  <li>
+                    <a href='#connectiondetails' class='toc-h2 toc-link' data-title='Definitions'>ConnectionDetails</a>
+                  </li>
+                  <li>
+                    <a href='#content' class='toc-h2 toc-link' data-title='Definitions'>Content</a>
+                  </li>
+                  <li>
+                    <a href='#disconnectiondetails' class='toc-h2 toc-link' data-title='Definitions'>DisconnectionDetails</a>
+                  </li>
+                  <li>
+                    <a href='#error' class='toc-h2 toc-link' data-title='Definitions'>Error</a>
+                  </li>
+                  <li>
+                    <a href='#event' class='toc-h2 toc-link' data-title='Definitions'>Event</a>
+                  </li>
+                  <li>
+                    <a href='#field' class='toc-h2 toc-link' data-title='Definitions'>Field</a>
+                  </li>
+                  <li>
+                    <a href='#key' class='toc-h2 toc-link' data-title='Definitions'>Key</a>
+                  </li>
+                  <li>
+                    <a href='#message' class='toc-h2 toc-link' data-title='Definitions'>Message</a>
+                  </li>
+                  <li>
+                    <a href='#subfilterfield' class='toc-h2 toc-link' data-title='Definitions'>SubFilterField</a>
+                  </li>
+                  <li>
+                    <a href='#user' class='toc-h2 toc-link' data-title='Definitions'>User</a>
+                  </li>
+                  <li>
+                    <a href='#useraccountdisonnectionresponse' class='toc-h2 toc-link' data-title='Definitions'>UserAccountDisonnectionResponse</a>
+                  </li>
+                  <li>
+                    <a href='#useraction' class='toc-h2 toc-link' data-title='Definitions'>UserAction</a>
+                  </li>
+                  <li>
+                    <a href='#userconnection' class='toc-h2 toc-link' data-title='Definitions'>UserConnection</a>
+                  </li>
+                  <li>
+                    <a href='#userconnectionerror' class='toc-h2 toc-link' data-title='Definitions'>UserConnectionError</a>
+                  </li>
+                  <li>
+                    <a href='#userconnectionresponse' class='toc-h2 toc-link' data-title='Definitions'>UserConnectionResponse</a>
+                  </li>
+                  <li>
+                    <a href='#usertoconnect' class='toc-h2 toc-link' data-title='Definitions'>UserToConnect</a>
+                  </li>
+                  <li>
+                    <a href='#usertodisconnect' class='toc-h2 toc-link' data-title='Definitions'>UserToDisconnect</a>
+                  </li>
+              </ul>
+          </li>
+      </div>
+        <ul class='toc-footer'>
+        </ul>
+    </div>
+    <div class='page-wrapper'>
+      <div class='dark-box'></div>
+      <div class='content'>
+        <h1 id="appwise-api-reference">AppWise API Reference</h1>
+
+<blockquote>
+<p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
+</blockquote>
+
+<p>The Content Event Publishing API is a platform-as-a-service that enables you to publish real-time events that happen in your application to AppDirect. AppDirect consumes these events and exposes them to users who connect their data to AppDirect through features such as enterprise search, team messaging, and activity logs.</p>
+
+<p>Use the following URL format to send API calls:</p>
+
+<p><a href>https://{marketplaceURL}/api/{endpoint}</a></p>
+
+<p>For example:</p>
+
+<p><a href>https://marketplace.appdirect.com/api/integration/v1/content/accounts</a></p>
+
+<p>Generated on Wed Mar 03 2021 07:28:45 GMT-0500 (EST)</p>
+
+<h1 id="content-events">Content Events</h1>
+<h2 id='ingest-content-events'>Ingest content events</h2>
+<p><a id="opIdevents"></a></p>
+
+<blockquote>
+<p>Example request</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl -X POST https://<span class="o">{</span>marketplaceURL<span class="o">}</span>/api/integration/v1/content/events <span class="se">\</span>
+  -H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+
+</code></pre><pre class="highlight http tab-http"><code><span class="nf">POST</span> <span class="nn">https://{marketplaceURL}/api/integration/v1/content/events</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">appdirect.com</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'Content-Type'</span><span class="p">:</span><span class="s1">'application/json'</span><span class="p">,</span>
+    <span class="s1">'Accept'</span><span class="p">:</span><span class="s1">'application/json'</span>
+<span class="p">};</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s1">'https://{marketplaceURL}/api/integration/v1/content/events'</span><span class="p">,</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'post'</span><span class="p">,</span>
+
+  <span class="na">headers</span><span class="p">:</span> <span class="nx">headers</span><span class="p">,</span>
+  <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+
+</code></pre><pre class="highlight javascript tab-javascript--nodejs"><code><span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'node-fetch'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">inputBody</span> <span class="o">=</span> <span class="s1">'{
+  "type": "object",
+  "title": "Event",
+  "required": [
+    "key"
+  ],
+  "properties": {
+    "action": {
+      "allOf": [
+        {
+          "type": "object",
+          "title": "Action",
+          "required": [
+            "text",
+            "verb"
+          ],
+          "properties": {
+            "delete": {
+              "description": "If true, the resource will be deleted",
+              "type": "boolean"
+            },
+            "text": {
+              "description": "Description of the action to apply as a suffix",
+              "type": "string",
+              "example": "task #55 to Alice Beal"
+            },
+            "verb": {
+              "description": "Verb of the action",
+              "type": "string",
+              "example": "assigned"
+            }
+          }
+        },
+        {
+          "description": "Description of changes in the event"
+        }
+      ]
+    },
+    "actor": {
+      "allOf": [
+        {
+          "type": "object",
+          "title": "User",
+          "required": [
+            "identifier"
+          ],
+          "properties": {
+            "delete": {
+              "description": "If true, the user'</span><span class="nx">s</span> <span class="nx">access</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">resource</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">revoked</span> <span class="p">(</span><span class="nx">only</span> <span class="nx">applies</span> <span class="nx">to</span> <span class="err">\</span><span class="s2">"users\" array)"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"boolean"</span>
+            <span class="p">},</span>
+            <span class="s2">"identifier"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Identifier of the user in the application"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"bob@a13a9998-e025-4751-8fee-72afdc0fe6d5@2cc88871-e942-4910-96e3-0521d7ae52f4"</span>
+            <span class="p">},</span>
+            <span class="s2">"name"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Full name of the user in the application"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"Bob Roberts"</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"User who made the change"</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">"changes"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"allOf"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+          <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Changes"</span><span class="p">,</span>
+          <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"fields"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Field changes"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"array"</span><span class="p">,</span>
+              <span class="s2">"items"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+                <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Field"</span><span class="p">,</span>
+                <span class="s2">"required"</span><span class="p">:</span> <span class="p">[</span>
+                  <span class="s2">"name"</span><span class="p">,</span>
+                  <span class="s2">"value"</span>
+                <span class="p">],</span>
+                <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+                  <span class="s2">"display"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Controls how the field is displayed"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"enum"</span><span class="p">:</span> <span class="p">[],</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"expanded"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"label"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Display label of the field"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"Project Status"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"name"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Unique name of the field"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"projectStatus"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"op"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Controls how the field will be merged with an existing field of the same name"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"enum"</span><span class="p">:</span> <span class="p">[],</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"replace"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"value"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Value of the field"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"number"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"In progress"</span>
+                  <span class="p">}</span>
+                <span class="p">}</span>
+              <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"users"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"User access changes"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"array"</span><span class="p">,</span>
+              <span class="s2">"items"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+                <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"User"</span><span class="p">,</span>
+                <span class="s2">"required"</span><span class="p">:</span> <span class="p">[</span>
+                  <span class="s2">"identifier"</span>
+                <span class="p">],</span>
+                <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+                  <span class="s2">"delete"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"If true, the user's access to the resource will be revoked (only applies to \"users\" array)"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"boolean"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"identifier"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Identifier of the user in the application"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"bob@a13a9998-e025-4751-8fee-72afdc0fe6d5@2cc88871-e942-4910-96e3-0521d7ae52f4"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"name"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Full name of the user in the application"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"Bob Roberts"</span>
+                  <span class="p">}</span>
+                <span class="p">}</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"List of field and user access changes to apply to the resource"</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">"contents"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Content items associated with the resource"</span><span class="p">,</span>
+      <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"array"</span><span class="p">,</span>
+      <span class="s2">"items"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+        <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Content"</span><span class="p">,</span>
+        <span class="s2">"required"</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s2">"url"</span>
+        <span class="p">],</span>
+        <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">"delete"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"If true, the content will be removed from the resource"</span><span class="p">,</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"boolean"</span>
+          <span class="p">},</span>
+          <span class="s2">"title"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Title of the content"</span><span class="p">,</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+            <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"Order request"</span>
+          <span class="p">},</span>
+          <span class="s2">"url"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"URL of the content"</span><span class="p">,</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+            <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"https://myapp.com/orders/1234"</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"key"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"allOf"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+          <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Key"</span><span class="p">,</span>
+          <span class="s2">"required"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"instance"</span><span class="p">,</span>
+            <span class="s2">"resourceId"</span><span class="p">,</span>
+            <span class="s2">"source"</span>
+          <span class="p">],</span>
+          <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"instance"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Tenant account identifier within the application"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"myclient.myapp.com"</span>
+            <span class="p">},</span>
+            <span class="s2">"resourceId"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Unique ID of the resource in the instance"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"order-12345"</span>
+            <span class="p">},</span>
+            <span class="s2">"source"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Application UUID"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"b2fc6737-3d3f-4da2-afda-f80f25b89af9"</span>
+            <span class="p">},</span>
+            <span class="s2">"timestamp"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"UTC timestamp of when the event occurred in epoch format, with millisecond precision"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"integer"</span><span class="p">,</span>
+              <span class="s2">"format"</span><span class="p">:</span> <span class="s2">"int64"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="mi">1500558736123</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Event key"</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">"messages"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Messages to send about the event"</span><span class="p">,</span>
+      <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"array"</span><span class="p">,</span>
+      <span class="s2">"items"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+        <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Message"</span><span class="p">,</span>
+        <span class="s2">"required"</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s2">"recipient"</span><span class="p">,</span>
+          <span class="s2">"text"</span>
+        <span class="p">],</span>
+        <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">"recipient"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"allOf"</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+                <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"User"</span><span class="p">,</span>
+                <span class="s2">"required"</span><span class="p">:</span> <span class="p">[</span>
+                  <span class="s2">"identifier"</span>
+                <span class="p">],</span>
+                <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+                  <span class="s2">"delete"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"If true, the user's access to the resource will be revoked (only applies to \"users\" array)"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"boolean"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"identifier"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Identifier of the user in the application"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"bob@a13a9998-e025-4751-8fee-72afdc0fe6d5@2cc88871-e942-4910-96e3-0521d7ae52f4"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"name"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Full name of the user in the application"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"Bob Roberts"</span>
+                  <span class="p">}</span>
+                <span class="p">}</span>
+              <span class="p">},</span>
+              <span class="p">{</span>
+                <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Recipient user"</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+          <span class="p">},</span>
+          <span class="s2">"text"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Description of the action to apply as a suffix"</span><span class="p">,</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+            <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"you task #55"</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"userAction"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"allOf"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+          <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"UserAction"</span><span class="p">,</span>
+          <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"buttons"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"List of action buttons"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"array"</span><span class="p">,</span>
+              <span class="s2">"items"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
+                <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"ActionButton"</span><span class="p">,</span>
+                <span class="s2">"required"</span><span class="p">:</span> <span class="p">[</span>
+                  <span class="s2">"displayStyle"</span><span class="p">,</span>
+                  <span class="s2">"label"</span><span class="p">,</span>
+                  <span class="s2">"url"</span>
+                <span class="p">],</span>
+                <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
+                  <span class="s2">"action"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Type of action to execute when the action button is pressed"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"enum"</span><span class="p">:</span> <span class="p">[],</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"event"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"content"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"allOf"</span><span class="p">:</span> <span class="p">[]</span>
+                  <span class="p">},</span>
+                  <span class="s2">"displayStyle"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Display style of the action button"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"enum"</span><span class="p">:</span> <span class="p">[],</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"positive"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"failureMessage"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Message to display if the action fails"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"An error occurred. Please make sure you are authorized to complete the action."</span>
+                  <span class="p">},</span>
+                  <span class="s2">"label"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Label of the action button"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"Approve"</span>
+                  <span class="p">},</span>
+                  <span class="s2">"successMessage"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Message to display if the action succeeds"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"You have approved the ticket."</span>
+                  <span class="p">},</span>
+                  <span class="s2">"url"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"The URL to navigate to when the action button is pressed"</span><span class="p">,</span>
+                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+                    <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"https://myapp.com/approveOrder/1234"</span>
+                  <span class="p">}</span>
+                <span class="p">}</span>
+              <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"delete"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"If true, the user action will be removed from the resource"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"boolean"</span>
+            <span class="p">},</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Description displayed to provide context on the user action"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"This ticket needs approval."</span>
+            <span class="p">},</span>
+            <span class="s2">"failureMessage"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Message to display if the action fails"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"An error occurred. Please make sure you are authorized to complete the action."</span>
+            <span class="p">},</span>
+            <span class="s2">"successMessage"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Message to display if the action succeeds"</span><span class="p">,</span>
+              <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span>
+              <span class="s2">"example"</span><span class="p">:</span> <span class="s2">"You have approved the ticket."</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"User action associated with the resource"</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span><span class="s1">';
+const headers = {
+    '</span><span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="s1">':'</span><span class="nx">application</span><span class="o">/</span><span class="nx">json</span><span class="s1">',
+    '</span><span class="nx">Accept</span><span class="s1">':'</span><span class="nx">application</span><span class="o">/</span><span class="nx">json</span><span class="s1">'
+};
+fetch('</span><span class="na">https</span><span class="p">:</span><span class="c1">//{marketplaceURL}/api/integration/v1/content/events',</span>
+<span class="p">{</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+  <span class="na">body</span><span class="p">:</span> <span class="nx">inputBody</span><span class="p">,</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="nx">headers</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+<span class="p">});</span>
+
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
+  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/json'</span>
+<span class="p">}</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://{marketplaceURL}/api/integration/v1/content/events'</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
+
+<span class="p">},</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+</code></pre><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
+<span class="nb">require</span> <span class="s1">'json'</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">'Content-Type'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span><span class="p">,</span>
+  <span class="s1">'Accept'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span>
+<span class="p">}</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://{marketplaceURL}/api/integration/v1/content/events'</span><span class="p">,</span>
+  <span class="ss">params: </span><span class="p">{</span>
+  <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
+
+<span class="nb">p</span> <span class="no">JSON</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+</code></pre><pre class="highlight java tab-java"><code><span class="n">URL</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s">"https://{marketplaceURL}/api/integration/v1/content/events"</span><span class="o">);</span>
+<span class="n">HttpURLConnection</span> <span class="n">con</span> <span class="o">=</span> <span class="o">(</span><span class="n">HttpURLConnection</span><span class="o">)</span> <span class="n">obj</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+<span class="n">con</span><span class="o">.</span><span class="na">setRequestMethod</span><span class="o">(</span><span class="s">"POST"</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">responseCode</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="na">getResponseCode</span><span class="o">();</span>
+<span class="n">BufferedReader</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span>
+    <span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">con</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">()));</span>
+<span class="n">String</span> <span class="n">inputLine</span><span class="o">;</span>
+<span class="n">StringBuffer</span> <span class="n">response</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuffer</span><span class="o">();</span>
+<span class="k">while</span> <span class="o">((</span><span class="n">inputLine</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">inputLine</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="n">in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+
+</code></pre>
+<p><span class="method-httppost">POST</span><code>/integration/v1/content/events</code></p>
+
+<p>Ingests a content event that contains changes to a referenced resource.</p>
+<h3 id='body-parameters'>Body Parameters</h3>
+<p>Structure that contains the full context of a change to a resource: resource key, change description, changes to fields, user access, content and action buttons.</p>
+
+<p><a href="#event">Event</a> object:</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>action</td>
+<td><a href="#action">Action</a></td>
+<td><p style="margin: 0;">Description of changes in the event</p></td>
+</tr>
+<tr>
+<td>actor</td>
+<td><a href="#user">User</a></td>
+<td><p style="margin: 0;">User who made the change</p></td>
+</tr>
+<tr>
+<td>changes</td>
+<td><a href="#changes">Changes</a></td>
+<td><p style="margin: 0;">List of field and user access changes to apply to the resource</p></td>
+</tr>
+<tr>
+<td>contents</td>
+<td>array of <a href="#content">Content</a></td>
+<td><p style="margin: 0;">Content items associated with the resource</p></td>
+</tr>
+<tr>
+<td>key</td>
+<td><a href="#key">Key</a></td>
+<td><p style="margin: 0;">Event key</p></td>
+</tr>
+<tr>
+<td>messages</td>
+<td>array of <a href="#message">Message</a></td>
+<td><p style="margin: 0;">Messages to send about the event</p></td>
+</tr>
+<tr>
+<td>userAction</td>
+<td><a href="#useraction">UserAction</a></td>
+<td><p style="margin: 0;">User action associated with the resource</p></td>
+</tr>
+</tbody></table>
+
+<h3 id="events-responses">Responses</h3>
+
+<table><thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Definition</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td></td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Input is invalid or malformed</td>
+<td><a href="#error">Error</a></td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Unauthorized to publish this event</td>
+<td><a href="#error">Error</a></td>
+</tr>
+<tr>
+<td>500</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.6.1">Internal Server Error</a></td>
+<td>An internal error occurred during event processing</td>
+<td><a href="#error">Error</a></td>
+</tr>
+</tbody></table>
+
+<h1 id="user-accounts">User Accounts</h1>
+<h2 id='disconnect-user-accounts'>Disconnect user accounts</h2>
+<p><a id="opIddisconnecting"></a></p>
+
+<blockquote>
+<p>Example request</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE https://<span class="o">{</span>marketplaceURL<span class="o">}</span>/api/integration/v1/content/accounts?appId<span class="o">=</span><span class="nb">type</span>,string&amp;accountName<span class="o">=</span><span class="nb">type</span>,string <span class="se">\</span>
+  -H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+
+</code></pre><pre class="highlight http tab-http"><code><span class="nf">DELETE</span> <span class="nn">https://{marketplaceURL}/api/integration/v1/content/accounts?appId=type,string&amp;accountName=type,string</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">appdirect.com</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'Content-Type'</span><span class="p">:</span><span class="s1">'application/json'</span><span class="p">,</span>
+    <span class="s1">'Accept'</span><span class="p">:</span><span class="s1">'application/json'</span>
+<span class="p">};</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s1">'https://{marketplaceURL}/api/integration/v1/content/accounts'</span><span class="p">,</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'delete'</span><span class="p">,</span>
+  <span class="na">data</span><span class="p">:</span> <span class="s1">'?appId=type,string&amp;accountName=type,string'</span><span class="p">,</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="nx">headers</span><span class="p">,</span>
+  <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+
+</code></pre><pre class="highlight javascript tab-javascript--nodejs"><code><span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'node-fetch'</span><span class="p">);</span>
+
+<span class="kr">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'Content-Type'</span><span class="p">:</span><span class="s1">'application/json'</span><span class="p">,</span>
+    <span class="s1">'Accept'</span><span class="p">:</span><span class="s1">'application/json'</span>
+<span class="p">};</span>
+<span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://{marketplaceURL}/api/integration/v1/content/accounts?appId=type,string&amp;accountName=type,string'</span><span class="p">,</span>
+<span class="p">{</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'DELETE'</span><span class="p">,</span>
+
+  <span class="na">headers</span><span class="p">:</span> <span class="nx">headers</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+<span class="p">});</span>
+
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
+  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/json'</span>
+<span class="p">}</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s">'https://{marketplaceURL}/api/integration/v1/content/accounts'</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
+  <span class="s">'appId'</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s">"type"</span><span class="p">:</span> <span class="s">"string"</span>
+<span class="p">},</span>  <span class="s">'accountName'</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s">"type"</span><span class="p">:</span> <span class="s">"string"</span>
+<span class="p">}</span>
+<span class="p">},</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+</code></pre><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
+<span class="nb">require</span> <span class="s1">'json'</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">'Content-Type'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span><span class="p">,</span>
+  <span class="s1">'Accept'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span>
+<span class="p">}</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">delete</span> <span class="s1">'https://{marketplaceURL}/api/integration/v1/content/accounts'</span><span class="p">,</span>
+  <span class="ss">params: </span><span class="p">{</span>
+  <span class="s1">'appId'</span> <span class="o">=&gt;</span> <span class="s1">'string'</span><span class="p">,</span>
+<span class="s1">'accountName'</span> <span class="o">=&gt;</span> <span class="s1">'string'</span>
+<span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
+
+<span class="nb">p</span> <span class="no">JSON</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+</code></pre><pre class="highlight java tab-java"><code><span class="n">URL</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s">"https://{marketplaceURL}/api/integration/v1/content/accounts?appId=type,string&amp;accountName=type,string"</span><span class="o">);</span>
+<span class="n">HttpURLConnection</span> <span class="n">con</span> <span class="o">=</span> <span class="o">(</span><span class="n">HttpURLConnection</span><span class="o">)</span> <span class="n">obj</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+<span class="n">con</span><span class="o">.</span><span class="na">setRequestMethod</span><span class="o">(</span><span class="s">"DELETE"</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">responseCode</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="na">getResponseCode</span><span class="o">();</span>
+<span class="n">BufferedReader</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span>
+    <span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">con</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">()));</span>
+<span class="n">String</span> <span class="n">inputLine</span><span class="o">;</span>
+<span class="n">StringBuffer</span> <span class="n">response</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuffer</span><span class="o">();</span>
+<span class="k">while</span> <span class="o">((</span><span class="n">inputLine</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">inputLine</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="n">in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+
+</code></pre>
+<p><span class="method-httpdelete">DELETE</span><code>/integration/v1/content/accounts</code></p>
+
+<p>Disconnects an existing user account from AppDirect.</p>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Data Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>*accountName</strong></td>
+<td>query</td>
+<td>string</td>
+<td></td>
+<td>The user account name to disconnect</td>
+</tr>
+<tr>
+<td><strong>*appId</strong></td>
+<td>query</td>
+<td>string</td>
+<td></td>
+<td>Application UUID</td>
+</tr>
+<tr>
+<td>callbackUrl</td>
+<td>query</td>
+<td>string</td>
+<td></td>
+<td>Callback URL to which to publish status updates about the disconnection</td>
+</tr>
+</tbody></table>
+
+<h3 id="disconnecting-responses">Responses</h3>
+
+<table><thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Definition</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td><a href="#useraccountdisonnectionresponse">UserAccountDisonnectionResponse</a></td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Input is invalid or malformed</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Request cannot be authenticated</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+<tr>
+<td>403</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.3">Forbidden</a></td>
+<td>Request is authenticated but does not have permission to access the resource(s)</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+<tr>
+<td>502</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.6.3">Bad Gateway</a></td>
+<td>Internal services are unavailable</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+</tbody></table>
+<h2 id='create-user-connections'>Create user connections</h2>
+<p><a id="opIdprovisioning"></a></p>
+
+<blockquote>
+<p>Example request</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl -X POST https://<span class="o">{</span>marketplaceURL<span class="o">}</span>/api/integration/v1/content/accounts <span class="se">\</span>
+  -H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+  -H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+
+</code></pre><pre class="highlight http tab-http"><code><span class="nf">POST</span> <span class="nn">https://{marketplaceURL}/api/integration/v1/content/accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">appdirect.com</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'Content-Type'</span><span class="p">:</span><span class="s1">'application/json'</span><span class="p">,</span>
+    <span class="s1">'Accept'</span><span class="p">:</span><span class="s1">'application/json'</span>
+<span class="p">};</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s1">'https://{marketplaceURL}/api/integration/v1/content/accounts'</span><span class="p">,</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'post'</span><span class="p">,</span>
+
+  <span class="na">headers</span><span class="p">:</span> <span class="nx">headers</span><span class="p">,</span>
+  <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+
+</code></pre><pre class="highlight javascript tab-javascript--nodejs"><code><span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'node-fetch'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">inputBody</span> <span class="o">=</span> <span class="s1">'{
+  "type": "object",
+  "title": "UserConnection",
+  "required": [
+    "app",
+    "user"
+  ],
+  "properties": {
+    "app": {
+      "allOf": [
+        {
+          "type": "object",
+          "title": "ApplicationToConnect",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "description": "Application UUID",
+              "type": "string",
+              "example": "b2fc6737-3d3f-4da2-afda-f80f25b89af9"
+            },
+            "subFilterFields": {
+              "description": "Sub-filter fields",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "title": "SubFilterField",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "label": {
+                    "description": "Filterable field label",
+                    "type": "string",
+                    "example": "Project"
+                  },
+                  "name": {
+                    "description": "Filterable field name",
+                    "type": "string",
+                    "example": "project"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "description": "Application to provision"
+        }
+      ]
+    },
+    "user": {
+      "allOf": [
+        {
+          "type": "object",
+          "title": "UserToConnect",
+          "required": [
+            "companyId",
+            "handle",
+            "userId"
+          ],
+          "properties": {
+            "companyId": {
+              "description": "The user'</span><span class="nx">s</span> <span class="nx">company</span> <span class="nx">UUID</span><span class="s2">",
+              "</span><span class="nx">type</span><span class="s2">": "</span><span class="nx">string</span><span class="s2">",
+              "</span><span class="nx">example</span><span class="s2">": "</span><span class="mi">2</span><span class="nx">cc88871</span><span class="o">-</span><span class="nx">e942</span><span class="o">-</span><span class="mi">4910</span><span class="o">-</span><span class="mi">96</span><span class="nx">e3</span><span class="o">-</span><span class="mi">0521</span><span class="nx">d7ae52f4</span><span class="s2">"
+            },
+            "</span><span class="nx">handle</span><span class="s2">": {
+              "</span><span class="nx">description</span><span class="s2">": "</span><span class="nx">The</span> <span class="nx">user</span><span class="s1">'s handle in the application",
+              "type": "string",
+              "example": "bob"
+            },
+            "userId": {
+              "description": "The user'</span><span class="nx">s</span> <span class="nx">UUID</span><span class="s2">",
+              "</span><span class="nx">type</span><span class="s2">": "</span><span class="nx">string</span><span class="s2">",
+              "</span><span class="nx">example</span><span class="s2">": "</span><span class="nx">a13a9998</span><span class="o">-</span><span class="nx">e025</span><span class="o">-</span><span class="mi">4751</span><span class="o">-</span><span class="mi">8</span><span class="nx">fee</span><span class="o">-</span><span class="mi">72</span><span class="nx">afdc0fe6d5</span><span class="s2">"
+            }
+          }
+        },
+        {
+          "</span><span class="nx">description</span><span class="s2">": "</span><span class="nx">User</span> <span class="nx">to</span> <span class="nx">provision</span> <span class="p">(</span><span class="nx">connect</span> <span class="nx">to</span> <span class="nx">AppDirect</span><span class="p">)</span><span class="err">"</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span><span class="s1">';
+const headers = {
+    '</span><span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="s1">':'</span><span class="nx">application</span><span class="o">/</span><span class="nx">json</span><span class="s1">',
+    '</span><span class="nx">Accept</span><span class="s1">':'</span><span class="nx">application</span><span class="o">/</span><span class="nx">json</span><span class="s1">'
+};
+fetch('</span><span class="nx">https</span><span class="p">:</span><span class="c1">//{marketplaceURL}/api/integration/v1/content/accounts',</span>
+<span class="p">{</span>
+  <span class="nl">method</span><span class="p">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+  <span class="nx">body</span><span class="p">:</span> <span class="nx">inputBody</span><span class="p">,</span>
+  <span class="nx">headers</span><span class="p">:</span> <span class="nx">headers</span>
+<span class="p">})</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+<span class="p">});</span>
+
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
+  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/json'</span>
+<span class="p">}</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://{marketplaceURL}/api/integration/v1/content/accounts'</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
+
+<span class="p">},</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+</code></pre><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
+<span class="nb">require</span> <span class="s1">'json'</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">'Content-Type'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span><span class="p">,</span>
+  <span class="s1">'Accept'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span>
+<span class="p">}</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://{marketplaceURL}/api/integration/v1/content/accounts'</span><span class="p">,</span>
+  <span class="ss">params: </span><span class="p">{</span>
+  <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
+
+<span class="nb">p</span> <span class="no">JSON</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+</code></pre><pre class="highlight java tab-java"><code><span class="n">URL</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s">"https://{marketplaceURL}/api/integration/v1/content/accounts"</span><span class="o">);</span>
+<span class="n">HttpURLConnection</span> <span class="n">con</span> <span class="o">=</span> <span class="o">(</span><span class="n">HttpURLConnection</span><span class="o">)</span> <span class="n">obj</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+<span class="n">con</span><span class="o">.</span><span class="na">setRequestMethod</span><span class="o">(</span><span class="s">"POST"</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">responseCode</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="na">getResponseCode</span><span class="o">();</span>
+<span class="n">BufferedReader</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span>
+    <span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">con</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">()));</span>
+<span class="n">String</span> <span class="n">inputLine</span><span class="o">;</span>
+<span class="n">StringBuffer</span> <span class="n">response</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuffer</span><span class="o">();</span>
+<span class="k">while</span> <span class="o">((</span><span class="n">inputLine</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">response</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">inputLine</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="n">in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+
+</code></pre>
+<p><span class="method-httppost">POST</span><code>/integration/v1/content/accounts</code></p>
+
+<p>Creates a new user connection in AppDirect with the provided user information.</p>
+<h3 id='body-parameters-2'>Body Parameters</h3>
+<p>A connection request that contains information about the user and application. This information is used to set up the application record in AppDirect (if it has not been set up already) and connect the user&#39;s account to it.</p>
+
+<p><a href="#userconnection">UserConnection</a> object:</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>app</td>
+<td><a href="#applicationtoconnect">ApplicationToConnect</a></td>
+<td><p style="margin: 0;">Application to provision</p></td>
+</tr>
+<tr>
+<td>user</td>
+<td><a href="#usertoconnect">UserToConnect</a></td>
+<td><p style="margin: 0;">User to provision (connect to AppDirect)</p></td>
+</tr>
+</tbody></table>
+
+<h3 id="provisioning-responses">Responses</h3>
+
+<table><thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Definition</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.2">Created</a></td>
+<td>Success</td>
+<td><a href="#userconnectionresponse">UserConnectionResponse</a></td>
+</tr>
+<tr>
+<td>400</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.1">Bad Request</a></td>
+<td>Input is invalid or malformed</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+<tr>
+<td>401</td>
+<td><a href="https://tools.ietf.org/html/rfc7235#section-3.1">Unauthorized</a></td>
+<td>Request cannot be authenticated</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+<tr>
+<td>403</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.3">Forbidden</a></td>
+<td>Request is authenticated but does not have permission to access the resource(s)</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.4">Not Found</a></td>
+<td>The specified application and/or user were not found</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+<tr>
+<td>409</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.5.8">Conflict</a></td>
+<td>Inputs are valid, but this user and handle are already connected to the service</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+<tr>
+<td>502</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.6.3">Bad Gateway</a></td>
+<td>Internal services are unavailable</td>
+<td><a href="#userconnectionerror">UserConnectionError</a></td>
+</tr>
+</tbody></table>
+<h1 id='definitions'>Definitions</h1>
+<h2 id="action">Action</h2>
+
+<p><a id="schemaaction"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Action"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"verb"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"delete"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If true, the resource will be deleted"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Description of the action to apply as a suffix"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"task #55 to Alice Beal"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"verb"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Verb of the action"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assigned"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>delete</td>
+<td>boolean</td>
+<td>If true, the resource will be deleted</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+<td>Description of the action to apply as a suffix</td>
+</tr>
+<tr>
+<td>verb</td>
+<td>string</td>
+<td>Verb of the action</td>
+</tr>
+</tbody></table>
+
+<h2 id="actionbutton">ActionButton</h2>
+
+<p><a id="schemaactionbutton"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ActionButton"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"displayStyle"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"label"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"url"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Type of action to execute when the action button is pressed"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"navigate"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"info"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"event"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"event"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/ActionButtonContent"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Content to display with an </span><span class="se">\"</span><span class="s2">info</span><span class="se">\"</span><span class="s2"> type action button"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"displayStyle"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Display style of the action button"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"primaryOption"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"secondaryOption"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"positive"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"negative"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"positive"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"failureMessage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Message to display if the action fails"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An error occurred. Please make sure you are authorized to complete the action."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Label of the action button"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Approve"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"successMessage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Message to display if the action succeeds"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"You have approved the ticket."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The URL to navigate to when the action button is pressed"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://myapp.com/approveOrder/1234"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>action</td>
+<td>string</td>
+<td>Type of action to execute when the action button is pressed</td>
+</tr>
+<tr>
+<td>content</td>
+<td><a href="#actionbuttoncontent">ActionButtonContent</a></td>
+<td>Content to display with an &quot;info&quot; type action button</td>
+</tr>
+<tr>
+<td>displayStyle</td>
+<td>string</td>
+<td>Display style of the action button</td>
+</tr>
+<tr>
+<td>failureMessage</td>
+<td>string</td>
+<td>Message to display if the action fails</td>
+</tr>
+<tr>
+<td>label</td>
+<td>string</td>
+<td>Label of the action button</td>
+</tr>
+<tr>
+<td>successMessage</td>
+<td>string</td>
+<td>Message to display if the action succeeds</td>
+</tr>
+<tr>
+<td>url</td>
+<td>string</td>
+<td>The URL to navigate to when the action button is pressed</td>
+</tr>
+</tbody></table>
+
+<h2 id="actionbuttoncontent">ActionButtonContent</h2>
+
+<p><a id="schemaactionbuttoncontent"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ActionButtonContent"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"button"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"button"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/ActionButtonContentButton"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Button to display in the content panel of the </span><span class="se">\"</span><span class="s2">info</span><span class="se">\"</span><span class="s2"> type action button"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Description to display in the content panel of the </span><span class="se">\"</span><span class="s2">info</span><span class="se">\"</span><span class="s2"> type action button"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Please follow these instructions to register your account: ..."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Title to display in the content panel of the </span><span class="se">\"</span><span class="s2">info</span><span class="se">\"</span><span class="s2"> type action button"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Information"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>button</td>
+<td><a href="#actionbuttoncontentbutton">ActionButtonContentButton</a></td>
+<td>Button to display in the content panel of the &quot;info&quot; type action button</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Description to display in the content panel of the &quot;info&quot; type action button</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>Title to display in the content panel of the &quot;info&quot; type action button</td>
+</tr>
+</tbody></table>
+
+<h2 id="actionbuttoncontentbutton">ActionButtonContentButton</h2>
+
+<p><a id="schemaactionbuttoncontentbutton"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ActionButtonContentButton"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"displayStyle"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"label"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"displayStyle"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Display style of the button"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"primaryOption"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"secondaryOption"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"positive"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"negative"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"primaryOption"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Label of the button"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>displayStyle</td>
+<td>string</td>
+<td>Display style of the button</td>
+</tr>
+<tr>
+<td>label</td>
+<td>string</td>
+<td>Label of the button</td>
+</tr>
+</tbody></table>
+
+<h2 id="applicationtoconnect">ApplicationToConnect</h2>
+
+<p><a id="schemaapplicationtoconnect"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ApplicationToConnect"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"id"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application UUID"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b2fc6737-3d3f-4da2-afda-f80f25b89af9"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"subFilterFields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sub-filter fields"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/SubFilterField"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>Application UUID</td>
+</tr>
+<tr>
+<td>subFilterFields</td>
+<td>array of  <a href="#subfilterfield">SubFilterField</a></td>
+<td>Sub-filter fields</td>
+</tr>
+</tbody></table>
+
+<h2 id="applicationtodisconnect">ApplicationToDisconnect</h2>
+
+<p><a id="schemaapplicationtodisconnect"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ApplicationToDisconnect"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application UUID"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b2fc6737-3d3f-4da2-afda-f80f25b89af9"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>Application UUID</td>
+</tr>
+</tbody></table>
+
+<h2 id="changes">Changes</h2>
+
+<p><a id="schemachanges"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Changes"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Field changes"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/Field"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User access changes"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/User"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>fields</td>
+<td>array of  <a href="#field">Field</a></td>
+<td>Field changes</td>
+</tr>
+<tr>
+<td>users</td>
+<td>array of  <a href="#user">User</a></td>
+<td>User access changes</td>
+</tr>
+</tbody></table>
+
+<h2 id="connectiondetails">ConnectionDetails</h2>
+
+<p><a id="schemaconnectiondetails"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ConnectionDetails"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"accountName"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"accountName"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User account identifier"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bob@a13a9998-e025-4751-8fee-72afdc0fe6d5@2cc88871-e942-4910-96e3-0521d7ae52f4"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>accountName</td>
+<td>string</td>
+<td>User account identifier</td>
+</tr>
+</tbody></table>
+
+<h2 id="content">Content</h2>
+
+<p><a id="schemacontent"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Content"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"url"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"delete"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If true, the content will be removed from the resource"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Title of the content"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Order request"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"URL of the content"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://myapp.com/orders/1234"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>delete</td>
+<td>boolean</td>
+<td>If true, the content will be removed from the resource</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>Title of the content</td>
+</tr>
+<tr>
+<td>url</td>
+<td>string</td>
+<td>URL of the content</td>
+</tr>
+</tbody></table>
+
+<h2 id="disconnectiondetails">DisconnectionDetails</h2>
+
+<p><a id="schemadisconnectiondetails"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DisconnectionDetails"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"status"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"accountName"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user account name to disconnect"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bob@a13a9998-e025-4751-8fee-72afdc0fe6d5@2cc88871-e942-4910-96e3-0521d7ae52f4"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disconnection status"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PENDING_REMOVAL"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>accountName</td>
+<td>string</td>
+<td>The user account name to disconnect</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td>Disconnection status</td>
+</tr>
+</tbody></table>
+
+<h2 id="error">Error</h2>
+
+<p><a id="schemaerror"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Canonical error code"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NOT_FOUND"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error message"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User not found."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"moreInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"URL with more information about the error"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://help.appdirect.com/api/appwise.html"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTTP status code"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"int32"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>string</td>
+<td>Canonical error code</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message</td>
+</tr>
+<tr>
+<td>moreInfo</td>
+<td>string</td>
+<td>URL with more information about the error</td>
+</tr>
+<tr>
+<td>status</td>
+<td>integer</td>
+<td>HTTP status code</td>
+</tr>
+</tbody></table>
+
+<h2 id="event">Event</h2>
+
+<p><a id="schemaevent"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Event"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"key"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/Action"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Description of changes in the event"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"actor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/User"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User who made the change"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"changes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/Changes"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"List of field and user access changes to apply to the resource"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"contents"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Content items associated with the resource"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/Content"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/Key"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Event key"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"messages"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Messages to send about the event"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/Message"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"userAction"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/UserAction"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User action associated with the resource"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>action</td>
+<td><a href="#action">Action</a></td>
+<td>Description of changes in the event</td>
+</tr>
+<tr>
+<td>actor</td>
+<td><a href="#user">User</a></td>
+<td>User who made the change</td>
+</tr>
+<tr>
+<td>changes</td>
+<td><a href="#changes">Changes</a></td>
+<td>List of field and user access changes to apply to the resource</td>
+</tr>
+<tr>
+<td>contents</td>
+<td>array of  <a href="#content">Content</a></td>
+<td>Content items associated with the resource</td>
+</tr>
+<tr>
+<td>key</td>
+<td><a href="#key">Key</a></td>
+<td>Event key</td>
+</tr>
+<tr>
+<td>messages</td>
+<td>array of  <a href="#message">Message</a></td>
+<td>Messages to send about the event</td>
+</tr>
+<tr>
+<td>userAction</td>
+<td><a href="#useraction">UserAction</a></td>
+<td>User action associated with the resource</td>
+</tr>
+</tbody></table>
+
+<h2 id="field">Field</h2>
+
+<p><a id="schemafield"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Field"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"value"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"display"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Controls how the field is displayed"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"expanded"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"hidden"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"expanded"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Display label of the field"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project Status"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique name of the field"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"projectStatus"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"op"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Controls how the field will be merged with an existing field of the same name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"replace"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"remove"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"replace"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Value of the field"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In progress"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>display</td>
+<td>string</td>
+<td>Controls how the field is displayed</td>
+</tr>
+<tr>
+<td>label</td>
+<td>string</td>
+<td>Display label of the field</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Unique name of the field</td>
+</tr>
+<tr>
+<td>op</td>
+<td>string</td>
+<td>Controls how the field will be merged with an existing field of the same name</td>
+</tr>
+<tr>
+<td>value</td>
+<td>number</td>
+<td>Value of the field</td>
+</tr>
+</tbody></table>
+
+<h2 id="key">Key</h2>
+
+<p><a id="schemakey"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Key"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"instance"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"resourceId"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"source"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"instance"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tenant account identifier within the application"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"myclient.myapp.com"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"resourceId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique ID of the resource in the instance"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order-12345"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application UUID"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b2fc6737-3d3f-4da2-afda-f80f25b89af9"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UTC timestamp of when the event occurred in epoch format, with millisecond precision"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"int64"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500558736123</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>instance</td>
+<td>string</td>
+<td>Tenant account identifier within the application</td>
+</tr>
+<tr>
+<td>resourceId</td>
+<td>string</td>
+<td>Unique ID of the resource in the instance</td>
+</tr>
+<tr>
+<td>source</td>
+<td>string</td>
+<td>Application UUID</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>integer</td>
+<td>UTC timestamp of when the event occurred in epoch format, with millisecond precision</td>
+</tr>
+</tbody></table>
+
+<h2 id="message">Message</h2>
+
+<p><a id="schemamessage"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Message"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"recipient"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"text"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"recipient"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/User"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Recipient user"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Description of the action to apply as a suffix"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"you task #55"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>recipient</td>
+<td><a href="#user">User</a></td>
+<td>Recipient user</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+<td>Description of the action to apply as a suffix</td>
+</tr>
+</tbody></table>
+
+<h2 id="subfilterfield">SubFilterField</h2>
+
+<p><a id="schemasubfilterfield"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SubFilterField"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"name"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Filterable field label"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Filterable field name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"project"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>label</td>
+<td>string</td>
+<td>Filterable field label</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Filterable field name</td>
+</tr>
+</tbody></table>
+
+<h2 id="user">User</h2>
+
+<p><a id="schemauser"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"identifier"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"delete"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If true, the user's access to the resource will be revoked (only applies to </span><span class="se">\"</span><span class="s2">users</span><span class="se">\"</span><span class="s2"> array)"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Identifier of the user in the application"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bob@a13a9998-e025-4751-8fee-72afdc0fe6d5@2cc88871-e942-4910-96e3-0521d7ae52f4"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Full name of the user in the application"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bob Roberts"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>delete</td>
+<td>boolean</td>
+<td>If true, the user&#39;s access to the resource will be revoked (only applies to &quot;users&quot; array)</td>
+</tr>
+<tr>
+<td>identifier</td>
+<td>string</td>
+<td>Identifier of the user in the application</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Full name of the user in the application</td>
+</tr>
+</tbody></table>
+
+<h2 id="useraccountdisonnectionresponse">UserAccountDisonnectionResponse</h2>
+
+<p><a id="schemauseraccountdisonnectionresponse"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UserAccountDisonnectionResponse"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"app"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/ApplicationToDisconnect"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The application the account refers to"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"connection"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/DisconnectionDetails"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disconnection details"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/UserToDisconnect"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user the account belongs to"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>app</td>
+<td><a href="#applicationtodisconnect">ApplicationToDisconnect</a></td>
+<td>The application the account refers to</td>
+</tr>
+<tr>
+<td>connection</td>
+<td><a href="#disconnectiondetails">DisconnectionDetails</a></td>
+<td>Disconnection details</td>
+</tr>
+<tr>
+<td>user</td>
+<td><a href="#usertodisconnect">UserToDisconnect</a></td>
+<td>The user the account belongs to</td>
+</tr>
+</tbody></table>
+
+<h2 id="useraction">UserAction</h2>
+
+<p><a id="schemauseraction"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UserAction"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"buttons"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"List of action buttons"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/ActionButton"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"delete"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If true, the user action will be removed from the resource"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Description displayed to provide context on the user action"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This ticket needs approval."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"failureMessage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Message to display if the action fails"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An error occurred. Please make sure you are authorized to complete the action."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"successMessage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Message to display if the action succeeds"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"You have approved the ticket."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>buttons</td>
+<td>array of  <a href="#actionbutton">ActionButton</a></td>
+<td>List of action buttons</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>boolean</td>
+<td>If true, the user action will be removed from the resource</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Description displayed to provide context on the user action</td>
+</tr>
+<tr>
+<td>failureMessage</td>
+<td>string</td>
+<td>Message to display if the action fails</td>
+</tr>
+<tr>
+<td>successMessage</td>
+<td>string</td>
+<td>Message to display if the action succeeds</td>
+</tr>
+</tbody></table>
+
+<h2 id="userconnection">UserConnection</h2>
+
+<p><a id="schemauserconnection"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UserConnection"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"app"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"user"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"app"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/ApplicationToConnect"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application to provision"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"allOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/UserToConnect"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User to provision (connect to AppDirect)"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>app</td>
+<td><a href="#applicationtoconnect">ApplicationToConnect</a></td>
+<td>Application to provision</td>
+</tr>
+<tr>
+<td>user</td>
+<td><a href="#usertoconnect">UserToConnect</a></td>
+<td>User to provision (connect to AppDirect)</td>
+</tr>
+</tbody></table>
+
+<h2 id="userconnectionerror">UserConnectionError</h2>
+
+<p><a id="schemauserconnectionerror"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UserConnectionError"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Canonical error code"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NOT_FOUND"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Details of the error"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error message"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User not found."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"moreInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"URL with more information about the error"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://help.appdirect.com/api/appwise.html"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTTP status code"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"int32"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>string</td>
+<td>Canonical error code</td>
+</tr>
+<tr>
+<td>details</td>
+<td>array of  string</td>
+<td>Details of the error</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message</td>
+</tr>
+<tr>
+<td>moreInfo</td>
+<td>string</td>
+<td>URL with more information about the error</td>
+</tr>
+<tr>
+<td>status</td>
+<td>integer</td>
+<td>HTTP status code</td>
+</tr>
+</tbody></table>
+
+<h2 id="userconnectionresponse">UserConnectionResponse</h2>
+
+<p><a id="schemauserconnectionresponse"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UserConnectionResponse"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"connection"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/components/schemas/ConnectionDetails"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>connection</td>
+<td><a href="#connectiondetails">ConnectionDetails</a></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id="usertoconnect">UserToConnect</h2>
+
+<p><a id="schemausertoconnect"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UserToConnect"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"companyId"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"handle"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"userId"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"companyId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user's company UUID"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2cc88871-e942-4910-96e3-0521d7ae52f4"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"handle"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user's handle in the application"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bob"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user's UUID"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a13a9998-e025-4751-8fee-72afdc0fe6d5"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>companyId</td>
+<td>string</td>
+<td>The user&#39;s company UUID</td>
+</tr>
+<tr>
+<td>handle</td>
+<td>string</td>
+<td>The user&#39;s handle in the application</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>The user&#39;s UUID</td>
+</tr>
+</tbody></table>
+
+<h2 id="usertodisconnect">UserToDisconnect</h2>
+
+<p><a id="schemausertodisconnect"></a></p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UserToDisconnect"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"companyId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user's company UUID"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2cc88871-e942-4910-96e3-0521d7ae52f4"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user's UUID"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"example"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a13a9998-e025-4751-8fee-72afdc0fe6d5"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>companyId</td>
+<td>string</td>
+<td>The user&#39;s company UUID</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>The user&#39;s UUID</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class='dark-box'>
+          <div class='lang-selector'>
+                <a href='%' data-language-name='shell'>Shell</a>
+                <a href='%' data-language-name='http'>HTTP</a>
+                <a href='%' data-language-name='javascript'>JavaScript</a>
+                <a href='%' data-language-name='javascript--nodejs'>Node.JS</a>
+                <a href='%' data-language-name='python'>Python</a>
+                <a href='%' data-language-name='ruby'>Ruby</a>
+                <a href='%' data-language-name='java'>Java</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

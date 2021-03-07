@@ -1,0 +1,554 @@
+<base href="https://help.appdirect.com/products/Default.htm#Dev-DistributionGuide/sec-intro.htm%3FTocPath%3DConfigure%2520product%2520integration%2520security%7C_____0"><html class="defaultSkin left-layout js no-touch svg inlinesvg svgclippaths no-ie8compat fa-events-icons-ready has-topic _Skins_HTML5___Tripane" data-mc-runtime-file-type="Default;TriPane" lang="en"><!-- saved from url=(0016)http://localhost --><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-title="">Configure product integration security - Product Help - AppDirect</title>
+    <link rel="shortcut icon" href="https://d6r6ulbtqyuv7.cloudfront.net/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/appdirectapp/images/favicon-ver-E524860B6D15077DC12CB7437023988E.ico" type="image/x-icon">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/TextEffects.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Styles.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/normalize.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/foundation_custom.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/offcanvas.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Web.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Tablet.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Mobile.css">
+
+	<!----------------------------- Share-this Script ------------------------------->
+
+    <iframe id="pxcelframe" src="//t.sharethis.com/a/t_.htm?ver=1.457.22036&amp;cid=c010&amp;cls=B#cid=c010&amp;cls=B&amp;dmn=help.appdirect.com&amp;rnd=1615159365582&amp;tt=t.dhj&amp;dhjLcy=435&amp;lbl=pxcel&amp;flbl=pxcel&amp;ll=d&amp;ver=1.457.22036&amp;ell=d&amp;cck=__stid&amp;pn=%2Fproducts%2FDefault.htm&amp;qs=na&amp;rdn=help.appdirect.com&amp;rpn=%2Fproducts%2FDefault.htm&amp;rqs=na&amp;cc=RU&amp;cont=EU&amp;ipaddr=" style="display: none;"></iframe><script async="" src="https://buttons-config.sharethis.com/js/5a5c5a8c72b70f00137efecc.js"></script><script type="text/javascript" async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_7d99ba68b982471c851b1260868b2859_https.js"></script><script defer="defer" type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a5c5a8c72b70f00137efecc&amp;product=sticky-share-buttons">
+    </script>
+
+	<!----------------------------- Walkme Script ------------------------------->
+
+    <script type="text/javascript">
+        (function() {
+            var walkme = document.createElement('script');
+            walkme.type = 'text/javascript';
+            walkme.async = true;
+            walkme.src = 'https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_7d99ba68b982471c851b1260868b2859_https.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(walkme, s);
+            window._walkmeConfig = { smartLoad: true };
+        })();
+    </script>
+
+
+	<!----------------------------- Local JS Script ------------------------------->
+
+    <script type="text/javascript" src="Resources/Scripts/jquery.min.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/custom.modernizr.js">
+    </script>
+    <script type="text/javascript" src="Resources/Scripts/foundation.min.js">
+    </script><meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xxlarge"><style></style>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/require.min.js">
+    </script>
+    <script type="text/javascript" src="Resources/Scripts/plugins.min.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/require.config.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/MadCapAll.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/header.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/redirect.js">
+    </script>
+    <script defer="defer" src="https://use.fontawesome.com/a52c22cf39.js">
+    </script>
+    <style>
+
+        .button.print-button {
+	        -pie-background : url('Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.separator-button {
+	        -pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.topic-ratings-button {
+	        -pie-background : url('Skins/Default/Stylesheets/Images/starFull.png') no-repeat center center, linear-gradient(transparent, transparent);
+	        }
+
+        .button.separator-button {
+	        -pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.edit-user-profile-button {
+	        -pie-background : url('Skins/Default/Stylesheets/Images/edit-profile.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.filler-button {
+	        -pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.previous-topic-button {
+	        -pie-background : url('Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.current-topic-index-button {
+	        -pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.next-topic-button {
+	        -pie-background : url('Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.select-language-button {
+	        -pie-background : url('Skins/Default/Stylesheets/Images/select-language.png') no-repeat center cente, linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .button.login-button {
+	        -pie-background : url('Skins/Default/Stylesheets/Images/login.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .tabs-nav li.tabs-nav-inactive {
+	        -pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .tabs-nav li.tabs-nav-active {
+	        -pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+	        }
+
+        .login-dialog-header {
+	        -pie-background : url('Skins/Default/Stylesheets/Images/login-dialog-icon.png') no-repeat 18px center, linear-gradient(#5A5A5A, #4A4A4A);
+	        }
+
+        .login-dialog button {
+	        -pie-background : linear-gradient(#595959, #4A4A4A);
+	        }
+    </style>
+<link href="https://use.fontawesome.com/a52c22cf39.css" media="all" rel="stylesheet"><script id="mt_script_3653537175" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/settings.txt"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Breakpoints.js" src="Data/Breakpoints.js?t=636421935078698520"></script><script id="mt_script_3654441946" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/player/resources/wmjQuery3315.js"></script><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/scripts/prelib-plugin-a5bf053c-c09c-3183-8c39-ece2ec41c63c.js" rel="preload" as="script" id="wm_link0"><link href="https://cdn.walkme.com/player/lib/walkme_lib_20210301-130444-72c2f7f8-0ef15b74.js" rel="preload" as="script" id="wm_link1"><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_config_410af9750466448d9b285642808c1b7c.js" rel="preload" as="script" id="wm_link2"><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/data_60d29a68dc85497cb255474bcc1fdf9c.js" rel="preload" as="script" id="wm_link3"><link href="https://papi.walkme.com" rel="preconnect" id="wm_link4"><script id="mt_script_3655185764" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/scripts/prelib-plugin-a5bf053c-c09c-3183-8c39-ece2ec41c63c.js"></script><script id="mt_script_365557327" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/player/lib/walkme_lib_20210301-130444-72c2f7f8-0ef15b74.js"></script><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_config_410af9750466448d9b285642808c1b7c.js" id="mt_script_3658272388" class="walkme-to-remove"></script><link id="walkme-custom-css" rel="stylesheet" type="text/css" href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/custom_css_60d29a68dc85497cb255474bcc1fdf9c.css" media="all" class="walkme-to-remove"><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/data_60d29a68dc85497cb255474bcc1fdf9c.js" id="mt_script_365915366" class="walkme-to-remove"></script><script charset="utf-8" src="https://cdn.walkme.com/player/lib/20210301-130444-72c2f7f8-0ef15b74/22.c96692b5.walkme_lib.js"></script><script charset="utf-8" src="https://cdn.walkme.com/player/lib/20210301-130444-72c2f7f8-0ef15b74/15.3bf98503.walkme_lib.js"></script><style type="text/css">#st-2 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  backface-visibility: hidden;
+  display: block;
+  position: fixed;
+  opacity: 1;
+  text-align: left;
+  top: 88%;
+  z-index: 94034;
+}
+#st-2.st-right {
+  right: 0px;
+}
+#st-2.st-hidden.st-right {
+  right: -48px;
+}
+#st-2.st-hidden {
+  width: 96px;
+}
+#st-2 > div {
+  clear: right;
+  float: right;
+}
+#st-2 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: NaNpx;
+  height: 48px;
+  line-height: 24px;
+  margin-bottom: 0;
+  opacity: 1;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+  text-align: left;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 48px;
+}
+#st-2 .st-btn.st-first {
+  border-top: none;
+  border-top-left-radius: 11px;
+}
+#st-2 .st-btn.st-last {
+  border-bottom: none;
+  border-bottom-left-radius: 11px;
+}
+#st-2 .st-btn > svg {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > img {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  left: -35px;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+  filter: alpha(opacity=0);
+}
+#st-2 .st-btn.st-hide-label > span {
+  display: none !important;
+}
+#st-2 .st-total {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #fff;
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 18px;
+  margin-right: 0;
+  min-height: 34px;
+  max-width: 80px;
+  opacity: 1;
+  padding: 4px 0;
+  text-align: center;
+  width: 48px;
+}
+#st-2 .st-total.st-hidden {
+  display: none;
+}
+#st-2 .st-total > span {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0;
+}
+#st-2 .st-total > span.st-shares {
+  font-size: 11px;
+  line-height: 11px;
+}
+#st-2 .st-toggle {
+  right: -48px;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #ccc;
+  border-bottom-left-radius: 11px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  text-align: center;
+  width: 48px;
+}
+#st-2.st-hidden .st-toggle {
+  border-top-left-radius: 11px;
+}
+#st-2.st-right .st-toggle .st-right {
+  display: inline-block;
+}
+#st-2.st-right.st-hidden .st-toggle .st-right {
+  display: none;
+}
+#st-2.st-right .st-toggle .st-left {
+  display: none;
+}
+#st-2.st-right.st-hidden .st-toggle .st-left {
+  display: inline-block;
+}#st-2:hover .st-toggle {
+  right: 0;
+}
+#st-2.st-hidden:hover .st-toggle {
+  right: 48px;
+}
+#st-2.st-toggleable:hover .st-btn.st-last {
+  border-bottom-left-radius: 0;
+}
+#st-2.st-toggleable:hover .st-btn.st-last:hover {
+  border-bottom-left-radius: 11px;
+}
+#st-2 .st-btn:hover {
+  border-bottom-left-radius: 11px;
+  border-top-left-radius: 11px;
+}
+#st-2.st-has-labels .st-btn:hover {
+  width: 120px;
+}
+#st-2:not(.st-has-labels) .st-btn:hover {
+  width: 62px;
+}
+#st-2 .st-btn.st-hide-label:hover {
+  width: 62px;
+}
+#st-2 .st-btn:hover > svg {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > img {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > span {
+  opacity: 1;
+  display: inline-block;
+  left: 0;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 1073px) {
+  #st-2 .st-btn:hover > svg {
+    margin-left: 0;
+  }
+  #st-2 .st-btn:hover > span {
+    display: none;
+  }
+}@media (max-width: 1073px) {
+  #st-2 {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+}
+#st-2.st-hidden {
+  bottom: -48px;
+  width: 100%;
+}
+#st-2.st-hidden.st-left {
+  left: 0;
+}
+#st-2.st-hidden.st-right {
+  right: 0;
+}
+#st-2 > div {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  clear: none;
+  flex: 1;
+  float: none;
+}
+#st-2 .st-total {
+  background: #fff;
+  padding: 6px 8px;
+}
+#st-2 .st-btn {
+  -moz-border-radius: 0 !important;
+-webkit-border-radius: 0 !important;
+border-radius: 0 !important;
+  text-align: center;
+  width: auto;
+}
+#st-2 .st-btn > span {
+  display: none;
+}
+#st-2 .st-toggle {
+  display: none;
+}body { padding-bottom: 48px; }
+}#st-2 .st-btn[data-network='email'] {
+  background-color: #7d7d7d;
+}
+#st-2 .st-btn[data-network='email'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='email'] > span {
+  color: #fff;
+}
+#st-2 .st-btn[data-network='sms'] {
+  background-color: #ffbd00;
+}
+#st-2 .st-btn[data-network='sms'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='sms'] > span {
+  color: #fff;
+}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Language.js" src="Data/Language.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Tocs/REORGvendor.js" src="Data/Tocs/REORGvendor.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Filters.js" src="Data/Filters.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Tocs/REORGvendor_Chunk0.js" src="Data/Tocs/REORGvendor_Chunk0.js?t=636421935078698520"></script><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/settings.txt?forceUpdate=1615159371089" id="mt_script_371089103" class="walkme-to-remove"></script></head>
+
+<body class="off-canvas hide-extras" onload="setTimeout(function() {window.scrollTo(0, 1)}, 100)">
+<div id="DEBUG_Log">
+    <div class="MCDebugLogHeader">
+        Log Console
+    </div>
+    <div class="MCDebugLogBody"><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">147958ms 02:25:12</p>onhashchange: #Dev-DistributionGuide/sec-intro.htm%3FTocPath%3DConfigure%2520product%2520integration%2520security%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">145914ms 02:25:10</p>onhashchange: #DevCenter/addonsv2Cancelsubwithaddon.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">143848ms 02:25:08</p>onhashchange: #DevCenter/addonsv2Editproductsettings.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">141802ms 02:25:06</p>onhashchange: #DevCenter/ManualWebAppaddonEditintegrationsettings.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">139755ms 02:25:04</p>onhashchange: #DevCenter/addonsv2Editintegrationsettings.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">137669ms 02:25:02</p>onhashchange: #DevCenter/addonsv2Editaddonfeatbens.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____9</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">135623ms 02:25:00</p>onhashchange: #DevCenter/addonsV2IncludedItems.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____8</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">133570ms 02:24:58</p>onhashchange: #DevCenter/addonsV2TieredRevModel.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____7</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">131517ms 02:24:56</p>onhashchange: #DevCenter/addonsV2recurringRevModel.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">129467ms 02:24:54</p>onhashchange: #DevCenter/addonV2OneTimeRevenue.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">127418ms 02:24:52</p>onhashchange: #DevCenter/addonV2FreeRevModel.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">125360ms 02:24:50</p>onhashchange: #DevCenter/addonsV2RevenueModels.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">123315ms 02:24:47</p>onhashchange: #DevCenter/addonsV2editFreeTrials.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">121268ms 02:24:45</p>onhashchange: #DevCenter/editAddonV2information.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">119197ms 02:24:43</p>onhashchange: #DevCenter/addonsV2editpricing.htm%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">117149ms 02:24:41</p>onhashchange: #DevCenter/addonV2Connections.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">115073ms 02:24:39</p>onhashchange: #DevCenter/editV2Addons.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">113023ms 02:24:37</p>onhashchange: #DevCenter/addonsV2edit.htm%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">110975ms 02:24:35</p>onhashchange: #PartnerIntegrations/create-manual-web-app-addon.htm%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">108904ms 02:24:33</p>onhashchange: #DevCenter/createV2Addon.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">106850ms 02:24:31</p>onhashchange: #DevCenter/addonV2Prerequisite.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">104803ms 02:24:29</p>onhashchange: #DevCenter/addonV2Overview.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">102755ms 02:24:27</p>onhashchange: #DevCenter/Prod-publish-products.html%3FTocPath%3DProducts%7C_____9</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">100706ms 02:24:25</p>onhashchange: #DevCenter/Preview-product-profiles.htm%3FTocPath%3DProducts%7C_____8</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">98662ms 02:24:23</p>onhashchange: #DevCenter/Prod-Create-Prod-Versions.html%3FTocPath%3DProducts%7C_____7</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">96619ms 02:24:21</p>onhashchange: #DevCenter/Prod-assign-platforms-products.html%3FTocPath%3DProducts%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">94546ms 02:24:19</p>onhashchange: #AppDistribution/Product-settings-import-export.html%3FTocPath%3DProducts%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">92502ms 02:24:17</p>onhashchange: #DevCenter/Upload-prod-files.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____8</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">90458ms 02:24:15</p>onhashchange: #DevCenter/Test-auth-from-integ-report.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CIntegration%2520report%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">88394ms 02:24:13</p>onhashchange: #DevCenter/run-integration-reports.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CIntegration%2520report%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">86350ms 02:24:11</p>onhashchange: #DevCenter/Integ-report.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CIntegration%2520report%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">84305ms 02:24:08</p>onhashchange: #DevCenter/Test-subscription-integration.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CAccounts%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">82256ms 02:24:06</p>onhashchange: #DevCenter/View-accounts.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CAccounts%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">80210ms 02:24:04</p>onhashchange: #DevCenter/manage-accounts.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CAccounts%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">78166ms 02:24:02</p>onhashchange: #DevCenter/mng-integ-events.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">76122ms 02:24:00</p>onhashchange: #DevCenter/Prod-run-ping-tests.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">74076ms 02:23:58</p>onhashchange: #DevCenter/Dev-EditAuth-ConfImportSetupForm.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">72035ms 02:23:56</p>onhashchange: #DevCenter/Dev-EditAuth-Bookmark.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">69987ms 02:23:54</p>onhashchange: #DevCenter/Edit-auth-OpenID-20-auth-config.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">67945ms 02:23:52</p>onhashchange: #DevCenter/Edit-SAML-auth-Config-SAML-auth.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">65878ms 02:23:50</p>onhashchange: #DevCenter/SSO-OIDC-Config.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">63826ms 02:23:48</p>onhashchange: #DevCenter/Dev-EdithAuth-Overview.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">61774ms 02:23:46</p>onhashchange: #DevCenter/ManualWebAppEditintegrationsettings.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520integration%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">59732ms 02:23:44</p>onhashchange: #DevCenter/interactive-endpoints.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520integration%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">57675ms 02:23:42</p>onhashchange: #DevCenter/Dev-Edit-integ-Add-reqd-info.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520integration%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">55634ms 02:23:40</p>onhashchange: #DevCenter/Dev-Edit-integration.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520integration%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">53592ms 02:23:38</p>onhashchange: #DevCenter/Manage-credentials.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">51539ms 02:23:36</p>onhashchange: #DevCenter/dev-Integ-overview.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">49484ms 02:23:34</p>onhashchange: #Dev-DistributionGuide/Bill-Basic-EditionCreation-Contracts.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">47429ms 02:23:32</p>onhashchange: #DevCenter/Dev-Prod-MgeSharedFeatFootntes.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">45379ms 02:23:30</p>onhashchange: #DevCenter/Prod-Add-Tiered-Edition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">43337ms 02:23:27</p>onhashchange: #DevCenter/Prod-Add-Recurring-Edition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">41296ms 02:23:25</p>onhashchange: #DevCenter/Prod-Add-One-time-Edition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">39252ms 02:23:23</p>onhashchange: #DevCenter/Prod-Add-Free-Edition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">37204ms 02:23:21</p>onhashchange: #DevCenter/Dev-Prod-AddEdition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">35145ms 02:23:19</p>onhashchange: #DevCenter/dc-edit-edition-price.htm%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">33099ms 02:23:17</p>onhashchange: #DevCenter/Prod-Edit-resources.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____7</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">31049ms 02:23:15</p>onhashchange: #DevCenter/Prod-Edit-Support-Info.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">29000ms 02:23:13</p>onhashchange: #DevCenter/Prod-ConfMedSourcFeatCust.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">26957ms 02:23:11</p>onhashchange: #DevCenter/Prod-Edit-Features.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">24905ms 02:23:09</p>onhashchange: #DevCenter/Prod-Add-Features.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">22852ms 02:23:07</p>onhashchange: #DevCenter/Prod-Manage-Profile-Info.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">20805ms 02:23:05</p>onhashchange: #DevCenter/Prod-Edit-Listing-Info.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">18761ms 02:23:03</p>onhashchange: #DevCenter/dc-edit-profile-brand.htm%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">16716ms 02:23:01</p>onhashchange: #PartnerIntegrations/create-manual-web-app.htm%3FTocPath%3DProducts%7CAdd%2520products%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">14666ms 02:22:59</p>onhashchange: #DevCenter/Add-prod-combined-purchase.htm%3FTocPath%3DProducts%7CAdd%2520products%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">12617ms 02:22:57</p>onhashchange: #DevCenter/Product-types.htm%3FTocPath%3DProducts%7CAdd%2520products%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">10574ms 02:22:55</p>onhashchange: #DevCenter/Prod-Create-Products.html%3FTocPath%3DProducts%7CAdd%2520products%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">8525ms 02:22:53</p>onhashchange: #mng-prods/prodCreateGuide.htm%3FTocPath%3DProducts%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">6473ms 02:22:51</p>onhashchange: #Dev-DistributionGuide/Developer-Applic-Process.html%3FTocPath%3DCreate%2520and%2520manage%2520products%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">283ms 02:22:44</p>search: </div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">283ms 02:22:44</p>hash: </div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">269ms 02:22:44</p>onload</div>
+    </div>
+    <div class="MCDebugLogFooter">
+    </div>
+</div>
+<div id="header" class="primary-header">
+    <ul class="primary-header-left-ul">
+        <li class="primary-header-left-ul-li logo-li">
+            <a href="https://help.appdirect.com/" style="color: rgb(162, 162, 162);">
+                <img src="Skins/Default/Stylesheets/Images/appdirect-mark.png" class="appdirect_dark_logo" style="display: block;">
+                <img src="Skins/Default/Stylesheets/Images/appdirect-mark-light.png" class="appdirect_light_logo display_none" style="display: none;">
+            </a>
+        </li>
+        <li id="hide_subnav" class="primary-header-left-ul-li subnav-li both-side-border" style="background-color: rgb(238, 238, 238);">
+            <a id="userguidelink_id" class="header-links userguidelink" style="color: rgb(162, 162, 162); background-color: rgb(238, 238, 238);">
+                Docs
+                <i id="drop_down_icon" class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <ul class="subnav display_none" style="display: none;">
+                <li>
+                    <a class="subnav-links" href="/platform/manageThePlatform.html" target="_blank" style="color: rgb(162, 162, 162);">Platform</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/reseller/appreseller.html" target="_blank" style="color: rgb(162, 162, 162);">Resellers</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/products/createAndManageProducts.html" target="_blank" style="color: rgb(162, 162, 162);">Products</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/develop/useAppDirectAPI.html" target="_blank" style="color: rgb(162, 162, 162);">APIs</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="search-bar container-search">
+        <a href="javascript:void(0)" id="search_menu">
+            <img id="search_image" class="search_image" src="Skins/Default/Stylesheets/Images/magnifying_glass.png">
+        </a>
+        <input style="margin-top: 0px; border-radius: 0px; width: 23.75em; display: none;" autocomplete="off" id="search-val" class="header-search-result" placeholder="Search Documentation Center" type="text">
+    </div>
+    <div class="header-right-div">
+        <a href="javascript:void(0)" id="hide_menu">☰
+        </a>
+        <ul class="primary-header-right-ul display_none_mobile_view" style="display: none;">
+            <li class="primary-header-right-ul-li both-side-border top-down-border training-li">
+                <a class="header-links training" href="/training/training.html">Training</a>
+            </li>
+            <li class="primary-header-right-ul-li both-side-border top-down-border helpsupport-li">
+                <a class="header-links helpsupport" href="https://docs.appdirect.com/help-support/overview">Help &amp;
+                    Support</a>
+            </li>
+            <li class="primary-header-right-ul-li right-side-border">
+                <a class="header-links login" href="https://docs.appdirect.com/login">Log In</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div>
+    <div class="secondary_nav">
+        <div class="secondary_nav_bold_link">
+            <a href="/products/createAndManageProducts.html">PRODUCT HELP</a>
+            <span class="black">&gt;</span>
+        </div>
+        <div class="secondary_nav_links">
+            <a class="secondary_nav_links_over" href="#mng-prods/prodMgmtIntro.htm%3FTocPath%3D_____1">Overview</a>
+        </div>
+        <div class="secondary_nav_links">
+            <a class="secondary_nav_links_manage secondary_nav_active" href="#mng-prods/prodCreateGuide.htm%3FTocPath%3DProducts%7C_____0">Manage
+                Products</a>
+        </div>
+        <div class="secondary_nav_links">
+            <a class="secondary_nav_links_how" href="#mng-platform/how-do-i.htm%3FTocPath%3DHow%2520do%2520I...%253F%7C_____0">How-to guides</a>
+        </div>
+        <div class="secondary_nav_links">
+            <a class="secondary_nav_links_over" href="/platform/Default.htm#mng-platform/product-lifecycle.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____0" target="_blank">Product Lifecycle Phases</a>
+        </div>
+    </div>
+</div>
+<div id="navigationResizeBar" class="show-for-xlarge-up columns navbar-offset">
+    <div id="show-hide-navigation" class="needs-pie" dir="ltr">
+    </div>
+</div>
+<div id="body" class="row collapse" onload="setTimeout(function() {window.scrollTo(0, 1)}, 100)">
+    <div id="navigation" class="small-2 columns" role="complementary" style="">
+        <div class="tabs">
+            <div class="tab">
+                <ul class="tabs-nav clearfix image-then-text tab-icon">
+                </ul>
+                <div id="tabs-panel" class="tabs-panel tabs-panel-active">
+                    <div id="toc" class="tabs-panel-content needs-pie">
+                    <ul class="tree" data-mc-chunk="Data/Toc.xml"><li class="tree-node tree-node-expanded" data-mc-id="0"><div><span class="label"><a href="#mng-prods/prodMgmtIntro.htm%3FTocPath%3DCreate%2520and%2520manage%2520products%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Create and manage products</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="9"><div><span class="label"><a href="#Dev-DistributionGuide/Developer-Applic-Process.html%3FTocPath%3DCreate%2520and%2520manage%2520products%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Developer application process</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="1"><div><span class="label"><a href="#mng-prods/prodCreateGuide.htm%3FTocPath%3DProducts%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Products</a></span></div><ul class="tree inner"><li class="tree-node tree-node-expanded" data-mc-id="10"><div><span class="label"><a href="#DevCenter/Prod-Create-Products.html%3FTocPath%3DProducts%7CAdd%2520products%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Add products</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="20"><div><span class="label"><a href="#DevCenter/Product-types.htm%3FTocPath%3DProducts%7CAdd%2520products%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Product types</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="21"><div><span class="label"><a href="#DevCenter/Add-prod-combined-purchase.htm%3FTocPath%3DProducts%7CAdd%2520products%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add products for combined purchase</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="22"><div><span class="label"><a href="#PartnerIntegrations/create-manual-web-app.htm%3FTocPath%3DProducts%7CAdd%2520products%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create Manual Web App products</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="11"><div><span class="label"><a href="#DevCenter/dc-edit-profile-brand.htm%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Edit product profiles and branding</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="23"><div><span class="label"><a href="#DevCenter/Prod-Edit-Listing-Info.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit listing information</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="24"><div><span class="label"><a href="#DevCenter/Prod-Manage-Profile-Info.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit profile</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="25"><div><span class="label"><a href="#DevCenter/Prod-Add-Features.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add product features</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="26"><div><span class="label"><a href="#DevCenter/Prod-Edit-Features.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit features</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="27"><div><span class="label"><a href="#DevCenter/Prod-ConfMedSourcFeatCust.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit media sources and featured customers</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="28"><div><span class="label"><a href="#DevCenter/Prod-Edit-Support-Info.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit support information</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="29"><div><span class="label"><a href="#DevCenter/Prod-Edit-resources.html%3FTocPath%3DProducts%7CEdit%2520product%2520profiles%2520and%2520branding%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit resources</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="12"><div><span class="label"><a href="#DevCenter/dc-edit-edition-price.htm%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Edit editions and pricing</a></span></div><ul class="tree inner"><li class="tree-node tree-node-expanded" data-mc-id="30"><div><span class="label"><a href="#DevCenter/Dev-Prod-AddEdition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Add editions</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="33"><div><span class="label"><a href="#DevCenter/Prod-Add-Free-Edition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add free editions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="34"><div><span class="label"><a href="#DevCenter/Prod-Add-One-time-Edition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add one-time editions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="35"><div><span class="label"><a href="#DevCenter/Prod-Add-Recurring-Edition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add recurring editions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="36"><div><span class="label"><a href="#DevCenter/Prod-Add-Tiered-Edition.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7CAdd%2520editions%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add tiered editions</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="31"><div><span class="label"><a href="#DevCenter/Dev-Prod-MgeSharedFeatFootntes.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Shared features and footnotes</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="32"><div><span class="label"><a href="#Dev-DistributionGuide/Bill-Basic-EditionCreation-Contracts.html%3FTocPath%3DProducts%7CEdit%2520editions%2520and%2520pricing%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Contracts</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="13"><div><span class="label"><a href="#DevCenter/dev-Integ-overview.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Edit product integration settings</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="37"><div><span class="label"><a href="#DevCenter/Manage-credentials.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Manage credentials</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="38"><div><span class="label"><a href="#DevCenter/Dev-Edit-integration.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520integration%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Edit integration</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="45"><div><span class="label"><a href="#DevCenter/Dev-Edit-integ-Add-reqd-info.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520integration%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add required information</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="46"><div><span class="label"><a href="#DevCenter/interactive-endpoints.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520integration%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Interactive endpoints</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="47"><div><span class="label"><a href="#DevCenter/ManualWebAppEditintegrationsettings.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520integration%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Manual web app integration settings</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="39"><div><span class="label"><a href="#DevCenter/Dev-EdithAuth-Overview.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Edit authentication</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="48"><div><span class="label"><a href="#DevCenter/SSO-OIDC-Config.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit OpenID Connect</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="49"><div><span class="label"><a href="#DevCenter/Edit-SAML-auth-Config-SAML-auth.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit SAML</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="50"><div><span class="label"><a href="#DevCenter/Edit-auth-OpenID-20-auth-config.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit OpenID 2.0</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="51"><div><span class="label"><a href="#DevCenter/Dev-EditAuth-Bookmark.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit Bookmark authentication</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="52"><div><span class="label"><a href="#DevCenter/Dev-EditAuth-ConfImportSetupForm.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CEdit%2520authentication%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Configure the Import Setup Form</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="40"><div><span class="label"><a href="#DevCenter/Prod-run-ping-tests.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Run ping tests</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="41"><div><span class="label"><a href="#DevCenter/mng-integ-events.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Events</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="42"><div><span class="label"><a href="#DevCenter/manage-accounts.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CAccounts%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Accounts</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="53"><div><span class="label"><a href="#DevCenter/View-accounts.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CAccounts%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">View accounts</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="54"><div><span class="label"><a href="#DevCenter/Test-subscription-integration.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CAccounts%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Test subscription integration from Account Details</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="43"><div><span class="label"><a href="#DevCenter/Integ-report.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CIntegration%2520report%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Integration report</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="55"><div><span class="label"><a href="#DevCenter/run-integration-reports.html%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CIntegration%2520report%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Test integration from Integration Report</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="56"><div><span class="label"><a href="#DevCenter/Test-auth-from-integ-report.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7CIntegration%2520report%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Test single sign-on</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="44"><div><span class="label"><a href="#DevCenter/Upload-prod-files.htm%3FTocPath%3DProducts%7CEdit%2520product%2520integration%2520settings%7C_____8"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Upload product files</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="14"><div><span class="label"><a href="#AppDistribution/Product-settings-import-export.html%3FTocPath%3DProducts%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Import and export product settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="15"><div><span class="label"><a href="#DevCenter/Prod-assign-platforms-products.html%3FTocPath%3DProducts%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Assign platforms to products</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="16"><div><span class="label"><a href="#DevCenter/Prod-Create-Prod-Versions.html%3FTocPath%3DProducts%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create product versions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="17"><div><span class="label"><a href="#DevCenter/Preview-product-profiles.htm%3FTocPath%3DProducts%7C_____8"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Preview product profiles</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="18"><div><span class="label"><a href="#DevCenter/Prod-publish-products.html%3FTocPath%3DProducts%7C_____9"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Publish products</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="19"><div><span class="label"><a href="#DevCenter/addonV2Overview.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Manage add-on products</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="57"><div><span class="label"><a href="#DevCenter/addonV2Prerequisite.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Prerequisites</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="58"><div><span class="label"><a href="#DevCenter/createV2Addon.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Add add-on products</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="59"><div><span class="label"><a href="#PartnerIntegrations/create-manual-web-app-addon.htm%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create Manual Web App add-ons</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="60"><div><span class="label"><a href="#DevCenter/addonsV2edit.htm%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Edit add-ons</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="62"><div><span class="label"><a href="#DevCenter/editV2Addons.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit descriptions</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="63"><div><span class="label"><a href="#DevCenter/addonV2Connections.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit connections to parent products</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="64"><div><span class="label"><a href="#DevCenter/addonsV2editpricing.htm%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Edit add-on pricing</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="68"><div><span class="label"><a href="#DevCenter/editAddonV2information.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit add-on information</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="69"><div><span class="label"><a href="#DevCenter/addonsV2editFreeTrials.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit free trial periods</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="70"><div><span class="label"><a href="#DevCenter/addonsV2RevenueModels.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit revenue models</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="71"><div><span class="label"><a href="#DevCenter/addonV2FreeRevModel.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit free revenue model pricing</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="72"><div><span class="label"><a href="#DevCenter/addonV2OneTimeRevenue.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit one-time revenue model pricing</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="73"><div><span class="label"><a href="#DevCenter/addonsV2recurringRevModel.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit recurring revenue model pricing</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="74"><div><span class="label"><a href="#DevCenter/addonsV2TieredRevModel.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit tiered revenue model pricing</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="75"><div><span class="label"><a href="#DevCenter/addonsV2IncludedItems.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____8"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit included items</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="76"><div><span class="label"><a href="#DevCenter/addonsv2Editaddonfeatbens.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7CEdit%2520add-on%2520pricing%7C_____9"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit add-on features and benefits</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="65"><div><span class="label"><a href="#DevCenter/addonsv2Editintegrationsettings.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit add-on integration settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="66"><div><span class="label"><a href="#DevCenter/ManualWebAppaddonEditintegrationsettings.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit manual web app add-on integration settings</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="67"><div><span class="label"><a href="#DevCenter/addonsv2Editproductsettings.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7CEdit%2520add-ons%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Edit product settings</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="61"><div><span class="label"><a href="#DevCenter/addonsv2Cancelsubwithaddon.html%3FTocPath%3DProducts%7CManage%2520add-on%2520products%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Cancel subscriptions with add-ons</a></span></div><ul class="tree inner"></ul></li></ul></li></ul></li><li class="tree-node tree-node-collapsed tree-node-selected" data-mc-id="2"><div><span class="label"><a href="#Dev-DistributionGuide/sec-intro.htm%3FTocPath%3DConfigure%2520product%2520integration%2520security%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Configure product integration security</a></span></div><ul class="tree inner"><li class="tree-node tree-node-collapsed" data-mc-id="77"><div><span class="label"><a href="#AppDistribution/Security-Separate-Credentials-Authorization-Type.htm%3FTocPath%3DConfigure%2520product%2520integration%2520security%7CSeparate%2520credentials%2520authorization%2520type%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Separate credentials authorization type</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="78"><div><span class="label"><a href="#AppDistribution/Security-Shared-Credentials-Authorization-Type.htm%3FTocPath%3DConfigure%2520product%2520integration%2520security%7CShared%2520credentials%2520authorization%2520type%2520(legacy)%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Shared credentials authorization type (legacy)</a></span></div></li></ul></li><li class="tree-node tree-node-collapsed" data-mc-id="3"><div><span class="label"><a href="#DevCenter/Authentication.htm%3FTocPath%3DAuthentication%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Authentication</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="4"><div><span class="label"><a href="#DevCenter/DC-Leads.htm%3FTocPath%3DLeads%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Leads</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="5"><div><span class="label"><a href="#mng-platform/mktplc-notifs.htm%3FTocPath%3DUser%2520and%2520subscription%2520events%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">User and subscription events</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="6"><div><span class="label"><a href="#mng-platform/Prod-settings-valid-events.htm%3FTocPath%3D_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Product settings validation events</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="7"><div><span class="label"><a href="#mng-platform/how-do-i.htm%3FTocPath%3DHow%2520do%2520I...%253F%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">How do I...?</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="8"><div><span class="label"><a href="#DevCenter/add-on-v1-intro.htm%3FTocPath%3DLegacy%2520features%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Legacy features</a></span></div></li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contentBody" class="small-10 expand-for-small-10 columns non-collapsable needs-pie" role="main" style="margin-left: 310px;">
+        <div id="responsiveHeader" class="needs-pie"><a class="homeLink" href="Default.htm"><h1 class="logo"><img src="Skins/Default/Stylesheets/Images/appdirect-mark.png" alt="Logo"></h1></a>
+            <div id="slideRight" class="toggle-topbar menu-icon"><a id="sidebarButton" href="#"><span>   NAV </span></a>
+            </div>
+        </div>
+        <div class="buttons toolbar-buttons popup-container">
+            <div class="button-group-container-right">
+                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                    <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                </button>
+                <div class="button current-topic-index-button disabled"><span class="sequence-index"></span> of <span class="sequence-total"></span></div>
+                <button class="button needs-pie next-topic-button" title="Navigate next">
+                    <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                </button>
+            </div>
+        </div>
+        <div id="contentBodyInner">
+            <!-- frameBorder="0" is for IE 8 and below -->
+            <iframe id="topic" class="content" name="topic" frameborder="0" style="display: block;"></iframe>
+            <iframe id="pulse" class="content" name="pulse" frameborder="0" style="display: none;"></iframe>
+            <div id="searchPane" style="display: none;">
+                <h1 id="results-heading">Your search for <span class="query"></span> returned <span class="total-results"></span> result(s).</h1>
+                <div id="pagination"><a class="previousPage">Previous</a><a class="nextPage">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="login-dialog needs-pie">
+    <div class="login-dialog-header needs-pie">
+        Create Profile
+    </div>
+    <div class="login-dialog-content needs-pie">
+        <div class="profile-item-wrapper clearfix" data-mc-style="Feedback User Profile Item Label">
+            <div class="label-wrapper">
+                <label>Username *</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="needs-pie" type="text" name="Username" data-required="true">
+            </div>
+        </div>
+        <div class="profile-item-wrapper clearfix">
+            <div class="label-wrapper">
+                <label>Email Address *</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="needs-pie" type="text" name="EmailAddress" data-required="true">
+            </div>
+        </div>
+        <div class="profile-item-wrapper email-notifications-wrapper">
+            <div class="label-wrapper">
+                Email Notifications
+            </div>
+            <div class="email-notifications-group needs-pie">
+                I want to receive an email when...
+                <div><label><input type="checkbox" name="CommentReplyNotification">a reply is left to one of my
+                    comments</label></div>
+                <div><label><input type="checkbox" name="CommentSameTopicNotification">a comment is left on a topic
+                    that I commented on</label></div>
+                <div><label><input type="checkbox" name="CommentSameHelpSystemNotification">a comment is left on any
+                    topic in the Help system</label></div>
+            </div>
+        </div>
+        <div class="login-dialog-buttons">
+            <button class="submit-button needs-pie" type="submit">Submit</button>
+            <button class="cancel-button needs-pie">Cancel</button>
+        </div>
+        <div class="status-message-box"><span class="message verification-email-sent-message">An email has been sent to verify your new profile.</span><span class="message required-fields-missing-message">Please fill out all required fields before submitting your information.</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="Resources/Scripts/jquery.offcanvas.js">
+</script>
+<script>
+    $(document).foundation();
+</script>
+
+
+<iframe src="https://c.sharethis.mgr.consensu.org/portal-v2.html" id="st_gdpr_iframe" title="GDPR Consent Management" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe><div id="st-2" class=" st-sticky-share-buttons st-right st-toggleable st-has-labels "><div class="st-btn st-first st-last" data-network="email" style="display: inline-block;">
+  <img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+  <span class="st-label">Email</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+  </div>
+</div><div class="walkme-icon-root-Launcher-353032 walkme-not-embed walkme-launcher-container walkme-launcher-container-id-353032" title="Feedback" style="position: relative; display: inline-block; float: right; zoom: 1; cursor: pointer;"><div class="SkipThisFixedPosition walkme-custom-icon-outer-div walkme-launcher-id-353032 walkme-custom-launcher-outer-div walkme-text-launcher" style="position: absolute; display: inline; left: -100px; top: -81.5px; z-index: 2147483647;"><div class="walkme-icon-image-div walkme-launcher-image-div" style="background-repeat: no-repeat; background-image: url(&quot;https://d2qhvajt3imc89.cloudfront.net/customers/AppDirect/Feedback_Icon.png&quot;); height: 42px; width: 48px;"></div></div></div></div></body></html>

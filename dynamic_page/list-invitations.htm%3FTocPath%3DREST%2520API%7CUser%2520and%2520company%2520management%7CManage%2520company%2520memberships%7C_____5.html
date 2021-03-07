@@ -1,0 +1,571 @@
+<base href="https://help.appdirect.com/develop/Default.htm#api-iam/list-invitations.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____5"><html class="defaultSkin left-layout js no-touch svg inlinesvg svgclippaths no-ie8compat fa-events-icons-ready has-topic _Skins_HTML5___Tripane" data-mc-runtime-file-type="Default;TriPane" lang="en"><!-- saved from url=(0016)http://localhost --><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title data-title="">List invitations - Integration - AppDirect</title>
+    <link rel="shortcut icon" href="https://d6r6ulbtqyuv7.cloudfront.net/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/appdirectapp/images/favicon-ver-E524860B6D15077DC12CB7437023988E.ico" type="image/x-icon">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/TextEffects.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Styles.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/normalize.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/foundation_custom.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/offcanvas.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Web.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Tablet.css">
+    <link rel="Stylesheet" href="Skins/Default/Stylesheets/Mobile.css">
+
+	<!----------------------------- Share-this Script ------------------------------->
+
+    <iframe id="pxcelframe" src="//t.sharethis.com/a/t_.htm?ver=1.457.22036&amp;cid=c010&amp;cls=B#cid=c010&amp;cls=B&amp;dmn=help.appdirect.com&amp;rnd=1615157856342&amp;tt=t.dhj&amp;dhjLcy=309&amp;lbl=pxcel&amp;flbl=pxcel&amp;ll=d&amp;ver=1.457.22036&amp;ell=d&amp;cck=__stid&amp;pn=%2Fdevelop%2FDefault.htm&amp;qs=na&amp;rdn=help.appdirect.com&amp;rpn=%2Fdevelop%2FDefault.htm&amp;rqs=na&amp;cc=RU&amp;cont=EU&amp;ipaddr=" style="display: none;"></iframe><script async="" src="https://buttons-config.sharethis.com/js/5a5c5a8c72b70f00137efecc.js"></script><script type="text/javascript" async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_7d99ba68b982471c851b1260868b2859_https.js"></script><script defer="defer" type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a5c5a8c72b70f00137efecc&amp;product=sticky-share-buttons">
+    </script>
+
+	<!----------------------------- Walkme Script ------------------------------->
+
+    <script type="text/javascript">
+        (function() {
+            var walkme = document.createElement('script');
+            walkme.type = 'text/javascript';
+            walkme.async = true;
+            walkme.src =
+                'https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_7d99ba68b982471c851b1260868b2859_https.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(walkme, s);
+            window._walkmeConfig = {
+                smartLoad: true
+            };
+        })();
+    </script>
+
+	<!----------------------------- Local JS Script ------------------------------->
+
+    <script type="text/javascript" src="Resources/Scripts/jquery.min.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/custom.modernizr.js">
+    </script>
+    <script type="text/javascript" src="Resources/Scripts/foundation.min.js">
+    </script><meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xxlarge"><style></style>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/require.min.js">
+    </script>
+    <script type="text/javascript" src="Resources/Scripts/plugins.min.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/require.config.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/MadCapAll.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/header.js">
+    </script>
+    <script defer="defer" type="text/javascript" src="Resources/Scripts/redirect.js">
+    </script>
+    <script defer="defer" src="https://use.fontawesome.com/a52c22cf39.js">
+    </script>
+
+    <style>
+		.button.print-button {
+			-pie-background : url('Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.separator-button {
+			-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.topic-ratings-button {
+			-pie-background : url('Skins/Default/Stylesheets/Images/starFull.png') no-repeat center center, linear-gradient(transparent, transparent);
+			}
+
+		.button.separator-button {
+			-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.edit-user-profile-button {
+			-pie-background : url('Skins/Default/Stylesheets/Images/edit-profile.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.filler-button {
+			-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.previous-topic-button {
+			-pie-background : url('Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.current-topic-index-button {
+			-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.next-topic-button {
+			-pie-background : url('Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.select-language-button {
+			-pie-background : url('Skins/Default/Stylesheets/Images/select-language.png') no-repeat center cente, linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.button.login-button {
+			-pie-background : url('Skins/Default/Stylesheets/Images/login.png') no-repeat center center, linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.tabs-nav li.tabs-nav-inactive {
+			-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.tabs-nav li.tabs-nav-active {
+			-pie-background : linear-gradient(#FFFFFF, #FFFFFF);
+			}
+
+		.login-dialog-header {
+			-pie-background : url('Skins/Default/Stylesheets/Images/login-dialog-icon.png') no-repeat 18px center, linear-gradient(#5A5A5A, #4A4A4A);
+			}
+
+		.login-dialog button {
+			-pie-background : linear-gradient(#595959, #4A4A4A);
+			}
+    </style>
+<link href="https://use.fontawesome.com/a52c22cf39.css" media="all" rel="stylesheet"><script id="mt_script_8561281558" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/settings.txt"></script><style type="text/css">#st-2 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  backface-visibility: hidden;
+  display: block;
+  position: fixed;
+  opacity: 1;
+  text-align: left;
+  top: 88%;
+  z-index: 94034;
+}
+#st-2.st-right {
+  right: 0px;
+}
+#st-2.st-hidden.st-right {
+  right: -48px;
+}
+#st-2.st-hidden {
+  width: 96px;
+}
+#st-2 > div {
+  clear: right;
+  float: right;
+}
+#st-2 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: NaNpx;
+  height: 48px;
+  line-height: 24px;
+  margin-bottom: 0;
+  opacity: 1;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+  text-align: left;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 48px;
+}
+#st-2 .st-btn.st-first {
+  border-top: none;
+  border-top-left-radius: 11px;
+}
+#st-2 .st-btn.st-last {
+  border-bottom: none;
+  border-bottom-left-radius: 11px;
+}
+#st-2 .st-btn > svg {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > img {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 24px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 24px;
+}
+#st-2 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  left: -35px;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+  filter: alpha(opacity=0);
+}
+#st-2 .st-btn.st-hide-label > span {
+  display: none !important;
+}
+#st-2 .st-total {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #fff;
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 18px;
+  margin-right: 0;
+  min-height: 34px;
+  max-width: 80px;
+  opacity: 1;
+  padding: 4px 0;
+  text-align: center;
+  width: 48px;
+}
+#st-2 .st-total.st-hidden {
+  display: none;
+}
+#st-2 .st-total > span {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0;
+}
+#st-2 .st-total > span.st-shares {
+  font-size: 11px;
+  line-height: 11px;
+}
+#st-2 .st-toggle {
+  right: -48px;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #ccc;
+  border-bottom-left-radius: 11px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  text-align: center;
+  width: 48px;
+}
+#st-2.st-hidden .st-toggle {
+  border-top-left-radius: 11px;
+}
+#st-2.st-right .st-toggle .st-right {
+  display: inline-block;
+}
+#st-2.st-right.st-hidden .st-toggle .st-right {
+  display: none;
+}
+#st-2.st-right .st-toggle .st-left {
+  display: none;
+}
+#st-2.st-right.st-hidden .st-toggle .st-left {
+  display: inline-block;
+}#st-2:hover .st-toggle {
+  right: 0;
+}
+#st-2.st-hidden:hover .st-toggle {
+  right: 48px;
+}
+#st-2.st-toggleable:hover .st-btn.st-last {
+  border-bottom-left-radius: 0;
+}
+#st-2.st-toggleable:hover .st-btn.st-last:hover {
+  border-bottom-left-radius: 11px;
+}
+#st-2 .st-btn:hover {
+  border-bottom-left-radius: 11px;
+  border-top-left-radius: 11px;
+}
+#st-2.st-has-labels .st-btn:hover {
+  width: 120px;
+}
+#st-2:not(.st-has-labels) .st-btn:hover {
+  width: 62px;
+}
+#st-2 .st-btn.st-hide-label:hover {
+  width: 62px;
+}
+#st-2 .st-btn:hover > svg {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > img {
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > span {
+  opacity: 1;
+  display: inline-block;
+  left: 0;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 1073px) {
+  #st-2 .st-btn:hover > svg {
+    margin-left: 0;
+  }
+  #st-2 .st-btn:hover > span {
+    display: none;
+  }
+}@media (max-width: 1073px) {
+  #st-2 {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+}
+#st-2.st-hidden {
+  bottom: -48px;
+  width: 100%;
+}
+#st-2.st-hidden.st-left {
+  left: 0;
+}
+#st-2.st-hidden.st-right {
+  right: 0;
+}
+#st-2 > div {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  clear: none;
+  flex: 1;
+  float: none;
+}
+#st-2 .st-total {
+  background: #fff;
+  padding: 6px 8px;
+}
+#st-2 .st-btn {
+  -moz-border-radius: 0 !important;
+-webkit-border-radius: 0 !important;
+border-radius: 0 !important;
+  text-align: center;
+  width: auto;
+}
+#st-2 .st-btn > span {
+  display: none;
+}
+#st-2 .st-toggle {
+  display: none;
+}body { padding-bottom: 48px; }
+}#st-2 .st-btn[data-network='email'] {
+  background-color: #7d7d7d;
+}
+#st-2 .st-btn[data-network='email'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='email'] > span {
+  color: #fff;
+}
+#st-2 .st-btn[data-network='sms'] {
+  background-color: #ffbd00;
+}
+#st-2 .st-btn[data-network='sms'] svg {
+  fill: #fff;
+}
+#st-2 .st-btn[data-network='sms'] > span {
+  color: #fff;
+}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Breakpoints.js" src="Data/Breakpoints.js?t=636421935078698520"></script><script id="mt_script_8567034365" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/player/resources/wmjQuery3315.js"></script><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/scripts/prelib-plugin-a5bf053c-c09c-3183-8c39-ece2ec41c63c.js" rel="preload" as="script" id="wm_link0"><link href="https://cdn.walkme.com/player/lib/walkme_lib_20210301-130444-72c2f7f8-0ef15b74.js" rel="preload" as="script" id="wm_link1"><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_config_410af9750466448d9b285642808c1b7c.js" rel="preload" as="script" id="wm_link2"><link href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/data_60d29a68dc85497cb255474bcc1fdf9c.js" rel="preload" as="script" id="wm_link3"><link href="https://papi.walkme.com" rel="preconnect" id="wm_link4"><script id="mt_script_8568075737" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/scripts/prelib-plugin-a5bf053c-c09c-3183-8c39-ece2ec41c63c.js"></script><script id="mt_script_8568816868" async="true" class="walkme-to-remove" src="https://cdn.walkme.com/player/lib/walkme_lib_20210301-130444-72c2f7f8-0ef15b74.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Language.js" src="Data/Language.js?t=636421935078698520"></script><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/walkme_config_410af9750466448d9b285642808c1b7c.js" id="mt_script_8572321023" class="walkme-to-remove"></script><link id="walkme-custom-css" rel="stylesheet" type="text/css" href="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/custom_css_60d29a68dc85497cb255474bcc1fdf9c.css" media="all" class="walkme-to-remove"><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/data_60d29a68dc85497cb255474bcc1fdf9c.js" id="mt_script_857311917" class="walkme-to-remove"></script><script charset="utf-8" src="https://cdn.walkme.com/player/lib/20210301-130444-72c2f7f8-0ef15b74/22.c96692b5.walkme_lib.js"></script><script charset="utf-8" src="https://cdn.walkme.com/player/lib/20210301-130444-72c2f7f8-0ef15b74/15.3bf98503.walkme_lib.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Tocs/REORGapidev.js" src="Data/Tocs/REORGapidev.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Filters.js" src="Data/Filters.js?t=636421935078698520"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Data/Tocs/REORGapidev_Chunk0.js" src="Data/Tocs/REORGapidev_Chunk0.js?t=636421935078698520"></script><script async="" src="https://cdn.walkme.com/users/7d99ba68b982471c851b1260868b2859/settings.txt?forceUpdate=1615157862504" id="mt_script_8625043562" class="walkme-to-remove"></script></head>
+
+<body class="off-canvas hide-extras" onload="setTimeout(function() {window.scrollTo(0, 1)}, 100)">
+<div id="DEBUG_Log">
+    <div class="MCDebugLogHeader">
+        Log Console
+    </div>
+    <div class="MCDebugLogBody"><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">66109ms 01:58:41</p>onhashchange: #api-iam/list-invitations.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">64050ms 01:58:39</p>onhashchange: #api-iam/delete-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">61992ms 01:58:37</p>onhashchange: #api-iam/read-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">59937ms 01:58:35</p>onhashchange: #api-iam/update-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">57885ms 01:58:33</p>onhashchange: #api-iam/create-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">55833ms 01:58:31</p>onhashchange: #api-iam/manage-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">53767ms 01:58:29</p>onhashchange: #api-iam/delete-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">51716ms 01:58:27</p>onhashchange: #api-iam/read-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">49660ms 01:58:25</p>onhashchange: #api-iam/update-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">47590ms 01:58:23</p>onhashchange: #api-iam/create-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">45526ms 01:58:21</p>onhashchange: #api-iam/api-iam-mng-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">43446ms 01:58:19</p>onhashchange: #api-iam/read-companies.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520companies%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">41389ms 01:58:17</p>onhashchange: #api-iam/update-companies.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520companies%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">39338ms 01:58:15</p>onhashchange: #api-iam/create-companies.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520companies%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">37285ms 01:58:12</p>onhashchange: #api-iam/api-iam-mng-comps.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520companies%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">35227ms 01:58:10</p>onhashchange: #api-iam/iam-data-model.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">33178ms 01:58:08</p>onhashchange: #api-iam/api-iam.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">31128ms 01:58:06</p>onhashchange: #apiDev/api-versioning-policy.htm%3FTocPath%3DREST%2520API%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">29074ms 01:58:04</p>onhashchange: #apiDev/rest-api.htm%3FTocPath%3DREST%2520API%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">27028ms 01:58:02</p>onhashchange: #Integration/role-mapping.htm%3FTocPath%3DAPI%25C2%25A0authentication%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">24980ms 01:58:00</p>onhashchange: #Integration/token-timeouts.html%3FTocPath%3DAPI%25C2%25A0authentication%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">22924ms 01:57:58</p>onhashchange: #Integration/Scopes.htm%3FTocPath%3DAPI%25C2%25A0authentication%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">20877ms 01:57:56</p>onhashchange: #Integration/grant-refresh.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____6</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">18830ms 01:57:54</p>onhashchange: #Integration/grant-clientcreds.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____5</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">16778ms 01:57:52</p>onhashchange: #Integration/grant-password.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____4</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">14723ms 01:57:50</p>onhashchange: #Integration/grant-implicit.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____3</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">12668ms 01:57:48</p>onhashchange: #Integration/grant-authcode-nativeapps.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____2</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">10610ms 01:57:46</p>onhashchange: #Integration/grant-authcode-webapps.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____1</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">8551ms 01:57:44</p>onhashchange: #Integration/grant-desc.html%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">6498ms 01:57:42</p>onhashchange: #Integration/api-auth.html%3FTocPath%3DAPI%25C2%25A0authentication%7C_____0</div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">279ms 01:57:35</p>search: </div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">279ms 01:57:35</p>hash: </div><div class="MCDebugLogEntry"><p class="MCDebugLogEntryTime">266ms 01:57:35</p>onload</div>
+    </div>
+    <div class="MCDebugLogFooter">
+    </div>
+</div>
+<div id="header" class="primary-header">
+    <ul class="primary-header-left-ul">
+        <li class="primary-header-left-ul-li logo-li">
+            <a href="https://help.appdirect.com/" style="color: rgb(162, 162, 162);">
+                <img src="Skins/Default/Stylesheets/Images/appdirect-mark.png" class="appdirect_dark_logo" style="display: block;">
+                <img src="Skins/Default/Stylesheets/Images/appdirect-mark-light.png" class="appdirect_light_logo display_none" style="display: none;">
+            </a>
+        </li>
+        <li id="hide_subnav" class="primary-header-left-ul-li subnav-li both-side-border" style="background-color: rgb(238, 238, 238);">
+            <a id="userguidelink_id" class="header-links userguidelink" style="color: rgb(162, 162, 162); background-color: rgb(238, 238, 238);">
+                Docs
+                <i id="drop_down_icon" class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <ul class="subnav display_none" style="display: none;">
+                <li>
+                    <a class="subnav-links" href="/platform/manageThePlatform.html" target="_blank" style="color: rgb(162, 162, 162);">Platform</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/reseller/appreseller.html" target="_blank" style="color: rgb(162, 162, 162);">Resellers</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/products/createAndManageProducts.html" target="_blank" style="color: rgb(162, 162, 162);">Products</a>
+                </li>
+                <li>
+                    <a class="subnav-links" href="/develop/useAppDirectAPI.html" target="_blank" style="color: rgb(162, 162, 162);">APIs</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="search-bar container-search">
+        <a href="javascript:void(0)" id="search_menu">
+            <img id="search_image" class="search_image" src="Skins/Default/Stylesheets/Images/magnifying_glass.png">
+        </a>
+        <input style="margin-top: 0px; border-radius: 0px; width: 23.75em; display: none;" autocomplete="off" id="search-val" class="header-search-result" placeholder="Search Documentation Center" type="text">
+    </div>
+    <div class="header-right-div">
+        <a href="javascript:void(0)" id="hide_menu">
+            ☰
+        </a>
+		<ul class="primary-header-right-ul display_none_mobile_view" style="display: none;">
+            <li class="primary-header-right-ul-li both-side-border top-down-border training-li">
+                <a class="header-links training" href="/training/training.html">
+                    Training
+                </a>
+            </li>
+            <li class="primary-header-right-ul-li both-side-border top-down-border helpsupport-li">
+                <a class="header-links helpsupport" href="https://docs.appdirect.com/help-support/overview">
+                    Help &amp; Support
+                </a>
+            </li>
+            <li class="primary-header-right-ul-li right-side-border">
+                <a class="header-links login" href="https://docs.appdirect.com/login">
+                    Log In
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="secondary_nav">
+    <div class="secondary_nav_bold_link">
+        <a href="/develop/Default.htm#apiDev/apiDevIntro.htm%3FTocPath%3D_____1">API Help</a>
+        <span class="black">&gt;</span>
+    </div>
+    <div class="secondary_nav_links">
+        <a class="secondary_nav_links_over" href="#apiDev/apiDevIntro.htm%3FTocPath%3D_____1">
+            Overview
+        </a>
+    </div>
+        <div class="secondary_nav_links">
+            <a href="/api/appdirect.html">REST API Reference</a>
+        </div>
+        <div class="secondary_nav_links">
+            <a href="/api/graphql/index.html">GraphQL API Reference</a>
+        </div>
+        <div class="secondary_nav_links">
+            <a class="secondary_nav_links_over" href="/platform/Default.htm#mng-platform/product-lifecycle.htm%3FTocPath%3DManage%2520the%2520platform%7CProduct%2520lifecycle%2520phases%7C_____0" target="_blank">Product Lifecycle Phases</a>
+        </div>
+</div>
+
+<div id="navigationResizeBar" class="show-for-xlarge-up columns navbar-offset">
+    <div id="show-hide-navigation" class="needs-pie" dir="ltr">
+    </div>
+</div>
+<div id="body" class="row collapse" onload="setTimeout(function() {window.scrollTo(0, 1)}, 100)">
+    <div id="navigation" class="small-2 columns" role="complementary" style="">
+        <div class="tabs">
+            <div class="tab">
+                <ul class="tabs-nav clearfix image-then-text tab-icon">
+                </ul>
+                <div id="tabs-panel" class="tabs-panel tabs-panel-active">
+                    <div id="toc" class="tabs-panel-content needs-pie">
+                    <ul class="tree" data-mc-chunk="Data/Toc.xml"><li class="tree-node tree-node-leaf tree-node-expanded" data-mc-id="0"><div><span class="label"><a href="#apiDev/apiDevIntro.htm%3FTocPath%3D_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Use the AppDirect API</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="1"><div><span class="label"><a href="#Integration/api-auth.html%3FTocPath%3DAPI%25C2%25A0authentication%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">API&nbsp;authentication</a></span></div><ul class="tree inner"><li class="tree-node tree-node-expanded" data-mc-id="6"><div><span class="label"><a href="#Integration/grant-desc.html%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Grant types</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="10"><div><span class="label"><a href="#Integration/grant-authcode-webapps.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Authorization code for web applications</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="11"><div><span class="label"><a href="#Integration/grant-authcode-nativeapps.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Authorization code for native applications</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="12"><div><span class="label"><a href="#Integration/grant-implicit.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Implicit</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="13"><div><span class="label"><a href="#Integration/grant-password.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Password</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="14"><div><span class="label"><a href="#Integration/grant-clientcreds.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Client credentials</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="15"><div><span class="label"><a href="#Integration/grant-refresh.htm%3FTocPath%3DAPI%25C2%25A0authentication%7CGrant%2520types%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Refresh token</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="7"><div><span class="label"><a href="#Integration/Scopes.htm%3FTocPath%3DAPI%25C2%25A0authentication%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Scopes</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="8"><div><span class="label"><a href="#Integration/token-timeouts.html%3FTocPath%3DAPI%25C2%25A0authentication%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Token timeouts</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="9"><div><span class="label"><a href="#Integration/role-mapping.htm%3FTocPath%3DAPI%25C2%25A0authentication%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">API and user interface role mapping</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="2"><div><span class="label"><a href="#apiDev/rest-api.htm%3FTocPath%3DREST%2520API%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">REST API</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="16"><div><span class="label"><a href="#apiDev/api-versioning-policy.htm%3FTocPath%3DREST%2520API%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">REST API versioning policy</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="17"><div><span class="label"><a href="#api-iam/api-iam.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">User and company management</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="23"><div><span class="label"><a href="#api-iam/iam-data-model.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">IAM Data Model</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-expanded" data-mc-id="24"><div><span class="label"><a href="#api-iam/api-iam-mng-comps.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520companies%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Manage companies</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="27"><div><span class="label"><a href="#api-iam/create-companies.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520companies%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create companies</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="28"><div><span class="label"><a href="#api-iam/update-companies.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520companies%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Update companies</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="29"><div><span class="label"><a href="#api-iam/read-companies.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520companies%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Read companies</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="25"><div><span class="label"><a href="#api-iam/api-iam-mng-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Manage users</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="30"><div><span class="label"><a href="#api-iam/create-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create users</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="31"><div><span class="label"><a href="#api-iam/update-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Update users</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="32"><div><span class="label"><a href="#api-iam/read-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Read users</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="33"><div><span class="label"><a href="#api-iam/delete-users.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520users%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Delete users</a></span></div><ul class="tree inner"></ul></li></ul></li><li class="tree-node tree-node-expanded" data-mc-id="26"><div><span class="label"><a href="#api-iam/manage-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Manage company memberships</a></span></div><ul class="tree inner"><li class="tree-node tree-node-leaf" data-mc-id="34"><div><span class="label"><a href="#api-iam/create-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____1"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Create company memberships</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="35"><div><span class="label"><a href="#api-iam/update-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____2"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Update company memberships</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="36"><div><span class="label"><a href="#api-iam/read-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____3"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Read company memberships</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="37"><div><span class="label"><a href="#api-iam/delete-memberships.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____4"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Delete company memberships</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf tree-node-selected" data-mc-id="38"><div><span class="label"><a href="#api-iam/list-invitations.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____5"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">List invitations</a></span></div><ul class="tree inner"></ul></li><li class="tree-node tree-node-leaf" data-mc-id="39"><div><span class="label"><a href="#api-iam/revoke-invitations.htm%3FTocPath%3DREST%2520API%7CUser%2520and%2520company%2520management%7CManage%2520company%2520memberships%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Revoke invitations</a></span></div></li></ul></li></ul></li><li class="tree-node tree-node-collapsed" data-mc-id="18"><div><span class="label"><a href="#api-sub/api-sub.htm%3FTocPath%3DREST%2520API%7CBilling%2520and%2520subscription%2520management%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Billing and subscription management</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="19"><div><span class="label"><a href="#apiDev/prod-integ-intro.htm%3FTocPath%3DREST%2520API%7CProduct%2520integration%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Product integration</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="20"><div><span class="label"><a href="#API-Shipping-Integration/Shipping-integration-overview.htm%3FTocPath%3DREST%2520API%7CShipping%2520integration%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Shipping integration</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="21"><div><span class="label"><a href="#apiDev/cloud-mgmt-intro.htm%3FTocPath%3DREST%2520API%7C_____6"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Cloud management</a></span></div></li><li class="tree-node tree-node-leaf" data-mc-id="22"><div><span class="label"><a href="#Integration/api-comp-custatt.htm%3FTocPath%3DREST%2520API%7C_____7"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Topic Icon">Use custom attributes with APIs</a></span></div></li></ul></li><li class="tree-node tree-node-collapsed" data-mc-id="3"><div><span class="label"><a href="#apiDev/graph-intro.htm%3FTocPath%3DGraphQL%2520API%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">GraphQL API</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="4"><div><span class="label"><a href="#Integration/webhooks-guide.html%3FTocPath%3DWebhooks%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Webhooks</a></span></div></li><li class="tree-node tree-node-collapsed" data-mc-id="5"><div><span class="label"><a href="#Integration/Add-On-Store.htm%3FTocPath%3DAdd-On%2520Store%7C_____0"><img src="Skins/Default/Stylesheets/Images/transparent.gif" class="toc-icon" alt="Closed Book" data-mc-alt2="Open Book">Add-On Store</a></span></div></li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contentBody" class="small-10 expand-for-small-10 columns non-collapsable needs-pie" role="main" style="margin-left: 310px;">
+        <div id="responsiveHeader" class="needs-pie"><a class="homeLink" href="Default.htm">
+            <h1 class="logo"><img src="Skins/Default/Stylesheets/Images/appdirect-mark.png" alt="Logo"></h1>
+        </a>
+            <div id="slideRight" class="toggle-topbar menu-icon"><a id="sidebarButton" href="#"><span> NAV
+                        </span></a>
+            </div>
+        </div>
+        <div class="buttons toolbar-buttons popup-container">
+            <div class="button-group-container-right">
+                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                    <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                </button>
+                <div class="button current-topic-index-button disabled"><span class="sequence-index"></span> of
+                    <span class="sequence-total"></span></div>
+                <button class="button needs-pie next-topic-button" title="Navigate next">
+                    <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                </button>
+            </div>
+        </div>
+        <div id="contentBodyInner">
+            <!-- frameBorder="0" is for IE 8 and below -->
+            <iframe id="topic" class="content" name="topic" frameborder="0" style="display: block;"></iframe>
+            <iframe id="pulse" class="content" name="pulse" frameborder="0" style="display: none;"></iframe>
+            <div id="searchPane" style="display: none;">
+                <h1 id="results-heading">Your search for <span class="query"></span> returned <span class="total-results"></span> result(s).</h1>
+                <div id="pagination"><a class="previousPage">Previous</a><a class="nextPage">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="login-dialog needs-pie">
+    <div class="login-dialog-header needs-pie">
+        Create Profile
+    </div>
+    <div class="login-dialog-content needs-pie">
+        <div class="profile-item-wrapper clearfix" data-mc-style="Feedback User Profile Item Label">
+            <div class="label-wrapper">
+                <label>Username *</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="needs-pie" type="text" name="Username" data-required="true">
+            </div>
+        </div>
+        <div class="profile-item-wrapper clearfix">
+            <div class="label-wrapper">
+                <label>Email Address *</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="needs-pie" type="text" name="EmailAddress" data-required="true">
+            </div>
+        </div>
+        <div class="profile-item-wrapper email-notifications-wrapper">
+            <div class="label-wrapper">
+                Email Notifications
+            </div>
+            <div class="email-notifications-group needs-pie">
+                I want to receive an email when...
+                <div><label><input type="checkbox" name="CommentReplyNotification">a reply is left to one of my
+                    comments</label></div>
+                <div><label><input type="checkbox" name="CommentSameTopicNotification">a comment is left on a
+                    topic
+                    that I commented on</label></div>
+                <div><label><input type="checkbox" name="CommentSameHelpSystemNotification">a comment is left on
+                    any
+                    topic in the Help system</label></div>
+            </div>
+        </div>
+        <div class="login-dialog-buttons">
+            <button class="submit-button needs-pie" type="submit">Submit</button>
+            <button class="cancel-button needs-pie">Cancel</button>
+        </div>
+        <div class="status-message-box"><span class="message verification-email-sent-message">An email has been sent
+                    to verify your new profile.</span><span class="message required-fields-missing-message">Please fill
+                    out all required fields before submitting your information.</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="Resources/Scripts/jquery.offcanvas.js">
+</script>
+<script>
+    $(document).foundation();
+</script>
+
+
+<iframe src="https://c.sharethis.mgr.consensu.org/portal-v2.html" id="st_gdpr_iframe" title="GDPR Consent Management" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe><div id="st-2" class=" st-sticky-share-buttons st-right st-toggleable st-has-labels "><div class="st-btn st-first st-last" data-network="email" style="display: inline-block;">
+  <img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+  <span class="st-label">Email</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+  </div>
+</div><div class="walkme-icon-root-Launcher-353075 walkme-not-embed walkme-launcher-container walkme-launcher-container-id-353075" title="Feedback" style="position: relative; display: inline-block; float: right; zoom: 1; cursor: pointer;"><div class="SkipThisFixedPosition walkme-custom-icon-outer-div walkme-launcher-id-353075 walkme-custom-launcher-outer-div walkme-text-launcher" style="position: absolute; display: inline; left: -100px; top: -81.5px; z-index: 2147483647;"><div class="walkme-icon-image-div walkme-launcher-image-div" style="background-repeat: no-repeat; background-image: url(&quot;https://d2qhvajt3imc89.cloudfront.net/customers/AppDirect/Feedback_Icon.png&quot;); height: 42px; width: 48px;"></div></div></div></div></body></html>
